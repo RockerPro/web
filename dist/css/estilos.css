@@ -1,0 +1,133 @@
+@font-face {
+font-family: Lato-Light;
+src: url(fuentes/Lato-Light.ttf);
+}
+@font-face {
+font-family: Lato-Medium;
+src: url(fuentes/Lato-Medium.ttf);
+}
+ @font-face {
+font-family: Euro-Light;
+src: url(fuentes/eurof35.ttf);
+}
+
+.cabecera{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: white;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.headlogo{
+	width: 200px;
+	margin-left: 15px;
+}
+
+.listredes{
+	list-style: none;
+	margin-top: 10px;
+}
+.listdate{
+	list-style: none;
+	margin-top: 10px;
+	padding-left: 0;
+	font-family: Lato-Light;
+}
+.listredes li{
+	float: left;
+	padding: 4px 8px 4px 8px;
+	margin: 2px;
+	color: white;
+	border-radius: 5px;
+}
+.listredes li a{
+	color: white;
+}
+.listredes .fb{
+	background: #44619D;
+}
+.listredes .tw{
+	background: #1DA1F2;
+}
+.listredes .ln{
+	background: #005582;
+}
+.imgarea{
+	width: 100%;
+}
+.title{
+	margin-top: -37px;
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: Lato-Light;
+}
+.title p{
+	text-align: center;
+}
+.titsec{
+	font-family: Euro-Light;
+	font-size: 35px;
+	margin-bottom: 15px;
+}
+.contnove{
+	margin-bottom: 15px;
+    border: 1px solid silver;
+    padding: 3px;
+    overflow: hidden;
+}
+.contnove p{
+	margin-bottom: 25px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.contnove a{
+	font-size: 13px;
+	color: #005A97;
+}
+.imgnove{
+	width: 60px;
+	float: left;
+	margin-right: 10px;
+}
+.client {
+    width: 200px;
+    margin-bottom: 35px;
+}
+.contcli{
+	border-top: 1px solid silver;
+	margin-top: 25px;
+}
+.contcli p{
+	margin-top: 15px;
+	text-align: center;
+}
+#footer {
+    height: auto;
+    display: block;
+    width: 100%;
+    background: #1C3D60;
+    z-index: 9;
+    text-align: center;
+    color: #f2f2f2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 0.8;
+}
+@media only screen and (max-width: 767px){
+.headlogo {
+    width: 150px;
+}
+.listredes {
+    margin-top: 5px;
+    margin-right: 70px;
+}
+}
+@media only screen and (max-width: 450px){
+.listredes {
+    margin-right: 55px;
+}
+}
