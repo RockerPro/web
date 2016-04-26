@@ -74,120 +74,21 @@
 			<div class="col-md-9" style="margin-top: 55px;margin-bottom:25px;overflow: hidden;">
 				<div class="col-md-12" style="margin-top:55px;">					
 		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		            	<div class="subti3">
-		            		<p class="titsec">DESARROLLO DE APLICACIONES</p>
+		            	<div class="contvalor">
+		            		<p class="titsec">CONSULTORÍA Y EMPRENDIMIENTO</p>
 			                <div class="divider divider_gray ">
 			                    <span></span><span></span>
 			                </div>
 		            	</div>
-	                    <div class="col-md-6">
-                                   <ul  class="textarea listaserv">
-                                     <li class="itemm3" data-cont="s1" style="color:#004375;list-style:url(dist/img2/punto.png);">Desarrollo de aplicaciones para smartphones</li>
-                                     <li class="itemm3" data-cont="s2">Computación en la nube</li>
-                                     <li class="itemm3" data-cont="s3">Desarrollo de proyectos de impacto social</li>
-                                     <li class="itemm3" data-cont="s4">Marketing digital</li>
-                                     <li class="itemm3" data-cont="s5">Ecommnerce</li>
-                                   </ul>
-                                   <br><br>
-                               </div>
-                               <div class="col-md-6">
-                                    <div class="hidee3" id="s1">
-                                        Desarrollamos soluciones y servicios que incluyen el uso de aplicaciones para teléfonos inteligentes. Somos expertos en tecnologías de geolocalización, conectividad y sensado. Desarrollamos aplicaciones para Android y iOS. Todos nuestros desarrollos se apoyan en la plataforma JM Cloud.
-                                    </div>
-                                    <div class="hidee3" id="s2">
-                                        Proveemos de servicios de geolocalización, registro y procesamiento para aplicaciones web y mobile a través de nuestra plataforma JM Cloud.
-                                    </div>
-                                    <div class="hidee3" id="s3">
-                                        Desarrollamos plataformas novedosas apoyando a la sociedad a minimizar los riesgos en desastres naturales, inseguridad ciudadana, transporte, etc.
-                                    </div>
-                                    <div class="hidee3" id="s4">
-                                        • Solución profesional de comercio electrónico.  <br>
-                                        • Gestionará su propia tienda on line de manera sencilla y eficaz, sin necesidad de tener conocimientos de programación o diseño web. <br> 
-                                        • Podrá actualizar su catálogo virtual de productos, modificando precios e insertando nuevas ofertas a través de un sencillo panel de gestión accesible desde donde usted quiera.  <br>
-                                        • Llegará a más clientes potenciales y así podrá incrementar los beneficios de su empresa a corto plazo. <br> 
-                                        <br>
-                                    </div>
-                                    <div class="hidee3" id="s5">
-                                        En MD Marketing Digital trabajamos con una estructura dinámica que nos permite adaptarnos sin fisuras, ni tensiones, de acuerdo al tamaño del cliente. <br>
-                                        Pequeñas, medianas y grandes empresas pueden posicionarse en internet. Sólo necesitan crear su espacio en el mundo digital de manera acorde a su tamaño y a su historia en el mundo real, logrando así recrear el vinculo empresa-consumidor en este nuevo mundo on line. <br>   
-                                    </div>
-                               </div>
-		            </div>
-		           	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="subti">
-		            		<p class="titsec">NUESTRAS APPS</p>
-			                <div class="divider divider_gray ">
-			                    <span></span><span></span>
-			                </div>
-		            	</div>
-		            	<div class="row">
-		            		<div class="col-md-4">
-		            			<img class="img-responsive imgapp" src="dist/img2/clients/b1.jpg" alt="app">
-		            		</div>
-		            		<div class="col-md-4">
-		            			<img class="img-responsive imgapp" src="dist/img2/clients/b2.jpg" alt="app">
-		            		</div>
-		            		<div class="col-md-4">
-		            			<img class="img-responsive imgapp" src="dist/img2/clients/b3.jpg" alt="app">
-		            		</div>
-		            		<div class="col-md-4">
-		            			<img class="img-responsive imgapp" src="dist/img2/clients/b4.jpg" alt="app">
-		            		</div>
-		            		<div class="col-md-4">
-		            			<img class="img-responsive imgapp" src="dist/img2/clients/b5.jpg" alt="app">
-		            		</div>
-		            		<div class="col-md-4">
-		            			<img class="img-responsive imgapp" src="dist/img2/clients/b6.jpg" alt="app">
-		            		</div>
-		            		<div class="col-md-4"></div>
-		            		<div class="col-md-4">
-		            			<img class="img-responsive imgapp" src="dist/img2/clients/b7.jpg" alt="app">
-		            		</div>
-		            	</div>
-		           	</div>	            
+		            	<p class="conttext2">Mediante la unidad de consultoría  y emprendimiento buscamos
+		            	ayudar a empresas y personas a desarrollar y/o formular proyectos empresariales
+		            	, fomentando el desarrollo económico y social. Para ello contamos con un equipo
+		            	especializado y certificado que formulan los estudios de pre-inversión y los
+		            	correspondientes expedientes técnicos del proyecto. Garantizando así, una inversión
+		            	bien planeada, estructurada y rentable.</p>
+		            </div>            
 				</div>
-			</div>
-			<div class="col-md-3 novedades"  style="margin-top: 110px;margin-bottom:25px;overflow: hidden;">
-				<p class="titsec">Novedades</p>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 descarga">
-					<a href="document/brochure.pdf" download>
-					<h2>DESCARGAR BROCHURE</h2>
-					<img class="img-responsive icondwl" src="dist/img2/icons/download.svg" alt="descargar brochure">
-					</a>
-				</div>
-
-			</div>
-			<div class="col-md-12 contcli">
+				<div class="col-md-12 contcli">
                      <p class="titsec">CLIENTES</p>
                                	<div class="divider divider_gray ">
                                		<span></span><span></span>
@@ -252,6 +153,37 @@
                                       </div>
                               	</div>                             
                 </div>
+			</div>
+			<div class="col-md-3 novedades"  style="margin-top: 110px;margin-bottom:25px;overflow: hidden;">
+				<p class="titsec">Novedades</p>
+				<div class="col-md-12 contnove">
+					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
+					<p>Lorem ipsum dolor sit amet</p>
+					<a href="" class="pull-right">Ver más</a>
+				</div>
+				<div class="col-md-12 contnove">
+					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
+					<p>Lorem ipsum dolor sit amet</p>
+					<a href="" class="pull-right">Ver más</a>
+				</div>
+				<div class="col-md-12 contnove">
+					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
+					<p>Lorem ipsum dolor sit amet</p>
+					<a href="" class="pull-right">Ver más</a>
+				</div>
+				<div class="col-md-12 contnove">
+					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
+					<p>Lorem ipsum dolor sit amet</p>
+					<a href="" class="pull-right">Ver más</a>
+				</div>
+				<div class="col-md-12 descarga">
+					<a href="document/brochure.pdf" download>
+					<h2>DESCARGAR BROCHURE</h2>
+					<img class="img-responsive icondwl" src="dist/img2/icons/download.svg" alt="descargar brochure">
+					</a>
+				</div>
+
+			</div>			
 			<div class="col-md-12" style="padding: 0;">
 				<div id="footer">
 	                <div class="container">
