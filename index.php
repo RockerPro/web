@@ -17,8 +17,7 @@
     <meta property="og:site_name" content="SGTEL">
     <title>SGTEL</title>
     <link rel="stylesheet" href="dist/css/bootstrap.css">
-	<link rel="shortcut icon" href="dist/img/icono.png">
-	<link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.css">
+	<link rel="shortcut icon" href="dist/img2/icono.png">
     <link rel="stylesheet" href="dist/css/estilos.css">
     <link rel="stylesheet" href="dist/css/reset.css">
     <link rel="stylesheet" href="dist/css/style.css">
@@ -45,7 +44,7 @@
 			<header class="cabecera">
 				<div class="row">
 					<div class="col-md-1 pull-left">
-						<img class="headlogo" src="dist/img2/logo.png" alt="logo sgtel">
+						<a href="./"><img class="headlogo" src="dist/img2/logo.png" alt="logo sgtel"></a>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
 						<ul class="listdate">
@@ -123,30 +122,30 @@
 		</main>
 		<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-			<li><a href="" class="selected">INICIO</a></li>
-			<li><a href="">ACERCA DE SGTEL</a></li>
+			<li><a href="./" class="selected">INICIO</a></li>
+			<li><a href="acerca_sgtel.php">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
-				<a href="">ÁREAS DE NEGOCIO </a>
+				<a>ÁREAS DE NEGOCIO </a>
 
 				<ul class="cd-nav-icons is-hidden">
 					<li class="go-back"><a href="#0">Volver</a></li>
 					<li>
-						<a class="cd-nav-item " href="">
+						<a class="cd-nav-item " href="infraestructura.php">
 							Infraestructura
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="">
+						<a class="cd-nav-item " href="soluciones_moviles.php">
 							Soluciones Móviles
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="">
+						<a class="cd-nav-item " href="consultoria_emprendimiento.php">
 							Consultoría y Emprendimiento
 							<p></p>
 						</a>
@@ -186,27 +185,31 @@
 	</nav> <!-- cd-nav -->
 		<div class="col-md-12" style="margin-top:25px;">
 			<div class="col-md-9">
-				<div class="col-md-4">
+				<div class="tres">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<img class="imgarea" src="dist/img2/areas/infra.jpg" alt="infraestuctura">
 					<div class="title">
 						<p>INFRAESTUCTURA</p>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<img class="imgarea" src="dist/img2/areas/mobil.jpg" alt="soluciones mobiles">
 					<div class="title">
 						<p>SOLUCIONES MÓVILES</p>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<img class="imgarea" src="dist/img2/areas/consul.jpg" alt="consultoria">
 					<div class="title">
 						<p>CONSULTORÍA Y EMPRENDIMIENTO</p>
 					</div>
 				</div>
+				</div>
 				<div class="col-md-12 contcli">
                                <p class="titsec">CLIENTES</p>
-                               <div class="line5"></div>
+                               <div class="divider divider_gray ">
+                               		<span></span><span></span>
+                               </div>
                                <br><br>
                               <div id="owl-demo" class="col-md-12 owl-carousel owl-theme owl-loaded">
                                       <div class="item">
@@ -268,7 +271,7 @@
                               </div>                              
                            </div>
 			</div>
-			<div class="col-md-3" style="border-left: 1px solid silver;">
+			<div class="col-md-3 novedades">
 				<p class="titsec">Novedades</p>
 				<div class="col-md-12 contnove">
 					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
@@ -312,10 +315,6 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-    <script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="bower_components/remodal/dist/remodal.min.js"></script>
 	<script type="text/javascript" src="dist/js/jquery.mobile.custom.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.js"></script> <!-- Resource jQuery -->
 	<!-- slider-->
@@ -325,16 +324,6 @@
     <script src="dist/carousel/owl.carousel.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#fullpage').fullpage({
-                verticalCentered: false,
-                scrollingSpeed: 700,
-                menu: 'menu',
-                css3:false
-            });
-                setTimeout(function() {
-                    $(".saludo").fadeOut(1200);
-                   },1000);
-
             /*slider clientes*/
 		 $("#owl-demo").owlCarousel({
           items : 4,

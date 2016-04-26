@@ -73,8 +73,13 @@ Main components
   -o-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
-}
 
+}
+.cd-main-header{
+  position: fixed;
+    width: 100%;
+    top: 0;
+}
 .cd-main-content, .cd-main-header {
   position: relative;
   -webkit-transition: -webkit-transform 0.3s;
@@ -101,14 +106,17 @@ Main components
 .cd-main-content {
   /*background: #e2e3df;*/
   min-height: 90vh;
+  margin-top: 113px;
   /*z-index: 2;*/
 }
 
 .cd-main-header {
   height: auto;
- 
   background: #1F9BD7;
   z-index: 3;
+      position: fixed;
+    width: 100%;
+    top: 0;
 }
 .nav-is-fixed .cd-main-header {
   /* add .nav-is-fixed class to body if you want a fixed navigation on > 1170px */
@@ -120,6 +128,9 @@ Main components
 @media only screen and (min-width: 1170px) {
   .cd-main-header {
     height: 113px;
+    position: fixed;
+    width: 100%;
+    top: 0;
   }
   .cd-main-header::after {
     clear: both;
@@ -140,6 +151,9 @@ Main components
   .nav-on-left .cd-logo {
     left: auto;
     right: 5%;
+  }
+  .cd-main-content {
+    margin-top: 64px;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -611,7 +625,7 @@ Main components
   .cd-primary-nav .cd-secondary-nav, .cd-primary-nav .cd-nav-gallery, .cd-primary-nav .cd-nav-icons {
     /* dropdown menu style */
     position: initial;
-    top: 50px;
+        margin-top: -1px;
     width: 225px;
     background: #1F9BD7;
     padding: 10px 10px 10px;
@@ -1076,5 +1090,10 @@ support for no js
 
   .no-js .nav-is-fixed .cd-primary-nav {
     position: fixed;
+  }
+}
+@media only screen and (min-width: 767px) {
+.cd-main-content {
+    margin-top: 51px;
   }
 }
