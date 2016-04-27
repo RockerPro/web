@@ -53,11 +53,15 @@ jQuery(document).ready(function($){
 
 
 	//prevent default clicking on direct children of .cd-primary-nav 
-	$('.cd-primary-nav').children('.has-children').children('a').on('click', function(event){
+	$('.cd-primary-nav').children('.has-children').children('a').on('mouseover', function(event){
 		event.preventDefault();
 	});
+	// $('.has-children').children('a').on('mouseleave', function(event){
+	// 	var selected = $(this);
+	// 	selected.removeClass('selected').next('ul').addClass('is-hidden').end().parent('.has-children').parent('ul').removeClass('moves-out');
+	// });
 	//open submenu
-	$('.has-children').children('a').on('click', function(event){
+	$('.has-children').children('a').on('mouseover', function(event){
 		if( !checkWindowWidth() ) event.preventDefault();
 		var selected = $(this);
 		if( selected.next('ul').hasClass('is-hidden') ) {

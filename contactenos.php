@@ -71,119 +71,78 @@
 		</ul>
 		</header>
 		<main class="cd-main-content">
-			<div class="col-md-9" style="margin-top: 55px;margin-bottom:25px;overflow: hidden;">
+			<div class="col-md-12" style="overflow: hidden;">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 direcc">					
+				<div class="col-md-12 col-sm-12 col-xs-6">
+				<h3>Perú</h3>
+				<p>Av. Nicolás Arriola 290, Of. 311, <br>
+				La Victoria <br>
+				T. (51-1) 340 3401 <br>
+				Informes: informes@sgtel.pe <br>
+				www.sgtel.pe</p>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-6">
+				<h3>Colombia</h3>
+				<p>Av. Nicolás Arriola 290, Of. 311, <br>
+				Carrera 106 N° 16-86, interior <br>
+				2; Of. 503, Bogotá, Fortibón <br>
+				Centenario <br>
+				T. (57) 3133640282</p>
+				</div>
+				<div class="col-xs-3 visible-xs"></div>
+				<div class="col-md-12 col-sm-12 col-xs-6">
+				<h3>EEUU</h3>
+				<p>Av. Nicolás Arriola 290, Of. 311, <br>
+				5551 Courtyard  <br>
+				Dr. Margate FL <br>
+				Zip 33063 <br>
+				T. (001) - (305) 450 2570</p>
+				</div>
+			</div>	
+			<div class="col-lg-6 col-md-6 col-sm-9 col-xs-12 formu">
 				<div class="col-md-12" style="margin-top:55px;">					
 		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		            	<div class="contvalor">
-		            		<p class="titsec">CONSULTORÍA Y EMPRENDIMIENTO</p>
+		            		<p class="titsec">¿CONVERSAMOS?</p>
 			                <div class="divider divider_gray ">
 			                    <span></span><span></span>
 			                </div>
 		            	</div>
-		            	<p class="conttext2">Mediante la unidad de consultoría  y emprendimiento buscamos
-		            	ayudar a empresas y personas a desarrollar y/o formular proyectos empresariales
-		            	, fomentando el desarrollo económico y social. Para ello contamos con un equipo
-		            	especializado y certificado que formulan los estudios de pre-inversión y los
-		            	correspondientes expedientes técnicos del proyecto. Garantizando así, una inversión
-		            	bien planeada, estructurada y rentable.</p>
+		            	<form id="contact-form" class="formcontac" role="form" autocomplete="off">  
+                                <p class="success-message">Gracias por contactarnos!</p>
+                                <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6 camp">
+                                    <input type="text" name="name" class="contacinput" placeholder="Nombre">
+                                    <label for="contact-name"></label>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6 camp">
+                                    <input type="text" name="apelli" class="contacinput" placeholder="Apellidos">
+                                    <label for="contact-ape"></label>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6 camp">
+                                    <input maxlength="9" minlength="7" type="text" name="telf" class="contacinput" placeholder="Teléfono">
+                                    <label for="contact-telf"></label>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6 camp">
+                                    <input type="text" name="email" class="contacinput" placeholder="E-mail">
+                                    <label for="contact-email"></label>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <textarea style="resize:none;height: auto;" rows="2" name="message" class="contacinput" placeholder="Mensaje"></textarea>
+                                    <label for="contact-message"></label>
+                                </div>
+                                <div class="form-group">
+                                    <button  id="send-mail" class="message-btn btnsubmit pull-right">Enviar</button>
+                                </div>
+                            </form>   
 		            </div>            
 				</div>
-				<div class="col-md-12 contcli">
-                     <p class="titsec">CLIENTES</p>
-                               	<div class="divider divider_gray ">
-                               		<span></span><span></span>
-                               	</div>
-                               	<br><br>
-                              	<div id="owl-demo" class="col-md-12 owl-carousel owl-theme owl-loaded">
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/alicorp.png" alt="cliente1">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/backus.png" alt="cliente2">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/bbva.png" alt="cliente3">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/chinalco.png" alt="cliente4">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/claro.png" alt="cliente5">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/clinicaanglo.png" alt="cliente6">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/cobra.png" alt="cliente7">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/contugas.png" alt="cliente8">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/emerson.png" alt="cliente9">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/ericsson.png" alt="cliente10">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/grana_montero.png" alt="cliente11">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/grupo_romero.png" alt="cliente12">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/ministerio.png" alt="cliente13">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/onp.png" alt="cliente14">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/reniec.png" alt="cliente15">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/telefonica.png" alt="cliente16">
-                                      </div>
-                                      <div class="item visible-md">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/toyota.png" alt="cliente17">
-                                      </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/xerox.png" alt="cliente18">
-                                      </div>
-                              	</div>                             
-                </div>
 			</div>
-			<div class="col-md-3 novedades"  style="margin-top: 110px;margin-bottom:25px;overflow: hidden;">
-				<p class="titsec">Novedades</p>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="" class="pull-right">Ver más</a>
-				</div>
-				<div class="col-md-12 descarga">
-					<a href="document/brochure.pdf" download>
-					<h2>DESCARGAR BROCHURE</h2>
-					<img class="img-responsive icondwl" src="dist/img2/icons/download.svg" alt="descargar brochure">
-					</a>
-				</div>
-
-			</div>			
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mapa">
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3545172555437!2d-77.01774303380458!3d-12.
+				 087864986604602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c87e7ec68689%3A0x84ccb70dbbb4c820!2sAv+Nicol%C3%A1s
+				 +Arriola+290%2C+La+Victoria+15034!5e0!3m2!1ses-419!2spe!4v1458335440826" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>	
+			</div>		
 			<div class="col-md-12" style="padding: 0;">
 				<div id="footer">
 	                <div class="container">
@@ -268,6 +227,7 @@
 	<script type="text/javascript" src="dist/js/jquery.mobile.custom.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.js"></script> <!-- Resource jQuery -->
 	<script type="text/javascript" src="dist/js/areas.js"></script>
+	<script type="text/javascript" src="dist/js/sendmail.js"></script>
 	<!-- Include js plugin -->
     <script src="dist/carousel/owl.carousel.js"></script>
     <script type="text/javascript">

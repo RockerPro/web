@@ -298,7 +298,7 @@
 			</li>
 
 			<li class="has-children">
-				<a href="">NOVEDADES</a>
+				<a>NOVEDADES</a>
 				<ul class="cd-nav-icons is-hidden">
 					<li class="go-back"><a href="#0">Volver</a></li>
 					<li>
@@ -324,7 +324,7 @@
 				</ul>
 			</li>
 
-			<li><a href="">CONTÁCTENOS</a></li>
+			<li><a href="contactenos.php">CONTÁCTENOS</a></li>
 		</ul> <!-- primary-nav -->
 	</nav> <!-- cd-nav -->
 		

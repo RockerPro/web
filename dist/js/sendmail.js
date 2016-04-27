@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
         var postdata = form.serialize();
         $.ajax({
             type: 'POST',
-            url: 'http://www.deitaweb.com/sendmailsgtel/correo.php',
+            url: 'correo.php',
             data: postdata,
             dataType: 'json',
             success: function(json) {

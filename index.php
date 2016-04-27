@@ -22,18 +22,14 @@
     <link rel="stylesheet" href="dist/css/reset.css">
     <link rel="stylesheet" href="dist/css/style.css">
 	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
-    <script src="dist/js/modernizr.js"></script> <!-- Modernizr -->
-    <!-- slider-->
-    <link rel="stylesheet" type="text/css" href="dist/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="dist/css/style2.css" />
-    <link rel="stylesheet" type="text/css" href="dist/css/custom.css" />
-	<script type="text/javascript" src="dist/js/modernizr.custom.79639.js"></script>
-	<noscript>
-		<link rel="stylesheet" type="text/css" href="dist/css/styleNoJS.css" />
-	</noscript>
+	<link rel="stylesheet" type="text/css" href="dist/css/menu/demo.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/menu/style_alt.css" />
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="dist/css/menu/style_ie.css" />
+	<![endif]-->
+	<!-- jQuery -->
 	<!-- Important Owl stylesheet -->
     <link rel="stylesheet" href="dist/carousel/owl.carousel.css">
-     
     <!-- Default Theme -->
     <link rel="stylesheet" href="dist/carousel/owl.theme.css">
 </head>
@@ -81,109 +77,31 @@
 		</header>
 		<main class="cd-main-content">
 			<div class="demo-2">
-		<div id="slider" class="sl-slider-wrapper">
-
-				<div class="sl-slider">
-				
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
-							<h2>Mejoramos la calidad  de tus redes.</h2>
-							<blockquote><p>Te acompañamos y asesoramos durante todo el proyecto para que puedas lograr tus objetivos
-							y le garantizamos todo el tiempo que desee.</p></blockquote>
-						</div>
+				<section id="jms-slideshow" class="jms-slideshow">
+				<div class="step" data-color="color-1" data-x="2000" data-y="1000" data-z="3000" data-rotate="-20">
+					<div class="jms-content">
+						<h3>Mejoramos la calidad  de tus redes.</h3>
+						<p>Te acompañamos y asesoramos durante todo el proyecto para que puedas lograr tus objetivos
+							y le garantizamos todo el tiempo que desee.</p>
 					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-2"></div>
-							<h2>Sin Innovación, no hay futuro</h2>
-							<blockquote><p>El mundo cambia y las soluciones empresariales también, por eso la innovación  tecnológica nos permite brindar soluciones móviles que automaticen con éxito tus procesos críticos del negocio.</p></blockquote>
-						</div>
+				</div>
+				<div class="step" data-color="color-2" data-x="1000" data-z="2000" data-rotate="20">
+					<div class="jms-content">
+						<h3>Sin Innovación, no hay futuro</h3>
+						<p>El mundo cambia y las soluciones empresariales también, por eso la innovación  
+						tecnológica nos permite brindar soluciones móviles que automaticen con éxito tus procesos críticos del negocio.</p>
 					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-3"></div>
-							<h2>Generamos Resultados</h2>
-							<blockquote><p>Brindamos soluciones integrales para impulsar tu negocio generando valor agregado para tus clientes,mediante la consultoría empresarial.</p></blockquote>
-						</div>
-					</div>					
-				</div><!-- /sl-slider -->
-
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-				</nav>
-
-			</div><!-- /slider-wrapper -->
-		</div>		
-		</main>
-		<nav class="cd-nav">
-		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-			<li><a href="./" class="selected">INICIO</a></li>
-			<li><a href="acerca_sgtel.php">ACERCA DE SGTEL</a></li>
-
-			<li class="has-children">
-				<a>ÁREAS DE NEGOCIO </a>
-
-				<ul class="cd-nav-icons is-hidden">
-					<li class="go-back"><a href="#0">Volver</a></li>
-					<li>
-						<a class="cd-nav-item " href="infraestructura.php">
-							Infraestructura
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item " href="soluciones_moviles.php">
-							Soluciones Móviles
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item " href="consultoria_emprendimiento.php">
-							Consultoría y Emprendimiento
-							<p></p>
-						</a>
-					</li>
-				</ul>
-			</li>
-
-			<li class="has-children">
-				<a href="">NOVEDADES</a>
-				<ul class="cd-nav-icons is-hidden">
-					<li class="go-back"><a href="#0">Volver</a></li>
-					<li>
-						<a class="cd-nav-item" href="">
-							Infraestructura
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item" href="">
-							Soluciones Móviles
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item" href="">
-							Consultoría y Emprendimiento
-							<p></p>
-						</a>
-					</li>
-				</ul>
-			</li>
-
-			<li><a href="">CONTÁCTENOS</a></li>
-		</ul> <!-- primary-nav -->
-	</nav> <!-- cd-nav -->
-		<div class="col-md-12" style="margin-top:25px;">
+				</div>
+				<div class="step" data-color="color-3" data-x="2000" data-y="1500" data-z="1000" data-rotate="20">
+					<div class="jms-content">
+						<h3>Generamos Resultados</h3>
+						<p>Brindamos soluciones integrales para impulsar tu negocio generando valor agregado 
+						para tus clientes,mediante la consultoría empresarial.</p>
+					</div>
+				</div>
+			</section>
+			</div>
+			<div class="col-md-12" style="margin-top:25px;">
 			<div class="col-md-9">
 				<div class="tres">
 				<div class="col-md-4 col-sm-4 col-xs-12">
@@ -309,7 +227,72 @@
                     <div class="col-md-4">© 2016. Todos los Derechos Reservados</div>
                 </div>  
             </div>
-		</div>
+		</div>		
+		</main>
+		<nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+			<li><a href="./" class="selected">INICIO</a></li>
+			<li><a href="acerca_sgtel.php">ACERCA DE SGTEL</a></li>
+
+			<li class="has-children">
+				<a>ÁREAS DE NEGOCIO </a>
+
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Volver</a></li>
+					<li>
+						<a class="cd-nav-item " href="infraestructura.php">
+							Infraestructura
+							<p></p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item " href="soluciones_moviles.php">
+							Soluciones Móviles
+							<p></p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item " href="consultoria_emprendimiento.php">
+							Consultoría y Emprendimiento
+							<p></p>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="has-children">
+				<a>NOVEDADES</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Volver</a></li>
+					<li>
+						<a class="cd-nav-item" href="">
+							Infraestructura
+							<p></p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item" href="">
+							Soluciones Móviles
+							<p></p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item" href="">
+							Consultoría y Emprendimiento
+							<p></p>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li><a href="contactenos.php">CONTÁCTENOS</a></li>
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
+		
 		
 	</div> 
 
@@ -317,9 +300,11 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="dist/js/jquery.mobile.custom.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.js"></script> <!-- Resource jQuery -->
-	<!-- slider-->
-	<script type="text/javascript" src="dist/js/jquery.ba-cond.min.js"></script>
-	<script type="text/javascript" src="dist/js/jquery.slitslider.js"></script>
+	<!-- jmpress plugin -->
+		<script type="text/javascript" src="dist/js/menu/jmpress.js"></script>
+		<!-- jmslideshow plugin : extends the jmpress plugin -->
+		<script type="text/javascript" src="dist/js/menu/jquery.jmslideshow.js"></script>
+
 	<!-- Include js plugin -->
     <script src="dist/carousel/owl.carousel.js"></script>
     <script type="text/javascript">
@@ -346,56 +331,22 @@
         }); 
   
             });
-    </script> 
-    <script type="text/javascript">	
+    </script>
+    <script type="text/javascript">
 			$(function() {
 			
-				var Page = (function() {
-
-					var $nav = $( '#nav-dots > span' ),
-						slitslider = $( '#slider' ).slitslider( {
-							onBeforeChange : function( slide, pos ) {
-
-								$nav.removeClass( 'nav-dot-current' );
-								$nav.eq( pos ).addClass( 'nav-dot-current' );
-
-							}
-						} ),
-
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							$nav.each( function( i ) {
-							
-								$( this ).on( 'click', function( event ) {
-									
-									var $dot = $( this );
-									
-									if( !slitslider.isActive() ) {
-
-										$nav.removeClass( 'nav-dot-current' );
-										$dot.addClass( 'nav-dot-current' );
-									
-									}
-									
-									slitslider.jump( i + 1 );
-									return false;
-								
-								} );
-								
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();			
+				var jmpressOpts	= {
+					animation		: { transitionDuration : '6.9s' }
+				};
+				
+				$( '#jms-slideshow' ).jmslideshow( $.extend( true, { jmpressOpts : jmpressOpts }, {
+					autoplay	: true,
+					interval	: 6000,
+					bgColorSpeed: '1.9s',
+					arrows		: true
+				}));
+				
+				
 			});
 		</script>
 </body>

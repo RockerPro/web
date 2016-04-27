@@ -29,8 +29,8 @@ body{
 	box-shadow:         0px 1px 4px 0px rgba(50, 50, 50, 0.75);
 }
 .headlogo{
-	width: 200px;
-	margin-left: 15px;
+    width: 180px;
+    margin-left: 70px;
 }
 
 .listredes{
@@ -377,14 +377,115 @@ text-decoration: none;
 .imgapp{
     margin-bottom: 15px;
 }
+.formu{
+    margin-top: 55px;
+    margin-bottom:25px;
+    overflow: hidden;
+}
+.direcc{
+    margin-top: 135px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.direcc div h3{
+    font-family: Lato-Light;
+    font-weight: bold;
+    font-size: 18px;
+}
+.direcc div p{
+    font-family: Euro-Light;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #0064AA;
+}
+.success-message {
+     display: none; 
+    color: #0AA734;
+    font-family: Euro-Light;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: -39px;
+    margin-left: 25px;
+    position: fixed;
+    z-index: 10;
+}
+.camp{
+    height: 70px;
+}
+.contacinput{
+    color: #989898;
+    font-family: Euro-Light;
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #0064AA;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+.error-label {
+    color: #F7534B;
+    font-family: Lato-Light;
+    font-weight: bold;
+}
+.mapa{
+    margin-top: 110px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.btnsubmit {
+    background: rgba(0, 60, 116, 0.9);
+    border: 0px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: .25em;
+}
+.btnsubmit:hover {
+    background: rgba(0, 60, 149, 0.9);
+}
 
-
+.step h3{
+    color: #fff;
+    font-size: 50px;
+    font-family: Lato-Light;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    margin: 0;
+    padding: 60px 0 10px 0;
+}
+.step p {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    font-family: Euro-Light;
+    font-size: 42px;
+    position: relative;
+    margin: 0;
+}
 @media only screen and (max-width: 1200px){
 .title p{
 	font-size: 13px;
 }
 .title {
     margin-top: -34px;
+}
+@media only screen and (max-width: 1169px){
+.direcc {
+    margin-top: 80px;
+}
+.formu {
+    margin-top: 0px;
+}
+.mapa{
+    margin-top: 50px;
+}
 }
 @media only screen and (max-width: 1100px){
 .title p{
