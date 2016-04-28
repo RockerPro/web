@@ -1,0 +1,9 @@
+RewriteEngine on
+Rewriterule ^articulo/(.+) articulo.php?id=$1
+Rewriterule ^inicio index.php
+Rewriterule ^post post.php
+Rewriterule ^comentarios comentarios.php
+Rewriterule ^usuarios usuarios.php
+Rewriterule ^analytics analytics.php
+RewriteCond %{REQUEST_FILENAME} !-f
+ErrorDocument 404 404.html
