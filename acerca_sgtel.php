@@ -16,12 +16,12 @@
     <meta property="og:url" content="http://www.sgtel.com">
     <meta property="og:site_name" content="SGTEL">
     <title>SGTEL</title>
-    <link rel="stylesheet" href="dist/css/bootstrap.css">
-	<link rel="shortcut icon" href="dist/img2/icono.png">
-    <link rel="stylesheet" href="dist/css/estilos.css">
-    <link rel="stylesheet" href="dist/css/reset.css">
-    <link rel="stylesheet" href="dist/css/style.css">
-	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost/web/dist/css/bootstrap.css">
+	<link rel="shortcut icon" href="http://localhost/web/dist/img2/icono.png">
+    <link rel="stylesheet" href="http://localhost/web/dist/css/estilos.css">
+    <link rel="stylesheet" href="http://localhost/web/dist/css/reset.css">
+    <link rel="stylesheet" href="http://localhost/web/dist/css/style.css">
+	<link rel="stylesheet" href="http://localhost/web/bower_components/components-font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 	<div id="main">
@@ -30,7 +30,7 @@
 			<header class="cabecera">
 				<div class="row">
 					<div class="col-md-1 pull-left">
-						<a href="./"><img class="headlogo" src="dist/img2/logo.png" alt="logo sgtel"></a>
+						<a href="./"><img class="headlogo" src="http://localhost/web/dist/img2/logo.png" alt="logo sgtel"></a>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
 						<ul class="listdate">
@@ -82,7 +82,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
 						<div class="box">
 							<div class="icon">
-								<img src="dist/img2/icons/aseso.png">
+								<img src="http://localhost/web/dist/img2/icons/aseso.png">
 							</div>
 							<h2>ASESORíA</h2>
 							<p></p><p>Contamos con un staff multidisciplinario.</p><p></p>
@@ -91,7 +91,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-12">
 						<div class="box">
 							<div class="icon">
-								<img src="dist/img2/icons/expec.png">
+								<img src="http://localhost/web/dist/img2/icons/expec.png">
 							</div>
 							<h2>SOBREPASAMOS TUS EXPECTATIVAS</h2>
 							<p></p><p>Respetamos nuestro compromiso adicionando mejoras en el proyecto.</p><p></p>
@@ -212,21 +212,21 @@
 				<ul class="cd-nav-icons is-hidden">
 					<li class="go-back"><a href="#0">Volver</a></li>
 					<li>
-						<a class="cd-nav-item " href="infraestructura.php">
+						<a class="cd-nav-item " href="areas_negocio/infraestructura">
 							Infraestructura
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="soluciones_moviles.php">
+						<a class="cd-nav-item " href="areas_negocio/soluciones_moviles">
 							Soluciones Móviles
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="consultoria_emprendimiento.php">
+						<a class="cd-nav-item " href="areas_negocio/consultoria_emprendimiento">
 							Consultoría y Emprendimiento
 							<p></p>
 						</a>
@@ -261,17 +261,17 @@
 				</ul>
 			</li>
 
-			<li><a href="contactenos.php">CONTÁCTENOS</a></li>
+			<li><a href="contactenos">CONTÁCTENOS</a></li>
 		</ul> <!-- primary-nav -->
 	</nav> <!-- cd-nav -->
 		
 		
 	</div> 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="dist/js/main.js"></script> <!-- Resource jQuery -->
+    <script src="http://localhost/web/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost/web/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://localhost/web/dist/js/jquery.mobile.custom.min.js"></script>
+	<script type="text/javascript" src="http://localhost/web/dist/js/main.js"></script> <!-- Resource jQuery -->
     <script type="text/javascript">
         $(document).ready(function() {
             

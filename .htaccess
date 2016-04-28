@@ -1,0 +1,10 @@
+RewriteEngine on
+Rewriterule ^articulo/(.+) articulo.php?id=$1
+Rewriterule ^inicio index.php
+Rewriterule ^acerca_sgtel acerca_sgtel.php
+Rewriterule ^areas_negocio/infraestructura infraestructura.php
+Rewriterule ^areas_negocio/soluciones_moviles soluciones_moviles.php
+Rewriterule ^areas_negocio/consultoria_emprendimiento consultoria_emprendimiento.php
+Rewriterule ^contactenos contactenos.php
+RewriteCond %{REQUEST_FILENAME} !-f
+ErrorDocument 404 404.html

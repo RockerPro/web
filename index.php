@@ -16,22 +16,22 @@
     <meta property="og:url" content="http://www.sgtel.com">
     <meta property="og:site_name" content="SGTEL">
     <title>SGTEL</title>
-    <link rel="stylesheet" href="dist/css/bootstrap.css">
-	<link rel="shortcut icon" href="dist/img2/icono.png">
-    <link rel="stylesheet" href="dist/css/estilos.css">
-    <link rel="stylesheet" href="dist/css/reset.css">
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="http://localhost/web/dist/css/bootstrap.css">
+	<link rel="shortcut icon" href="http://localhost/web/dist/img2/icono.png">
+    <link rel="stylesheet" href="http://localhost/web/dist/css/estilos.css">
+    <link rel="stylesheet" href="http://localhost/web/dist/css/reset.css">
+    <link rel="stylesheet" href="http://localhost/web/dist/css/style.css">
 	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="dist/css/menu/demo.css" />
-    <link rel="stylesheet" type="text/css" href="dist/css/menu/style_alt.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost/web/dist/css/menu/demo.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/web/dist/css/menu/style_alt.css" />
 	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="dist/css/menu/style_ie.css" />
+	<link rel="stylesheet" type="text/css" href="http://localhost/web/dist/css/menu/style_ie.css" />
 	<![endif]-->
 	<!-- jQuery -->
 	<!-- Important Owl stylesheet -->
-    <link rel="stylesheet" href="dist/carousel/owl.carousel.css">
+    <link rel="stylesheet" href="http://localhost/web/dist/carousel/owl.carousel.css">
     <!-- Default Theme -->
-    <link rel="stylesheet" href="dist/carousel/owl.theme.css">
+    <link rel="stylesheet" href="http://localhost/web/dist/carousel/owl.theme.css">
 </head>
 <body>
 	<div id="main">
@@ -40,7 +40,7 @@
 			<header class="cabecera">
 				<div class="row">
 					<div class="col-md-1 pull-left">
-						<a href="./"><img class="headlogo" src="dist/img2/logo.png" alt="logo sgtel"></a>
+						<a href="./"><img class="headlogo" src="http://localhost/web/dist/img2/logo.png" alt="logo sgtel"></a>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
 						<ul class="listdate">
@@ -105,19 +105,19 @@
 			<div class="col-md-9">
 				<div class="tres">
 				<div class="col-md-4 col-sm-4 col-xs-12">
-					<img class="imgarea" src="dist/img2/areas/infra.jpg" alt="infraestuctura">
+					<img class="imgarea" src="http://localhost/web/dist/img2/areas/infra.jpg" alt="infraestuctura">
 					<div class="title">
 						<p>INFRAESTUCTURA</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12">
-					<img class="imgarea" src="dist/img2/areas/mobil.jpg" alt="soluciones mobiles">
+					<img class="imgarea" src="http://localhost/web/dist/img2/areas/mobil.jpg" alt="soluciones mobiles">
 					<div class="title">
 						<p>SOLUCIONES MÓVILES</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12">
-					<img class="imgarea" src="dist/img2/areas/consul.jpg" alt="consultoria">
+					<img class="imgarea" src="http://localhost/web/dist/img2/areas/consul.jpg" alt="consultoria">
 					<div class="title">
 						<p>CONSULTORÍA Y EMPRENDIMIENTO</p>
 					</div>
@@ -131,60 +131,60 @@
                                <br><br>
                               <div id="owl-demo" class="col-md-12 owl-carousel owl-theme owl-loaded">
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/alicorp.png" alt="cliente1">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/alicorp.png" alt="cliente1">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/backus.png" alt="cliente2">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/backus.png" alt="cliente2">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/bbva.png" alt="cliente3">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/bbva.png" alt="cliente3">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/chinalco.png" alt="cliente4">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/chinalco.png" alt="cliente4">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/claro.png" alt="cliente5">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/claro.png" alt="cliente5">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/clinicaanglo.png" alt="cliente6">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/clinicaanglo.png" alt="cliente6">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/cobra.png" alt="cliente7">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/cobra.png" alt="cliente7">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/contugas.png" alt="cliente8">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/contugas.png" alt="cliente8">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/emerson.png" alt="cliente9">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/emerson.png" alt="cliente9">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/ericsson.png" alt="cliente10">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/ericsson.png" alt="cliente10">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/grana_montero.png" alt="cliente11">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/grana_montero.png" alt="cliente11">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/grupo_romero.png" alt="cliente12">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/grupo_romero.png" alt="cliente12">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/ministerio.png" alt="cliente13">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/ministerio.png" alt="cliente13">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/onp.png" alt="cliente14">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/onp.png" alt="cliente14">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/reniec.png" alt="cliente15">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/reniec.png" alt="cliente15">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/telefonica.png" alt="cliente16">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/telefonica.png" alt="cliente16">
                                       </div>
                                       <div class="item visible-md">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/toyota.png" alt="cliente17">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/toyota.png" alt="cliente17">
                                       </div>
                                       <div class="item">
-                                      <img class="lazyOwl client" data-src="dist/img2/clients/xerox.png" alt="cliente18">
+                                      <img class="lazyOwl client" data-src="http://localhost/web/dist/img2/clients/xerox.png" alt="cliente18">
                                       </div>
                               </div>                              
                            </div>
@@ -192,27 +192,27 @@
 			<div class="col-md-3 novedades">
 				<p class="titsec">Novedades</p>
 				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
+					<img class="img-responsive imgnove" src="http://localhost/web/dist/img2/novedades/descarga.svg" alt="novedades">
 					<p>Lorem ipsum dolor sit amet</p>
 					<a href="" class="pull-right">Ver más</a>
 				</div>
 				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
+					<img class="img-responsive imgnove" src="http://localhost/web/dist/img2/novedades/descarga.svg" alt="novedades">
 					<p>Lorem ipsum dolor sit amet</p>
 					<a href="" class="pull-right">Ver más</a>
 				</div>
 				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
+					<img class="img-responsive imgnove" src="http://localhost/web/dist/img2/novedades/descarga.svg" alt="novedades">
 					<p>Lorem ipsum dolor sit amet</p>
 					<a href="" class="pull-right">Ver más</a>
 				</div>
 				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
+					<img class="img-responsive imgnove" src="http://localhost/web/dist/img2/novedades/descarga.svg" alt="novedades">
 					<p>Lorem ipsum dolor sit amet</p>
 					<a href="" class="pull-right">Ver más</a>
 				</div>
 				<div class="col-md-12 contnove">
-					<img class="img-responsive imgnove" src="dist/img2/novedades/descarga.svg" alt="novedades">
+					<img class="img-responsive imgnove" src="http://localhost/web/dist/img2/novedades/descarga.svg" alt="novedades">
 					<p>Lorem ipsum dolor sit amet</p>
 					<a href="" class="pull-right">Ver más</a>
 				</div>
@@ -232,7 +232,7 @@
 		<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
 			<li><a href="./" class="selected">INICIO</a></li>
-			<li><a href="acerca_sgtel.php">ACERCA DE SGTEL</a></li>
+			<li><a href="acerca_sgtel">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
 				<a>ÁREAS DE NEGOCIO </a>
@@ -240,21 +240,21 @@
 				<ul class="cd-nav-icons is-hidden">
 					<li class="go-back"><a href="#0">Volver</a></li>
 					<li>
-						<a class="cd-nav-item " href="infraestructura.php">
+						<a class="cd-nav-item " href="areas_negocio/infraestructura">
 							Infraestructura
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="soluciones_moviles.php">
+						<a class="cd-nav-item " href="areas_negocio/soluciones_moviles">
 							Soluciones Móviles
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="consultoria_emprendimiento.php">
+						<a class="cd-nav-item " href="areas_negocio/consultoria_emprendimiento">
 							Consultoría y Emprendimiento
 							<p></p>
 						</a>
@@ -289,24 +289,24 @@
 				</ul>
 			</li>
 
-			<li><a href="contactenos.php">CONTÁCTENOS</a></li>
+			<li><a href="contactenos">CONTÁCTENOS</a></li>
 		</ul> <!-- primary-nav -->
 	</nav> <!-- cd-nav -->
 		
 		
 	</div> 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="dist/js/main.js"></script> <!-- Resource jQuery -->
+    <script src="http://localhost/web/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost/web/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://localhost/web/dist/js/jquery.mobile.custom.min.js"></script>
+	<script type="text/javascript" src="http://localhost/web/dist/js/main.js"></script> <!-- Resource jQuery -->
 	<!-- jmpress plugin -->
-		<script type="text/javascript" src="dist/js/menu/jmpress.js"></script>
+		<script type="text/javascript" src="http://localhost/web/dist/js/menu/jmpress.js"></script>
 		<!-- jmslideshow plugin : extends the jmpress plugin -->
-		<script type="text/javascript" src="dist/js/menu/jquery.jmslideshow.js"></script>
+		<script type="text/javascript" src="http://localhost/web/dist/js/menu/jquery.jmslideshow.js"></script>
 
 	<!-- Include js plugin -->
-    <script src="dist/carousel/owl.carousel.js"></script>
+    <script src="http://localhost/web/dist/carousel/owl.carousel.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             /*slider clientes*/
