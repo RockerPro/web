@@ -18,21 +18,27 @@
         <ul class="nav navbar-nav">
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs"><?php echo $_SESSION["nombre"]; ?></span>
               <i class="fa fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu">
               <li class="user-header">
                 <p>
-                  Alexander Pierce - Web Developer
+                  <?php 
+                    if ($_SESSION['rol'] == 'A') {
+                      echo $_SESSION["nombre"] . ' - Adminstrador';
+                    }else{
+                      echo $_SESSION["nombre"] . ' - Creador de Contenidos';
+                    }
+                  ?>
                 </p>
               </li>
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Ver Perfil</a>
+                  <a href="perfil" class="btn btn-default btn-flat">Ver Perfil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Cerrar Sesión</a>
+                  <a href="controller/login.controller.php?salir=exit" class="btn btn-default btn-flat">Cerrar Sesión</a>
                 </div>
               </li>
             </ul>
@@ -47,7 +53,7 @@
         <li class="header">Menu de Navegación</li>
         <li class="active"><a href="inicio"><i class="fa fa-dashboard"></i> <span>Panel de Control</span></a></li>
         <li><a href="post"><i class="fa fa-hashtag"></i> <span>Posts</span></a></li>
-        <li><a href="comentarios"><i class="fa fa-comment"></i> <span>Comentarios</span></a></li>
+        <!-- <li><a href="comentarios"><i class="fa fa-comment"></i> <span>Comentarios</span></a></li> -->
         <li><a href="usuarios"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
         <li><a href="analytics"><i class="fa fa-line-chart"></i> <span>Analytics</span></a></li>
       </ul>

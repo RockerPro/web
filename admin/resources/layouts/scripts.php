@@ -4,3 +4,8 @@
 <script src="<?php echo $baseurl.'public/bootstrap/js/bootstrap.min.js';?>"></script>
 <!-- AdminLTE App -->
 <script src="<?php echo $baseurl.'public/dist/js/app.min.js';?>"></script>
+<!-- Angular -->
+<script src="<?php echo $baseurl.'public/bower_components/angular/angular.min.js';?>"></script>
+<!-- sweet alert -->
+<script src="<?php echo $baseurl.'public/bower_components/sweetalert/dist/sweetalert.min.js';?>"></script>
+<script src="<?php echo $baseurl.'public/bower_components/angular-sweetalert/dist/ngSweetAlert.js';?>"></script>

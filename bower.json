@@ -1,8 +1,8 @@
 {
   "name": "sgtel web",
-  "homepage": "https://github.com/RockerPro/sgtel",
+  "homepage": "https://github.com/RockerPro/web",
   "authors": [
-    "cbregante <cristians.bregante@jmtech.pe>"
+    "cbregante <cristians159@gmail.com>"
   ],
   "description": "pagina web sgtel",
   "main": "dist/",
