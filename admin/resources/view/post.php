@@ -5,13 +5,14 @@ include '../../app/app2.php'; ?>
 <?php include '../layouts/head.php'; ?>
 <!-- DataTables -->
 <link rel="stylesheet" href="<?php echo $baseurl.'public/bower_components/datatables/media/css/dataTables.bootstrap.css';?>">
+<link rel="stylesheet" href="<?php echo $baseurl.'public/bower_components/datatables/media/css/jquery.dataTables.css';?>">
 </head>
-<body class="hold-transition skin-blue sidebar-mini" ng-app="app">
+<body class="hold-transition skin-blue sidebar-mini" ng-app="AngularWayApp">
 <div class="wrapper">
 
   <?php include '../layouts/menu_header.php'; ?>
   
-  <div class="content-wrapper" ng-controller="postController">
+  <div class="content-wrapper" ng-controller="AngularWayCtrl">
     <section class="content-header">
       <h1>
         Post
@@ -36,9 +37,24 @@ include '../../app/app2.php'; ?>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <div ng-controller="WithAjaxCtrl as showCase">
-                  <table datatable="" dt-options="showCase.dtOptions" dt-columns="showCase.dtColumns" class="row-border hover"></table>
-              </div>
+                  <table datatable="ng" class="table table-bordered table-hover">
+                      <thead>
+                          <tr>
+                              <th>Título</th>
+                              <th>Estado</th>
+                              <th>Acciones</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr ng-repeat="item in items" >
+                              <td>{{item.title}}</td>
+                              <td>{{item.state}}</td>
+                              <td>
+                                <i ng-click="testingClick(item.codpost)" class="fa fa-pencil"></i>
+                              </td>
+                            </tr>
+                      </tbody>
+                  </table>
             </div>
             <!-- /.box-body -->
           </div>
@@ -57,13 +73,14 @@ include '../../app/app2.php'; ?>
 
 <!-- REQUIRED JS SCRIPTS -->
 <?php include '../layouts/scripts.php'; ?>
+<script src="<?php echo $baseurl.'public/bower_components/datatables/media/js/jquery.dataTables.min.js';?>"></script>
+<script src="<?php echo $baseurl.'public/bower_components/angular-datatables/dist/angular-datatables.min.js';?>"></script> 
 <!-- Controlador -->
 <script src="<?php echo $baseurl.'public/dist/js/post_controller.js';?>"></script>
+<!-- subir archivos -->
 <script src="<?php echo $baseurl.'public/bower_components/ng-file-upload-shim/ng-file-upload-shim.js';?>"></script>
 <script src="<?php echo $baseurl.'public/bower_components/ng-file-upload/ng-file-upload.js';?>"></script>
-<!-- DataTables -->
-<script src="<?php echo $baseurl.'public/bower_components/datatables/media/js/jquery.dataTables.min.js';?>"></script>
-<script src="<?php echo $baseurl.'public/bower_components/datatables/media/js/dataTables.bootstrap.min.js';?>"></script>
+
 
 </body>
 

@@ -16,17 +16,17 @@
     <meta property="og:url" content="http://www.sgtel.com">
     <meta property="og:site_name" content="SGTEL">
     <title>SGTEL</title>
-    <link rel="stylesheet" href="http://localhost/web/dist/css/bootstrap.css">
-	<link rel="shortcut icon" href="http://localhost/web/dist/img2/icono.png">
-    <link rel="stylesheet" href="http://localhost/web/dist/css/estilos.css">
-    <link rel="stylesheet" href="http://localhost/web/dist/css/reset.css">
-    <link rel="stylesheet" href="http://localhost/web/dist/css/style.css">
+    <link rel="stylesheet" href="http://192.168.1.106/web/dist/css/bootstrap.css">
+	<link rel="shortcut icon" href="http://192.168.1.106/web/dist/img2/icono.png">
+    <link rel="stylesheet" href="http://192.168.1.106/web/dist/css/estilos.css">
+    <link rel="stylesheet" href="http://192.168.1.106/web/dist/css/reset.css">
+    <link rel="stylesheet" href="http://192.168.1.106/web/dist/css/style.css">
 	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
 	<!-- Important Owl stylesheet -->
-    <link rel="stylesheet" href="http://localhost/web/dist/carousel/owl.carousel.css">
+    <link rel="stylesheet" href="http://192.168.1.106/web/dist/carousel/owl.carousel.css">
      
     <!-- Default Theme -->
-    <link rel="stylesheet" href="http://localhost/web/dist/carousel/owl.theme.css">
+    <link rel="stylesheet" href="http://192.168.1.106/web/dist/carousel/owl.theme.css">
 </head>
 <body>
 	<div id="main">
@@ -35,7 +35,7 @@
 			<header class="cabecera">
 				<div class="row">
 					<div class="col-md-1 pull-left">
-						<a href="./"><img class="headlogo" src="http://localhost/web/dist/img2/logo.png" alt="logo sgtel"></a>
+						<a href="./"><img class="headlogo" src="http://192.168.1.106/web/dist/img2/logo.png" alt="logo sgtel"></a>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
 						<ul class="listdate">
@@ -222,14 +222,14 @@
 		
 	</div> 
 
-    <script src="http://localhost/web/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="http://localhost/web/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://localhost/web/dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="http://localhost/web/dist/js/main.js"></script> <!-- Resource jQuery -->
-	<script type="text/javascript" src="http://localhost/web/dist/js/areas.js"></script>
-	<script type="text/javascript" src="http://localhost/web/dist/js/sendmail.js"></script>
+    <script src="http://192.168.1.106/web/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="http://192.168.1.106/web/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://192.168.1.106/web/dist/js/jquery.mobile.custom.min.js"></script>
+	<script type="text/javascript" src="http://192.168.1.106/web/dist/js/main.js"></script> <!-- Resource jQuery -->
+	<script type="text/javascript" src="http://192.168.1.106/web/dist/js/areas.js"></script>
+	<script type="text/javascript" src="http://192.168.1.106/web/dist/js/sendmail.js"></script>
 	<!-- Include js plugin -->
-    <script src="http://localhost/web/dist/carousel/owl.carousel.js"></script>
+    <script src="http://192.168.1.106/web/dist/carousel/owl.carousel.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             /*slider clientes*/

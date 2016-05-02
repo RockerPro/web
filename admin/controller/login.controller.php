@@ -37,7 +37,7 @@ class loginController
                 $_SESSION["access"] = true;
                 $_SESSION["nombre"] = $resp[0]->resul;    
                 $_SESSION["rol"] = $resp[0]->rola;   
-                $_SESSION["ingre"] = true;                   
+                $_SESSION["id"] =  $resp[0]->id;                   
                 header('Location: ../inicio');
             }else{
                 $_SESSION["msg"] = 'Usuario y/o Contraseña incorrecta';
@@ -49,7 +49,7 @@ class loginController
             unset($_SESSION["access"]);
             unset($_SESSION["nombre"]);
             unset($_SESSION["rol"]);
-             unset($_SESSION["ingre"]);
+             unset($_SESSION["id"]);
             header('Location: ../');
         }
 }
