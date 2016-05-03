@@ -51,14 +51,14 @@
     <section class="sidebar">
       <ul class="sidebar-menu">
         <li class="header">Menu de Navegación</li>
-        <li class="active"><a href="inicio"><i class="fa fa-dashboard"></i> <span>Panel de Control</span></a></li>
-        <li><a href="post"><i class="fa fa-hashtag"></i> <span>Posts</span></a></li>
-        <!-- <li><a href="comentarios"><i class="fa fa-comment"></i> <span>Comentarios</span></a></li> -->
+        <li id="ac1"><a href="inicio"><i class="fa fa-dashboard"></i> <span>Panel de Control</span></a></li>
+        <li id="ac2"><a href="post"><i class="fa fa-hashtag"></i> <span>Posts</span></a></li>
+        <!-- <li id="ac3"><a href="comentarios"><i class="fa fa-comment"></i> <span>Comentarios</span></a></li> -->
         <?php if ($_SESSION['rol']== "A") {
         ?>
-        <li><a href="usuarios"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
+        <li id="ac4"><a href="users"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
         <?php } ?>
-        <li><a href="analytics"><i class="fa fa-line-chart"></i> <span>Analytics</span></a></li>
+        <li id="ac5"><a href="analytics"><i class="fa fa-line-chart"></i> <span>Analytics</span></a></li>
       </ul>
     </section>
   </aside>

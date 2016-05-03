@@ -109,7 +109,7 @@ select * from categoria;
 drop table if exists post;
 create table post(
 codpost char(9) not null primary key,
-title varchar(40) not null,
+title varchar(200) not null,
 content mediumtext not null,
 summary mediumtext not null,
 state char(1) default 'D'  not null,
@@ -126,8 +126,9 @@ insert into post values('pt001','Post numero 1', 'mucho texto de contenido',
 select * from post;
 
 DELIMITER $$
+drop PROCEDURE if exists nuevopost;
 CREATE PROCEDURE nuevopost(	
- tit varchar(100),
+ tit varchar(200),
  conte mediumtext,
  summ mediumtext,
  cate varchar(40),
@@ -158,14 +159,36 @@ CREATE PROCEDURE sp_elim_post(
 id char(9)
 )delete from post where codpost = id;
 
+drop PROCEDURE if exists sp_editar_post;
 CREATE PROCEDURE sp_editar_post(
  cod char(9),	
- tit varchar(100),
+ tit varchar(200),
  conte mediumtext,
  summ mediumtext,
  cate varchar(40)
  )
 update  post set title=tit, content=conte,summary=summ,category=cate where codpost=cod;
+
+DELIMITER $$
+drop PROCEDURE if exists sp_change_state_post;
+CREATE PROCEDURE sp_change_state_post(	
+ cod char(9)	
+ )
+BEGIN
+	 DECLARE stte char(1);
+    SET stte = (select state from post where codpost = cod);
+	IF (stte = 'D') THEN
+       update post set state = 'A' where codpost = cod;
+		 select 'Activado' res;	       
+   ELSEIF (stte = 'A') THEN   
+       update post set state = 'D' where codpost = cod;
+       select 'Desactivado' res;
+   ELSE
+       select 'lol' res;
+   END IF;   
+END $$
+
+call sp_change_state_post('pt0001');
 
 /* tabla posts */
 

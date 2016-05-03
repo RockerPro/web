@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="<?php echo $baseurl.'public/libs/ionicons/2.0.1/css/ionicons.min.css';?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo $baseurl.'public/dist/css/AdminLTE.min.css';?>">
+  <link rel="stylesheet" href="<?php echo $baseurl.'public/dist/css/config.css';?>">
   <link rel="stylesheet" href="<?php echo $baseurl.'public/dist/css/skins/skin-blue.min.css';?>">
   <link rel="stylesheet" type="text/css" href="<?php echo $baseurl.'public/bower_components/sweetalert/dist/sweetalert.css';?>">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

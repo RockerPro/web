@@ -22,6 +22,12 @@ class PostsModel
 		return $stm->fetchAll(PDO::FETCH_OBJ);
 	}
 
+	public function State($id){
+		$stm = $this->pdo->prepare(" call sp_change_state_post(?)");
+		$stm->execute(array($id));
+		return $stm->fetchAll(PDO::FETCH_OBJ);
+	}
+
 	public function Eliminar($id){
 		$stm = $this->pdo->prepare("call sp_elim_post(?)");			          
 		$stm->execute(array($id));

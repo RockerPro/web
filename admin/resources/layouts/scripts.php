@@ -9,3 +9,30 @@
 <!-- sweet alert  -->
 <script src="<?php echo $baseurl.'public/bower_components/sweetalert/dist/sweetalert.min.js';?>"></script>
 <script src="<?php echo $baseurl.'public/bower_components/angular-sweetalert/dist/ngSweetAlert.js';?>"></script>
+<script>
+	jQuery(document).ready(function() {
+		var path = window.location.pathname.split('/web/admin/')[1];
+
+            if (path == 'inicio') {
+                 $("#ac1").addClass("active");
+                 console.log(path);
+            }
+            if (path == 'post') {
+                 $("#ac2").addClass("active");
+                 console.log(path);
+            }
+            if (path == 'users') {
+                 $("#ac4").addClass("active");
+                 console.log(path);
+            }
+            if (path == 'analytics') {
+                 $("#ac5").addClass("active");
+                 console.log(path);
+            }
+            if (path == 'coments') {
+                 $("#ac3").addClass("active");
+                 console.log(path);
+            }
+
+	});
+</script>

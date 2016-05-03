@@ -1,9 +1,11 @@
 RewriteEngine on
 Rewriterule ^articulo/(.+) articulo.php?id=$1
 Rewriterule ^inicio resources/view/index.php
-Rewriterule ^post resources/view/post.php
-Rewriterule ^comentarios resources/view/comentarios.php
-Rewriterule ^usuarios resources/view/usuarios.php
-Rewriterule ^analytics resources/view/analytics.php
+Rewriterule ^post resources/view/post/index.php
+Rewriterule ^edit/post/(.+) resources/view/post/edit.php?id=$1
+Rewriterule ^create/post resources/view/post/create.php
+Rewriterule ^coments resources/view/coments/index.php
+Rewriterule ^users resources/view/users/index.php
+Rewriterule ^analytics resources/view/analytics/index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 ErrorDocument 404 404.html

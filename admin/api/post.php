@@ -14,6 +14,10 @@ switch($action) {
         $data = $model->Obtener($_REQUEST['id']);
         echo json_encode($data);
         break;
+    case 'state':
+        $data = $model->State($_REQUEST['id']);
+        echo json_encode($data);
+        break;
     case 'registrar':
     		$ruta="../public/dist/img/posts";
         	$archivo=@$_FILES['img']['tmp_name'];      	

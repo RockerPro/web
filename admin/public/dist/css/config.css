@@ -1,0 +1,16 @@
+.opt{
+	cursor:pointer;
+	font-size: 18px;
+	margin-right: 5px;
+}
+.imgblog{
+	margin: 0 auto;
+}
+.inputfile{
+	margin:0 auto;
+	width: 300px;
+	margin-top: 15px;
+}
+.nores{
+	resize:none;
+}
