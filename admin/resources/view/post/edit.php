@@ -15,7 +15,7 @@ include '../../../app/app2.php'; ?>
   <div class="content-wrapper" ng-controller="postController">
     <section class="content-header">
       <h1>
-        Post <?php echo $_REQUEST['id'];?>
+        Post: {{item.title}}
       </h1>
       <ol class="breadcrumb">
         <li><a href="<?php echo $baseurl; ?>inicio"><i class="fa fa-dashboard"></i> Panel de Control</a></li>
@@ -35,7 +35,7 @@ include '../../../app/app2.php'; ?>
             </div>
             <!-- /.box-header -->
             <form name="myForm" autocomplete="off">   
-			<div class="col-sm-12" ng-if="view == true">
+			<div class="col-sm-12">
 					<div class="inputfile">
 						<input type="file" ngf-select ng-model="picFile" name="file"    
 							accept="image/*" ngf-max-size="2MB" 
@@ -49,47 +49,45 @@ include '../../../app/app2.php'; ?>
 					class="img-responsive imgblog" ng-src="<?php echo $baseurl ?>public/dist/img/posts/{{item.path_url}}"
 					style="display: block !important;">
 					<span class="progress" ng-show="picFile.progress >= 0">
-								            <div style="width:@{{picFile.progress}}%" 
+								            <div style="width:@{{picFile.progress}}%"
 								            ng-bind="picFile.progress + '%'"></div>
 									      </span>
 									      <span ng-show="picFile.result">	</span>
 									      <span class="err" ng-show="errorMsg">@{{errorMsg}}</span>
 			</div>
-            <div class="box-body" ng-if="view == true" >
+            <div class="box-body">
 							<div class="col-sm-12">
 								     <div class="form-group">
-									    <label class="control-label">Titulo</label>
-									    <input type="text" class="form-control" name="title" ng-model="item.title"required>
+									    <label class="control-label">Título</label>
+									    <input type="text" class="form-control" name="title" ng-model="item.title" required>
 								        <i ng-show="myForm.title.$error.required" style="color:red">* Requerido</i>
-									 </div>									 				       
+									 </div>
 								     <div class="form-group">
 									    <label class="control-label">Resumen</label>
-									    <textarea ng-model="item.summary" name="summary" class="form-control nores"cols="30" rows="3"></textarea>
+									    <textarea ng-model="item.summary" name="summary" class="form-control nores"cols="30" rows="3" required></textarea>
 								        <i ng-show="myForm.summary.$error.required" style="color:red">* Requerido</i>
 									 </div>
 									 <div class="form-group">
 									    <label class="control-label">Contenido</label>
-									    <textarea ng-model="item.content"class="form-control nores" cols="30" rows="7"></textarea>
+									    <textarea ng-model="item.content" name="content" class="form-control nores" cols="30" rows="7" required></textarea>
 								        <i ng-show="myForm.content.$error.required" style="color:red">* Requerido</i>
-									 </div>	
+									 </div>
 								     <div class="form-group">
-									    <label class="control-label">Titulo</label>
-									    <select name="" id="">
-									    	<option value=""></option>
+									    <label class="control-label">Categoría: {{item.category}}</label>
+									    <select name="category" class="form-control"  ng-model="select_cat">
 									    	<option value="Infraestructura">Infraestructura</option>
 									    	<option value="Soluciones Móviles">Soluciones Móviles</option>
 									    	<option value="Consuloría y Emprendimiento">Consuloría y Emprendimiento</option>
 									    </select>
-								        <i ng-show="myForm.title.$error.required" style="color:red">* Requerido</i>
-									 </div>	                                                  
+									 </div>
                             </div>
             </div>
             <div class="box-footer">
-						<a href="/admin/tips/index.html" 
+						<a href="/admin/tips/index.html"
 						class="btn btn-danger pull-left">Cancelar</a>
-						<button class="btn btn-success pull-right" ng-disabled="!myForm.$valid" 
+						<button class="btn btn-success pull-right" ng-disabled="!myForm.$valid"
 						ng-click="editPost(picFile)">Actualizar
-						</button>								      
+						</button>
 			</div>
 			</form>
             <div class="box-body" ng-if="view == false" >

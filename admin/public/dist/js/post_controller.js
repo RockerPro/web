@@ -68,13 +68,14 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload']);
              
             });
 
-        $scope.editPost = function(file) { 
+        $scope.editPost = function(file) {
               if (file == null) {
               sweet.show('', 'Item guardado exitosamente', 'success');
             }
+            $scope.item.img = file;
               file.upload = Upload.upload({
-                method: 'post',
-                url: 'web/admin/api/post.php?a=editar&id=' + get,
+                method: 'POST',
+                url: '../../../../web/admin/api/post.php?a=editar&id=' + get,
                 data: $scope.item,
               });
 
@@ -98,10 +99,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload']);
            })
 
           $scope.addPost = function(file) {
-            
             $scope.item.img = file;
-            console.log($scope.item);
-            
             file.upload = Upload.upload({
               method: 'POST',
               url: '../../../web/admin/api/post.php?a=registrar',

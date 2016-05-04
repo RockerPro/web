@@ -46,7 +46,7 @@ include '../../../app/app2.php'; ?>
 					class="img-responsive imgblog" ng-src="<?php echo $baseurl ?>public/dist/img/posts/{{item.path_url}}"
 					style="display: block !important;">
 					<span class="progress" ng-show="picFile.progress >= 0">
-								            <div style="width:@{{picFile.progress}}%" 
+								            <div style="width:@{{picFile.progress}}%"
 								            ng-bind="picFile.progress + '%'"></div>
 									      </span>
 									      <span ng-show="picFile.result">	</span>
@@ -55,10 +55,10 @@ include '../../../app/app2.php'; ?>
             <div class="box-body">
 							<div class="col-sm-12">
 								     <div class="form-group">
-									    <label class="control-label">Titulo</label>
+									    <label class="control-label">Título</label>
 									    <input type="text" class="form-control" name="title" ng-model="item.title" required>
 								        <i ng-show="myForm.title.$error.required" style="color:red">* Requerido</i>
-									 </div>									 				       
+									 </div>
 								     <div class="form-group">
 									    <label class="control-label">Resumen</label>
 									    <textarea ng-model="item.summary" name="summary" class="form-control nores"cols="30" rows="3" required></textarea>
@@ -68,25 +68,24 @@ include '../../../app/app2.php'; ?>
 									    <label class="control-label">Contenido</label>
 									    <textarea ng-model="item.content" name="content" class="form-control nores" cols="30" rows="7" required></textarea>
 								        <i ng-show="myForm.content.$error.required" style="color:red">* Requerido</i>
-									 </div>	
+									 </div>
 								     <div class="form-group">
-									    <label class="control-label">Titulo</label>
+									    <label class="control-label">Categoría</label>
 									    <select name="category" id="" required ng-model="select_cat">
-									    	<option value=""></option>
 									    	<option value="Infraestructura">Infraestructura</option>
 									    	<option value="Soluciones Móviles">Soluciones Móviles</option>
 									    	<option value="Consuloría y Emprendimiento">Consuloría y Emprendimiento</option>
 									    </select>
 								        <i ng-show="myForm.category.$error.required" style="color:red">* Requerido</i>
-									 </div>	                                                  
+									 </div>
                             </div>
             </div>
             <div class="box-footer">
-						<a href="/admin/tips/index.html" 
+						<a href="/admin/tips/index.html"
 						class="btn btn-danger pull-left">Cancelar</a>
-						<button class="btn btn-success pull-right" ng-disabled="!myForm.$valid" 
-						ng-click="addPost(picFile)">Actualizar
-						</button>								      
+						<button class="btn btn-success pull-right" ng-disabled="!myForm.$valid"
+						ng-click="addPost(picFile)">Crear
+						</button>
 			</div>
 			</form>
             <!-- /.box-body -->
