@@ -16,12 +16,15 @@ fech_create TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 )DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 insert into usuario (codusu,nomusu,rol,email,pass) 
-values('us0001','Administrador','A','admin123@gmail.com','f865b53623b121fd34ee5426c792e5c33af8c227');
+values('us0001','Administrador','A','admin123@gmail.com','010438e6515e45aeaea0ac5303dbf9c2806eb0d0');
 insert into usuario (codusu,nomusu,rol,email,pass) 
 values('us0002','Usuario','U','usuario123@gmail.com','3c55950f0400029902b056c1492f4cc040898c79');
 select * from usuario;
 
 SELECT SHA1('usuario123');
+SELECT SHA1('3c55950f0400029902b056c1492f4cc040898c79');
+1dd69c9972b50a6fcb013a72baaebc5eef05cd8a
+select * from usuario
 /* Procedimientos almacenados - login de usuario */
 DELIMITER $$
 DROP PROCEDURE IF EXISTS sp_login;
@@ -43,13 +46,18 @@ BEGIN
      END IF;
 END
 
-call sp_login('admin123@gmail.com','admin123');
-call sp_login('cristians@gmail.com','manzana');
+call sp_login('admin123@gmail.com','010438e6515e45aeaea0ac5303dbf9c2806eb0d0');
+call sp_login('usuario123@gmail.com','3c55950f0400029902b056c1492f4cc040898c79');
 
+drop procedure if exists sp_listar_usu;
 create procedure sp_listar_usu()
 select codusu,nomusu,rol,email,fech_create from usuario
+where rol = 'U';
+
+select * from usuario
 
 DELIMITER $$
+drop procedure if exists sp_nuevo_usu;
 CREATE PROCEDURE sp_nuevo_usu(	
  nom varchar(100),
  mail varchar(50),
@@ -64,7 +72,7 @@ BEGIN
 	     	ELSE   
 			   SET co = (select concat('us',right(concat('000',right(IFNULL(max(codusu),'000'),3)+1),4)) AS cod from usuario);
           	insert into usuario (codusu,nomusu, email,pass) values(co,nom,mail,SHA1(pas));
-	       	 select 'succes' res, co;
+	       	 select 'success' res, co;
 	     	END IF;
         END $$
         
@@ -77,12 +85,24 @@ CREATE PROCEDURE sp_elim_usu(
 id char(9)
 )delete from usuario where codusu = id;
 
+drop PROCEDURE if exists sp_editar_usu;
+CREATE PROCEDURE sp_editar_usu(	
+ cod char(9),	
+ nom varchar(100),
+ mail varchar(50)
+ )
+BEGIN
+       update usuario set nomusu=nom, email=mail where codusu=cod;
+	       	 select 'success' res;
+        END $$
+
 CREATE PROCEDURE sp_editar_usu(
  cod char(9),	
  nom varchar(100),
  mail varchar(50)
  )
 update usuario set nomusu=nom, email=mail where codusu=cod;
+select 'success' res;
 
 call sp_editar_usu('us0005','cristians bregante','cristians22@gmail.com');
 
@@ -190,19 +210,23 @@ END $$
 
 call sp_change_state_post('pt0001');
 
-/* tabla posts */
+/* tabla analytics */
 
-drop table if exists comentario;
-create table comentario(
-codcm char(9) not null primary key,
-title varchar(40) not null,
-content mediumtext not null,
-summary mediumtext not null,
-state char(1) default 'D'  not null,
-category varchar(40),
-author varchar(100),
-path_url mediumtext,
-fech_create TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+create table analytics(
+content mediumtext not null
 )DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+insert into analytics values('<script>var google_conversion_id=1072579290,google_conversion_label="OTUsCLDCh1wQ2oW5_wM",
+google_custom_params=window.google_tag_params,google_remarketing_only=!0</script>');
 
+select * from analytics;
+
+drop PROCEDURE if exists sp_editar_script;
+CREATE PROCEDURE sp_editar_script(
+ conte mediumtext
+ )
+update analytics set content=conte;
+
+CREATE PROCEDURE sp_listar_script(
+ )
+select * from analytics limit 1

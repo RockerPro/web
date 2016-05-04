@@ -32,7 +32,7 @@ class loginController
         }
 
         public function Login($user,$pass){
-            $resp = $this->model->Login(array($user,$pass));
+            $resp = $this->model->Login(array($user,sha1($pass)));
             if ($resp[0]->res == "success") {
                 $_SESSION["access"] = true;
                 $_SESSION["nombre"] = $resp[0]->resul;    

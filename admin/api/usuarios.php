@@ -16,26 +16,33 @@ switch($action) {
         break;
     case 'registrar': 	
 		    $array = array();
-            $array[] = $_POST['nom'];
-            $array[] = $_POST['email'];
-            $array[] = $_POST['pass'];
+            $array[] = $_GET['nom'];
+            $array[] = $_GET['email'];
+            $array[] = sha1($_GET['pass']);
  		    $id =  $model->Nuevo($array);
 		    echo json_encode($id);
         break;
     case 'editar':  	
 		    $array = array();
 		    $array[] = $_SESSION["id"];
-            $array[] = $_POST['nom'];
-            $array[] = $_POST['email'];
+            $array[] = $_GET['nom'];
+            $array[] = $_GET['email'];
  		    $id =  $model->Editar($array);
+             $_SESSION["nombre"] = $_GET['nom'];
 		    echo json_encode('ok');
         break;
     case 'passw':  	
-		    $array = array();
-		    $array[] = $_SESSION["id"];
-            $array[] = $_POST['pass'];
- 		    $id =  $model->Editarpw($array);
-		    echo json_encode('ok');
+            if ($_GET['pass1'] <> $_GET['pass2']) {
+              $res = false;
+              echo json_encode($res);  
+            }else{
+              $array = array();
+              $array[] = $_SESSION["id"];
+              $array[] = sha1($_GET['pass1']);
+              $id =  $model->Editarpw($array);
+              $res = true;
+              echo json_encode($res);
+            }		    
         break;
     case 'eliminar':
         	$data = $model->Eliminar($_REQUEST['id']);

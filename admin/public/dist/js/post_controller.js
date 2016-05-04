@@ -39,7 +39,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload']);
              closeOnCancel: true }, 
           function(isConfirm){ 
              if (isConfirm) {
-                $http.delete(base_url +'/web/admin/api/post.php?a=eliminar&id' + id)
+                $http.delete(base_url +'/web/admin/api/post.php?a=eliminar&id=' + id)
                 .success(function(res) {
                   $scope.items.splice(index, 1);
                        
@@ -121,5 +121,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload']);
               file.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total));
             });
           }
+
+          
 
     });          

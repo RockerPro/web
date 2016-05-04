@@ -35,7 +35,7 @@
               </li>
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="perfil" class="btn btn-default btn-flat">Ver Perfil</a>
+                  <a href="<?php echo $baseurl; ?>perfil" class="btn btn-default btn-flat">Ver Perfil</a>
                 </div>
                 <div class="pull-right">
                   <a href="controller/login.controller.php?salir=exit" class="btn btn-default btn-flat">Cerrar Sesión</a>

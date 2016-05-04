@@ -24,7 +24,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: sans-serif;
+  font-family: Lato-Light;
   color: #2e3233;
   background-color: #ffffff;
 }
@@ -44,7 +44,7 @@ a {
 }*/
 
 input {
-  font-family: sans-serif;
+  font-family: Lato-Light;
   font-size: 1.6rem;
 }
 

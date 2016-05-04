@@ -15,12 +15,12 @@ include '../../../app/app2.php'; ?>
   <div class="content-wrapper" ng-controller="userController">
     <section class="content-header">
       <h1>
-        Analytics
+        Crear Usuarios
       </h1>
       <ol class="breadcrumb">
         <li><a href="<?php echo $baseurl; ?>inicio"><i class="fa fa-dashboard"></i> Panel de Control</a></li>
-        <li><a href="<?php echo $baseurl; ?>users"><i class="fa fa-line-chart"></i> Analytics</a></li>
-        <li><i class="fa fa-hsahtag"></i> Actualizar Script</li>
+        <li><a href="<?php echo $baseurl; ?>users"><i class="fa fa-users"></i> Usuarios</a></li>
+        <li><i class="fa fa-hsahtag"></i> Crear Usuarios</li>
       </ol>
     </section>
 
@@ -32,26 +32,30 @@ include '../../../app/app2.php'; ?>
           <div class="box box-success">
             <!-- /.box-header -->
             <form role="form">
-            <div class="box-header with-border">
-              <h3 class="box-title ng-binding">Actualizar Script</h3>
-            </div>
             <div class="box-body">
-              <div class="col-sm-12">
-                     <div class="form-group">
-                      <label class="control-label">Script</label>
-                      <textarea class="form-control" ng-model="item.content" rows="8" required>
-                      </textarea>
-                   </div>
+							<div class="col-sm-12">
+								     <div class="form-group">
+									    <label class="control-label">Nombre</label>
+									    <input type="text" class="form-control" ng-model="item.nom" required>
+									 </div>
+								     <div class="form-group">
+									    <label class="control-label">Email</label>
+									    <input type="email" class="form-control" ng-model="item.email" required>
+									 </div>
+									 <div class="form-group">
+									    <label class="control-label">Contraseña</label>
+									    <input type="password" class="form-control" ng-model="item.pass" required>
+									 </div>
                             </div>
             </div>
             <div class="box-footer">
-            <a href="<?php echo $baseurl; ?>inicio"
-            class="btn btn-danger pull-left">Cancelar</a>
-            <button class="btn btn-success pull-right"
-            ng-click="editScript()">Actualizar
-            </button>
-      </div>
-      </form>
+						<a href="<?php echo $baseurl; ?>users"
+						class="btn btn-danger pull-left">Cancelar</a>
+						<a class="btn btn-success pull-right"
+						ng-click="addUser()">Crear
+						</a>
+			</div>
+			</form>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
@@ -72,7 +76,7 @@ include '../../../app/app2.php'; ?>
 <script src="<?php echo $baseurl.'public/bower_components/datatables/media/js/jquery.dataTables.min.js';?>"></script>
 <script src="<?php echo $baseurl.'public/bower_components/angular-datatables/dist/angular-datatables.min.js';?>"></script> 
 <!-- Controlador -->
-<script src="<?php echo $baseurl.'public/dist/js/script_controller.js';?>"></script>
+<script src="<?php echo $baseurl.'public/dist/js/user_controller.js';?>"></script>
 <!-- subir archivos -->
 <script src="<?php echo $baseurl.'public/bower_components/ng-file-upload-shim/ng-file-upload-shim.js';?>"></script>
 <script src="<?php echo $baseurl.'public/bower_components/ng-file-upload/ng-file-upload.js';?>"></script>

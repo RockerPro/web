@@ -1,3 +1,6 @@
+<?php
+include 'app.php'; 
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,12 +19,12 @@
     <meta property="og:url" content="http://www.sgtel.com">
     <meta property="og:site_name" content="SGTEL">
     <title>SGTEL</title>
-    <link rel="stylesheet" href="http://192.168.1.106/web/dist/css/bootstrap.css">
-	<link rel="shortcut icon" href="http://192.168.1.106/web/dist/img2/icono.png">
-    <link rel="stylesheet" href="http://192.168.1.106/web/dist/css/estilos.css">
-    <link rel="stylesheet" href="http://192.168.1.106/web/dist/css/reset.css">
-    <link rel="stylesheet" href="http://192.168.1.106/web/dist/css/style.css">
-	<link rel="stylesheet" href="http://192.168.1.106/web/bower_components/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/bootstrap.css">
+	<link rel="shortcut icon" href="<?php echo $baseurl;?>dist/img2/icono.png">
+    <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/estilos.css">
+    <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/reset.css">
+    <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/style.css">
+	<link rel="stylesheet" href="<?php echo $baseurl;?>bower_components/components-font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 	<div id="main">
@@ -30,7 +33,7 @@
 			<header class="cabecera">
 				<div class="row">
 					<div class="col-md-1 pull-left">
-						<a href="./"><img class="headlogo" src="http://192.168.1.106/web/dist/img2/logo.png" alt="logo sgtel"></a>
+						<a href="./"><img class="headlogo" src="<?php echo $baseurl;?>dist/img2/logo.png" alt="logo sgtel"></a>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
 						<ul class="listdate">
@@ -82,7 +85,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
 						<div class="box">
 							<div class="icon">
-								<img src="http://192.168.1.106/web/dist/img2/icons/aseso.png">
+								<img src="<?php echo $baseurl;?>dist/img2/icons/aseso.png">
 							</div>
 							<h2>ASESORíA</h2>
 							<p></p><p>Contamos con un staff multidisciplinario.</p><p></p>
@@ -91,7 +94,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-12">
 						<div class="box">
 							<div class="icon">
-								<img src="http://192.168.1.106/web/dist/img2/icons/expec.png">
+								<img src="<?php echo $baseurl;?>dist/img2/icons/expec.png">
 							</div>
 							<h2>SOBREPASAMOS TUS EXPECTATIVAS</h2>
 							<p></p><p>Respetamos nuestro compromiso adicionando mejoras en el proyecto.</p><p></p>
@@ -268,10 +271,10 @@
 		
 	</div> 
 
-    <script src="http://192.168.1.106/web/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="http://192.168.1.106/web/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://192.168.1.106/web/dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="http://192.168.1.106/web/dist/js/main.js"></script> <!-- Resource jQuery -->
+    <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>
+	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script> <!-- Resource jQuery -->
     <script type="text/javascript">
         $(document).ready(function() {
             

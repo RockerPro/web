@@ -71,7 +71,7 @@ include '../../../app/app2.php'; ?>
 									 </div>
 								     <div class="form-group">
 									    <label class="control-label">Categoría</label>
-									    <select name="category" id="" required ng-model="select_cat">
+									    <select name="category" class="form-control" required ng-model="select_cat">
 									    	<option value="Infraestructura">Infraestructura</option>
 									    	<option value="Soluciones Móviles">Soluciones Móviles</option>
 									    	<option value="Consuloría y Emprendimiento">Consuloría y Emprendimiento</option>
@@ -81,7 +81,7 @@ include '../../../app/app2.php'; ?>
                             </div>
             </div>
             <div class="box-footer">
-						<a href="/admin/tips/index.html"
+						<a href="<?php echo $baseurl; ?>post"
 						class="btn btn-danger pull-left">Cancelar</a>
 						<button class="btn btn-success pull-right" ng-disabled="!myForm.$valid"
 						ng-click="addPost(picFile)">Crear
