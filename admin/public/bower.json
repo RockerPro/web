@@ -28,5 +28,8 @@
     "ng-file-upload": "^12.0.4",
     "angular-datatables": "^0.5.4",
     "ng-ckeditor": "^0.2.1"
+  },
+  "devDependencies": {
+    "angular-ui-tinymce": "^0.0.15"
   }
 }

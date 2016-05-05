@@ -22,7 +22,6 @@ include 'app.php';
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/bootstrap.css">
 	<link rel="shortcut icon" href="<?php echo $baseurl;?>dist/img2/icono.png">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/estilos.css">
-    <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/reset.css">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/style.css">
 	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
 	<!-- Important Owl stylesheet -->
@@ -160,8 +159,8 @@ include 'app.php';
 		</main>
 		<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-			<li><a href="./">INICIO</a></li>
-			<li><a href="acerca_sgtel">ACERCA DE SGTEL</a></li>
+			<li><a href="<?php echo $baseurl ?>">INICIO</a></li>
+			<li><a href="<?php echo $baseurl ?>acerca_sgtel">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
 				<a  class="selected">ÁREAS DE NEGOCIO </a>
@@ -169,21 +168,21 @@ include 'app.php';
 				<ul class="cd-nav-icons is-hidden">
 					<li class="go-back"><a href="#0">Volver</a></li>
 					<li>
-						<a class="cd-nav-item " href="areas_negocio/infraestructura">
+						<a class="cd-nav-item " href="<?php echo $baseurl ?>areas_negocio/infraestructura">
 							Infraestructura
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="areas_negocio/soluciones_moviles">
+						<a class="cd-nav-item " href="<?php echo $baseurl ?>areas_negocio/soluciones_moviles">
 							Soluciones Móviles
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="areas_negocio/consultoria_emprendimiento">
+						<a class="cd-nav-item " href="<?php echo $baseurl ?>areas_negocio/consultoria_emprendimiento">
 							Consultoría y Emprendimiento
 							<p></p>
 						</a>
@@ -196,21 +195,21 @@ include 'app.php';
 				<ul class="cd-nav-icons is-hidden">
 					<li class="go-back"><a href="#0">Volver</a></li>
 					<li>
-						<a class="cd-nav-item" href="">
+						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/infraestructura">
 							Infraestructura
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item" href="">
+						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/soluciones_moviles">
 							Soluciones Móviles
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item" href="">
+						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/consultoria_emprendimiento">
 							Consultoría y Emprendimiento
 							<p></p>
 						</a>
@@ -218,7 +217,7 @@ include 'app.php';
 				</ul>
 			</li>
 
-			<li><a href="contactenos">CONTÁCTENOS</a></li>
+			<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
 		</ul> <!-- primary-nav -->
 	</nav> <!-- cd-nav -->
 		

@@ -169,6 +169,28 @@ call nuevopost('post numero 2','contenido asdasdad','resumenasdsa','Infraestruct
 CREATE PROCEDURE sp_lista_posts()
 select * from post order by fech_create desc; 
 
+CREATE PROCEDURE sp_ult_posts()
+select codpost, left(title,65) as title, path_url from post 
+where state= 'A' order by fech_create desc limit 4;
+ 
+
+
+CREATE PROCEDURE sp_related_posts(
+ cate varchar(40)
+)
+select codpost, left(title,65) as title, path_url from post 
+where category = cate and state = 'A'
+ORDER BY RAND() desc limit 5;
+
+CREATE PROCEDURE sp_xarea_posts(
+ cate varchar(40)
+)
+select codpost, title, summary, path_url from post 
+where category = cate and state = 'A'
+ORDER BY fech_create 
+
+
+
 
 CREATE PROCEDURE sp_obtener_posts(
 id char(9)

@@ -10,6 +10,18 @@ switch($action) {
         $data = $model->Listar();
         echo json_encode($data);
         break;
+    case 'ultimos':
+        $data = $model->ultimos();
+        echo json_encode($data);
+        break;
+    case 'related':
+        $data = $model->related($_REQUEST['cat']);
+        echo json_encode($data);
+        break;
+    case 'category':
+        $data = $model->category($_REQUEST['cat']);
+        echo json_encode($data);
+        break;
     case 'obtener':
         $data = $model->Obtener($_REQUEST['id']);
         echo json_encode($data);

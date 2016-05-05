@@ -1,5 +1,6 @@
 RewriteEngine on
-Rewriterule ^articulo/(.+) articulo.php?id=$1
+Rewriterule ^news/category/(.+) post_by_area.php?id=$1
+Rewriterule ^novelty/(.+) novelty.php?id=$1
 Rewriterule ^inicio index.php
 Rewriterule ^acerca_sgtel acerca_sgtel.php
 Rewriterule ^areas_negocio/infraestructura infraestructura.php

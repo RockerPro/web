@@ -16,14 +16,32 @@ class PostsModel
 		return $stm->fetchAll(PDO::FETCH_OBJ);
 	}
 
+	public function ultimos(){
+		$stm = $this->pdo->prepare("call sp_ult_posts()");
+		$stm->execute();
+		return $stm->fetchAll(PDO::FETCH_OBJ);
+	}
+
+	public function related($cat){
+		$stm = $this->pdo->prepare("call sp_related_posts(?)");
+		$stm->execute(array($cat));
+		return $stm->fetchAll(PDO::FETCH_OBJ);
+	}
+
+	public function category($cat){
+		$stm = $this->pdo->prepare("call sp_xarea_posts(?)");
+		$stm->execute(array($cat));
+		return $stm->fetchAll(PDO::FETCH_OBJ);
+	}
+
 	public function Obtener($id){
-		$stm = $this->pdo->prepare(" call sp_obtener_posts(?)");
+		$stm = $this->pdo->prepare("call sp_obtener_posts(?)");
 		$stm->execute(array($id));
 		return $stm->fetchAll(PDO::FETCH_OBJ);
 	}
 
 	public function State($id){
-		$stm = $this->pdo->prepare(" call sp_change_state_post(?)");
+		$stm = $this->pdo->prepare("call sp_change_state_post(?)");
 		$stm->execute(array($id));
 		return $stm->fetchAll(PDO::FETCH_OBJ);
 	}

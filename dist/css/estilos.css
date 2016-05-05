@@ -27,6 +27,11 @@ body{
 	-webkit-box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 1px 4px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 1px 4px 0px rgba(50, 50, 50, 0.75);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 .headlogo{
     width: 180px;
@@ -89,7 +94,7 @@ body{
     overflow: hidden;
 }
 .contnove p{
-	margin-bottom: 25px;
+	margin-bottom: 5px;
     margin-top: 5px;
     font-weight: bold;
 }
@@ -98,10 +103,9 @@ body{
 	color: #005A97;
 }
 .imgnove{
-	width: 120px;
-    height: 60px;
-	float: left;
-	margin-right: 10px;
+    width: 300px;
+    height: 116px;
+    margin-right: 10px;
 }
 .client {
     width: 200px;
@@ -253,11 +257,12 @@ body{
     font-weight: bold;
 }
 .circle p{
-	text-align: center;
+    text-align: center;
     font-family: Lato-Light;
-	font-size: 22px;
-	margin-top: 20px;
+    font-size: 22px;
+    margin-top: 9px;
     font-weight: bold;
+    line-height: 1;
 }
 .bg1{
     /*background: url(../img2/bg.jpg);*/
@@ -398,7 +403,6 @@ text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     line-height: 1.2;
-    margin-bottom: 15px;
     color: #0064AA;
 }
 .success-message {
@@ -469,6 +473,62 @@ text-decoration: none;
     font-size: 42px;
     position: relative;
     margin: 0;
+}
+.imgpost{
+    width: 100%;
+    height:350px;
+    margin-bottom: 15px;
+}
+.titpost{
+    font-family: Lato-Light;
+    font-size: 32px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.autor{
+    margin-left: -30px;
+}
+.img-autor{
+    float: left;
+    margin-right: 15px;
+}
+.nom-autor{
+    line-height: 1.8;
+    font-family: Lato-Light;
+    font-size: 21px;
+    font-weight: bold;
+}
+.fecha_post {
+    padding-right: 0;
+    margin-left: 30px;
+}
+.fecha_post p{
+    line-height: 3;
+    font-family: Lato-Light;
+    font-size: 15px;
+}
+.post-cont{
+    margin-top: 100px;
+    line-height: 1.3;
+}
+.post-cont div{
+    font-size: 18px;
+}
+.white-tit{
+    background: rgba(255,255,255,0.8);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -365px;
+}
+.post_item{
+
+}
+.post_item:hover{
+    opacity: .7;
+    filter: alpha(opacity=50);
+    -moz-opacity: .70;
 }
 @media only screen and (max-width: 1200px){
 .title p{
