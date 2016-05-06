@@ -76,20 +76,38 @@ include 'app.php';
 			<div class="col-md-9" style="margin-top: 55px;margin-bottom:25px;overflow: hidden;">
 				<div class="col-md-12" style="margin-top:55px;">					
 		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		            	<div class="subti3">
+		            	<div class="contvalor">
 		            		<p class="titsec">{{cate}}</p>
+		                    <div class="divider divider_gray ">
+		                               		<span></span><span></span>
+		                    </div>
 		            	</div>
-	                   <div class="col-md-12" ng-repeat="related in relateds">
-	                   	 <p class="titpost">{{relateds.title}}</p>
-	                   	 <div class="col-md-6"></div>
-	                   	 <div class="col-md-4"></div>
-	                   </div> 
+	                   	<div class="col-md-12" ng-repeat="related in relateds" style="padding-bottom: 20px;">
+	                   	 	<a class="post_item" href="<?php echo $baseurl ?>novelty/{{related.codpost}}">
+	                   	 	<div class="col-md-8">
+	                   	 		<p class="titpost2">{{related.title}}</p>
+	                   	 		<div class="summary" ng-bind-html-unsafe="related.summary"></div>
+	                   	 	</div>
+	                   	 	<div class="col-md-4">
+	                   	 		<img class="img-responsive"
+	                   	 		ng-src="<?php echo $baseurl?>admin/public/dist/img/posts/{{related.path_url}}" alt="">
+	                   	 	</div>
+	                   	 	</a>
+	                   	 	<div class="col-md-12">
+	                   	 		<hr class="hr_post">
+	                   	 		<p class="nom_author">{{related.author}}</p>
+	                   	 		<div class="calen_post">
+	                   	 			<i class="fa fa-calendar-check-o"></i>
+	                   	 			{{related.fech_create}} 
+	                   	 		</div>
+	                   	 	</div>
+	                   	</div> 
 		            </div>            
 				</div>
 			</div>
 			<!-- seccion novedades -->
                 <?php
-                include 'layouts/postArea_novedades.php'; 
+                include 'layouts/suscribe.php'; 
                 ?>
             <!-- fin --> 			<div class="col-md-12" style="padding: 0;">
 				<div id="footer">
@@ -171,7 +189,7 @@ include 'app.php';
 	</div> 
 
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="<?php echo $baseurl;?>bower_components/angular/angular.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
     <script src="<?php echo $baseurl;?>dist/js/post_controller.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>

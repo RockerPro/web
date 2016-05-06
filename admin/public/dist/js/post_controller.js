@@ -1,10 +1,51 @@
 'use strict';
 
 var base_url=location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
-var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload']);
+var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui.tinymce']);
               
     app.controller('postController', function($scope, $http,sweet, $location, Upload, $timeout)
     {
+
+      /* textarea edito options*/
+      $scope.tinymceOptions = {
+    automatic_uploads: true,
+    file_browser_callback: function(field_name, url, type, win) {
+    win.document.getElementById(field_name).value = 'my browser value';
+    },
+    file_browser_callback_types: 'file image media',
+    images_upload_credentials: true,
+   file_picker_callback: function(callback, value, meta) {
+      // Provide file and text for the link dialog
+      if (meta.filetype == 'file') {
+        callback('mypage.html', {text: 'My text'});
+      }
+
+      // Provide image and alt text for the image dialog
+      if (meta.filetype == 'image') {
+        callback('web/public/dist/img/posts/pt0001.jpg', {alt: 'My alt text'});
+      }
+
+      // Provide alternative source and posted for the media dialog
+      if (meta.filetype == 'media') {
+        callback('movie.mp4', {source2: 'alt.ogg', poster: 'image.jpg'});
+      }
+   },
+   file_picker_types: 'file image media',
+    images_upload_base_path: 'public/dist/img/posts/',
+    images_upload_credentials: true,
+    plugins: [
+    'visualblocks fullscreen charmap code advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    'searchreplace wordcount visualblocks visualchars code fullscreen',
+    'insertdatetime media nonbreaking save table contextmenu directionality',
+    'emoticons template paste textcolor colorpicker textpattern imagetools'
+  ],
+  toolbar1: 'visualblocks | fullscreen | charmap | code | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  toolbar2: 'print preview media | forecolor backcolor emoticons',
+  image_advtab: true,
+    toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | code'
+  };
+      /* fin options*/
+
         $scope.items = [];
         $scope.load_items = function()
         {
@@ -58,11 +99,12 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload']);
             .success(function (res)
             {
              if (res == '') {
-                $scope.view = false;             
+                $scope.view = false;  
+                console.log($scope.view);               
              }else{
                 $scope.item = res[0];
-                $scope.view = true; 
-                console.log($scope.item);            
+                $scope.view = true;   
+                console.log($scope.view);            
              };
              
              
@@ -95,7 +137,6 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload']);
           $scope.item = [];
           $scope.$watch('select_cat', function() {
             $scope.item.category = $scope.select_cat;
-            console.log($scope.item);
            })
 
           $scope.addPost = function(file) {
@@ -110,7 +151,6 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload']);
               $timeout(function () {
                 file.result = response.data;
               });
-              console.log(response);
               sweet.show('', 'Item guardado exitosamente', 'success');
 
             }, function (response) {

@@ -73,6 +73,7 @@ include '../../../app/app2.php'; ?>
 
 <!-- REQUIRED JS SCRIPTS -->
 <?php include '../../layouts/scripts.php'; ?>
+
 <script src="<?php echo $baseurl.'public/bower_components/datatables/media/js/jquery.dataTables.min.js';?>"></script>
 <script src="<?php echo $baseurl.'public/bower_components/angular-datatables/dist/angular-datatables.min.js';?>"></script> 
 <!-- Controlador -->

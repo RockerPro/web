@@ -68,7 +68,7 @@ include 'app.php';
 		</ul>
 		</header>		
 		<main class="cd-main-content">
-			<div class="col-md-9" style="margin-top: 55px;margin-bottom:25px;overflow: hidden;">
+			<div class="col-md-9"   style="margin-top: 55px;margin-bottom:25px;overflow: hidden;{{view}}">
 				<div class="col-md-12" style="margin-top:55px;">
 					<img class="imgpost" 
 					ng-src="<?php echo $baseurl?>admin/public/dist/img/posts/{{item.path_url}}"
@@ -95,6 +95,16 @@ include 'app.php';
 		            </div>		            
 				</div>
 			</div>
+			<div class="col-md-12"   style="margin-top: 55px;margin-bottom:25px;overflow: hidden;{{error}}">
+				<div class="col-md-12" style="margin-top:55px;">
+					<h1 align="center">404! Pagina no encontrada.</h1>
+					<img style="margin:0 auto;" src="<?php echo $baseurl?>dist/img2/404.png" alt="img 404" class="img-responsive">
+					<p align="center"><a class="btn btn-success" href="javascript:history.back(-1);" title="Ir la página anterior">
+					<i class="fa fa-chevron-left"></i> Volver</a>
+					</p>
+				</div>
+			</div>
+			
 			<!-- seccion novedades -->
 				<?php
 				include 'layouts/related_novedades.php'; 
@@ -180,7 +190,7 @@ include 'app.php';
 	</div> 
 
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
     <script src="<?php echo $baseurl;?>dist/js/post_controller.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>

@@ -29,10 +29,14 @@ var app = angular.module('app', []);
             .success(function (res)
             {
              if (res == '') {
-                $scope.view = false;             
+                $scope.view = 'display:none;';
+                $scope.error = 'display:block;';
+                console.log($scope.view);             
              }else{
                 $scope.item = res[0];
-                $scope.view = true;
+                $scope.view = 'display:block;';
+                $scope.error = 'display:none;';
+                console.log($scope.view);
                 $scope.load_related($scope.item.category);     
              };
             });
@@ -89,6 +93,42 @@ var app = angular.module('app', []);
             console.log(res);
             }); 
 
+            
          
 
     });    
+jQuery(document).ready(function() {
+  /*suscribe foorm */
+  $('.success-message2').hide();
+	$('.error-message').hide();
+     $('#form_sus').submit(function(e) {
+
+		e.preventDefault();
+		
+		var form = $(this);
+	    var postdata = form.serialize();
+	    $.ajax({
+	        type: 'POST',
+	        url: base_url+'/web/layouts/subscribe.php',
+	        data: postdata,
+	        dataType: 'json',
+	        success: function(json) {
+	            if(json.valid == 0) {
+	                $('.success-message2').hide();
+	                $('.error-message').hide();
+	                $('.error-message').html(json.message);
+	                $('.error-message').fadeIn();
+	            }
+	            else {
+	                $('.error-message').hide();
+	                $('.success-message2').hide();
+	                form.hide();
+	                $('.success-message2').html(json.message);
+	                $('.success-message2').fadeIn();
+	            }	            
+	        }	               
+	    });
+	});
+
+	
+});

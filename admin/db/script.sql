@@ -136,6 +136,7 @@ state char(1) default 'D'  not null,
 category varchar(40),
 author varchar(100),
 path_url mediumtext,
+url_web varchar(200),
 fech_create TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 )DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
@@ -143,6 +144,7 @@ fech_create TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 insert into post values('pt001','Post numero 1', 'mucho texto de contenido',
 'mucho texto','D','Infraestructura','admin/public/dist/img/post/pt001.jpg');
 
+select REPLACE(REPLACE(REPLACE('¿Por qué abandonan los carritos de compra',"¿",""),"?","")," ","-") from post;
 select * from post;
 
 DELIMITER $$
@@ -152,14 +154,17 @@ CREATE PROCEDURE nuevopost(
  conte mediumtext,
  summ mediumtext,
  cate varchar(40),
- auth varchar(100)
+ auth varchar(100),
+ url varchar(200)
  )
 BEGIN
         DECLARE co CHAR(9);
+        DECLARE ur varchar(200);
         DECLARE img mediumtext;
+        		SET ur = (select REPLACE(url," ","-"));
             SET co = (select concat('pt',right(concat('000',right(IFNULL(max(codpost),'000'),3)+1),4)) AS cod from post);
             SET img =(select concat('pt',right(concat('000',right(IFNULL(max(codpost),'000'),3)+1),4),'.jpg') AS img from post);
-          insert into post (codpost,title, content,summary,category,author,path_url) values(co,tit,conte,summ,cate,auth,img);
+          insert into post (codpost,title, content,summary,category,author,url_web,path_url) values(co,tit,conte,summ,cate,auth,ur,img);
            	select co,img;
         END $$
 
@@ -170,8 +175,8 @@ CREATE PROCEDURE sp_lista_posts()
 select * from post order by fech_create desc; 
 
 CREATE PROCEDURE sp_ult_posts()
-select codpost, left(title,65) as title, path_url from post 
-where state= 'A' order by fech_create desc limit 4;
+select codpost, left(title,65) as title, path_url,url_web from post 
+where state= 'A' order by fech_create desc limit 3;
  
 
 
@@ -185,9 +190,9 @@ ORDER BY RAND() desc limit 5;
 CREATE PROCEDURE sp_xarea_posts(
  cate varchar(40)
 )
-select codpost, title, summary, path_url from post 
+select codpost, title, summary, path_url, fech_create, author from post 
 where category = cate and state = 'A'
-ORDER BY fech_create 
+ORDER BY fech_create desc;
 
 
 
@@ -207,9 +212,10 @@ CREATE PROCEDURE sp_editar_post(
  tit varchar(200),
  conte mediumtext,
  summ mediumtext,
- cate varchar(40)
+ cate varchar(40),
+ url varchar(200)
  )
-update  post set title=tit, content=conte,summary=summ,category=cate where codpost=cod;
+update  post set title=tit, content=conte,summary=summ,category=cate, url_web = REPLACE(url," ","-") where codpost=cod;
 
 DELIMITER $$
 drop PROCEDURE if exists sp_change_state_post;

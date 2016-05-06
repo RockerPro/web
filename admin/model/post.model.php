@@ -52,12 +52,12 @@ class PostsModel
 	}
 
 	public function Nuevo($data){
-		$stm = $this->pdo->prepare("call nuevopost(?,?,?,?,?)");	
+		$stm = $this->pdo->prepare("call nuevopost(?,?,?,?,?,?)");	
 		$stm->execute($data);
 		return $stm->fetchAll(PDO::FETCH_OBJ);
 	}
 	public function Editar($data){
-		$stm = $this->pdo->prepare("call sp_editar_post(?,?,?,?,?)");	
+		$stm = $this->pdo->prepare("call sp_editar_post(?,?,?,?,?,?)");	
 		$stm->execute($data);
 	}
 }

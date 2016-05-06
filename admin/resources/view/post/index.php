@@ -101,6 +101,8 @@ include '../../../app/app2.php'; ?>
 
 <!-- REQUIRED JS SCRIPTS -->
 <?php include '../../layouts/scripts.php'; ?>
+<script type="text/javascript" src="<?php echo $baseurl.'public/bower_components/tinymce-dist/tinymce.js';?>"></script>
+  <script type="text/javascript" src="<?php echo $baseurl.'public/bower_components/angular-ui-tinymce/src/tinymce.js';?>"></script>
 <script src="<?php echo $baseurl.'public/bower_components/datatables/media/js/jquery.dataTables.min.js';?>"></script>
 <script src="<?php echo $baseurl.'public/bower_components/angular-datatables/dist/angular-datatables.min.js';?>"></script> 
 <!-- Controlador -->

@@ -20,7 +20,7 @@ include '../../../app/app2.php'; ?>
       <ol class="breadcrumb">
         <li><a href="<?php echo $baseurl; ?>inicio"><i class="fa fa-dashboard"></i> Panel de Control</a></li>
         <li><a href="<?php echo $baseurl; ?>post"><i class="fa fa-hashtag"></i> Posts</a></li>
-        <li><i class="fa fa-hsahtag"></i> {{item.title}}</li>
+        <li><i class="fa fa-hsahtag"></i> {{item.codpost}}</li>
       </ol>
     </section>
 
@@ -34,7 +34,7 @@ include '../../../app/app2.php'; ?>
               <h3 class="box-title">Editar Post: {{item.title}}</h3>
             </div>
             <!-- /.box-header -->
-            <form name="myForm" autocomplete="off">   
+            <form name="myForm" autocomplete="off"  ng-if="view == true" >   
 			<div class="col-sm-12">
 					<div class="inputfile">
 						<input type="file" ngf-select ng-model="picFile" name="file"    
@@ -57,6 +57,11 @@ include '../../../app/app2.php'; ?>
 			</div>
             <div class="box-body">
 							<div class="col-sm-12">
+									 <div class="form-group">
+									    <label class="control-label">Url</label>
+									    <input type="text" class="form-control" name="url" ng-model="item.url_web" required>
+								        <i ng-show="myForm.url.$error.required" style="color:red">* Requerido</i>
+									 </div>
 								     <div class="form-group">
 									    <label class="control-label">Título</label>
 									    <input type="text" class="form-control" name="title" ng-model="item.title" required>
@@ -64,12 +69,12 @@ include '../../../app/app2.php'; ?>
 									 </div>
 								     <div class="form-group">
 									    <label class="control-label">Resumen</label>
-									    <textarea ng-model="item.summary" name="summary" class="form-control nores"cols="30" rows="3" required></textarea>
+									    <textarea  ui-tinymce="tinymceOptions"  ng-model="item.summary" name="summary" class="form-control nores"cols="30" rows="3" required></textarea>
 								        <i ng-show="myForm.summary.$error.required" style="color:red">* Requerido</i>
 									 </div>
 									 <div class="form-group">
 									    <label class="control-label">Contenido</label>
-									    <textarea ng-model="item.content" name="content" class="form-control nores" cols="30" rows="7" required></textarea>
+									    <textarea  ui-tinymce="tinymceOptions"  ng-model="item.content" name="content" class="form-control nores" cols="30" rows="10" required></textarea>
 								        <i ng-show="myForm.content.$error.required" style="color:red">* Requerido</i>
 									 </div>
 								     <div class="form-group">
@@ -110,6 +115,8 @@ include '../../../app/app2.php'; ?>
 
 <!-- REQUIRED JS SCRIPTS -->
 <?php include '../../layouts/scripts.php'; ?>
+<script type="text/javascript" src="<?php echo $baseurl.'public/bower_components/tinymce-dist/tinymce.js';?>"></script>
+  <script type="text/javascript" src="<?php echo $baseurl.'public/bower_components/angular-ui-tinymce/src/tinymce.js';?>"></script>
 <script src="<?php echo $baseurl.'public/bower_components/datatables/media/js/jquery.dataTables.min.js';?>"></script>
 <script src="<?php echo $baseurl.'public/bower_components/angular-datatables/dist/angular-datatables.min.js';?>"></script> 
 <!-- Controlador -->
