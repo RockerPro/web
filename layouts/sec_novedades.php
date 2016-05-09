@@ -1,6 +1,6 @@
 
 			<div class="col-md-3 novedades" ng-controller="listPostController">				
-				<p class="titsec">Novedades</p>
+				<p class="titsec news">Novedades</p>
 				<a href="<?php echo $baseurl?>novelty/{{item.url_web}}-{{item.codpost}}"
 				 ng-repeat="item in items" class="post_item" >
 					<div class="col-md-12 contnove">

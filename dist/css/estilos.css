@@ -1,14 +1,14 @@
 @font-face {
-font-family: Lato-Light;
-src: url(fuentes/Lato-Light.ttf);
+font-family: Roboto-Light;
+src: url(fuentes/Roboto-Light.ttf);
 }
 @font-face {
-font-family: Lato-Medium;
-src: url(fuentes/Lato-Medium.ttf);
+font-family: Roboto-Medium;
+src: url(fuentes/Roboto-Medium.ttf);
 }
  @font-face {
-font-family: Euro-Light;
-src: url(fuentes/eurof35.ttf);
+font-family: Roboto-Bold;
+src: url(fuentes/Roboto-Bold.ttf);
 }
 body{
 	background: url(../img2/cream_pixels.png);
@@ -32,21 +32,27 @@ body{
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .headlogo{
-    width: 180px;
+    width: 255px;
     margin-left: 70px;
 }
 
 .listredes{
 	list-style: none;
 	margin-top: 10px;
+    margin-top: 16px;
+    float: right;
+    width: 168px;
+    margin-right: -40px;
 }
 .listdate{
 	list-style: none;
 	margin-top: 10px;
 	padding-left: 0;
-	font-family: Lato-Light;
+	font-family: Roboto-Light;
 }
 .listredes li{
 	float: left;
@@ -77,13 +83,13 @@ body{
     position: relative;
     padding-bottom: 10px;
     padding-top: 10px;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
 }
 .title p{
 	text-align: center;
 }
 .titsec{
-	font-family: Lato-Light;
+	font-family: Roboto-Light;
 	font-size: 35px;
 	margin-bottom: 15px;
 }
@@ -187,13 +193,13 @@ body{
     font-weight: 300;
     margin-bottom: 18px;
     font-size: 26px;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
 }
 .box:hover h2 {
     color: #fff;
 }
 .box p {
-    font: 22px Lato-Light;
+    font: 22px Roboto-Light;
     font-weight: normal;
     line-height: 23px;
     text-align: center;
@@ -252,14 +258,14 @@ body{
 .circle h3{
 	color: #0064AA;
 	text-align: center;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 17px;
     margin-top: 15px;
     font-weight: bold;
 }
 .circle p{
     text-align: center;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 22px;
     margin-top: 9px;
     font-weight: bold;
@@ -313,7 +319,7 @@ body{
     width: 410px;
 }
 .conttext2 {
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 22px;
     text-align: justify;
 }
@@ -333,7 +339,7 @@ body{
 }
 .descarga h2{
 	text-align: center;
-	font-family: Lato-Light;
+	font-family: Roboto-Light;
 	font-size: 22px;
 	font-weight: bold;
 	color: #0064AA;
@@ -357,7 +363,7 @@ text-decoration: none;
     margin-top: 15px;
 }
 .textarea {
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 16px;
     color: black;
     text-align: justify;
@@ -373,11 +379,11 @@ text-decoration: none;
 }
 .itemm, .itemm2, .itemm3  {
     cursor: pointer;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-weight: bold;
 }
 .hidee, .hidee2, .hidee3{
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 16px;
     text-align: justify;
 }
@@ -395,12 +401,12 @@ text-decoration: none;
     overflow: hidden;
 }
 .direcc div h3{
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-weight: bold;
     font-size: 18px;
 }
 .direcc div p{
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-weight: bold;
     font-size: 18px;
     line-height: 1.2;
@@ -409,7 +415,7 @@ text-decoration: none;
 .success-message {
      display: none; 
     color: #0AA734;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-weight: bold;
     font-size: 23px;
     margin-top: -39px;
@@ -419,21 +425,21 @@ text-decoration: none;
 }
 .success-message2 {
     color: #0AA734;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-weight: bold;
     font-size: 23px;
     text-align: center;
 }
 .error-message {
     color: red;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
 }
 .camp{
     height: 70px;
 }
 .contacinput{
     color: #989898;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-weight: bold;
     font-weight: 500;
     font-size: 22px;
@@ -450,7 +456,7 @@ text-decoration: none;
 }
 .error-label {
     color: #F7534B;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-weight: bold;
 }
 .mapa{
@@ -472,7 +478,7 @@ text-decoration: none;
 .step h3{
     color: #fff;
     font-size: 50px;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     margin: 0;
@@ -481,7 +487,7 @@ text-decoration: none;
 .step p {
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 42px;
     position: relative;
     margin: 0;
@@ -492,13 +498,13 @@ text-decoration: none;
     margin-bottom: 15px;
 }
 .titpost{
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 32px;
     padding-left: 15px;
     padding-top: 5px;
 }
 .titpost2{
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 25px;    
     padding-top: 5px;
 }
@@ -514,7 +520,7 @@ text-decoration: none;
 }
 .nom-autor{
     line-height: 1.8;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 21px;
     font-weight: bold;
 }
@@ -524,7 +530,7 @@ text-decoration: none;
 }
 .fecha_post p{
     line-height: 3;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
     font-size: 15px;
 }
 .post-cont{
@@ -566,6 +572,10 @@ text-decoration: none;
 }
 .list_cate{
     list-style: none;
+}
+.news{
+    font-size: 20px;
+    font-family: Roboto-Medium;
 }
 @media only screen and (max-width: 1200px){
 .title p{

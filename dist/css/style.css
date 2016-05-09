@@ -7,16 +7,16 @@ Primary style
   box-sizing: border-box;
 }
 @font-face {
-font-family: Lato-Light;
-src: url(fuentes/Lato-Light.ttf);
+font-family: Roboto-Light;
+src: url(fuentes/Roboto-Light.ttf);
 }
 @font-face {
-font-family: Lato-Medium;
-src: url(fuentes/Lato-Medium.ttf);
+font-family: Roboto-Medium;
+src: url(fuentes/Roboto-Medium.ttf);
 }
 @font-face {
-font-family: Euro-Light;
-src: url(fuentes/eurof35.ttf);
+font-family: Roboto-Bold;
+src: url(fuentes/Roboto-Bold.ttf);
 }
 html {
   font-size: 62.5%;
@@ -24,7 +24,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Lato-Light;
+  font-family: Roboto-Light;
   color: #2e3233;
   background-color: #ffffff;
 }
@@ -43,7 +43,7 @@ a {
 }*/
 
 input {
-  font-family: Lato-Light;
+  font-family: Roboto-Light;
   font-size: 1.6rem;
 }
 
@@ -126,7 +126,7 @@ Main components
 }
 @media only screen and (min-width: 1170px) {
   .cd-main-header {
-    height: 113px;
+    height: 194px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -551,7 +551,7 @@ Main components
     float: right;
     overflow: visible;
     background: transparent;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
   }
   .cd-primary-nav::after {
     clear: both;
@@ -617,7 +617,7 @@ Main components
   .cd-primary-nav > li > a.selected {
     color: #4A0167;
     border-top: 5px solid #4A0167;
-    /*box-shadow: inset 0 -5px 0 #4A0167;*/
+    line-height: 2.5;
   }
   .cd-primary-nav .go-back, .cd-primary-nav .see-all {
     display: none;
@@ -806,7 +806,7 @@ Main components
   }
   .cd-primary-nav .cd-nav-icons .cd-nav-item h3 {
     color: white;
-    font-family: Lato-Light;
+    font-family: Roboto-Light;
   }
   .cd-primary-nav .cd-nav-icons .cd-nav-item p {
     display: block;
@@ -1094,6 +1094,6 @@ support for no js
 }
 @media only screen and (min-width: 767px) {
 .cd-main-content {
-    margin-top: 51px;
+    margin-top: 184px;
   }
 }

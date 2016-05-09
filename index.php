@@ -34,6 +34,7 @@ include 'app.php';
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.carousel.css">
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.theme.css">
+	<?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body ng-app="app">
 	<div id="main">

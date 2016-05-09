@@ -4,35 +4,28 @@ include 'app.php';
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-12">
+	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Trabajamos en el desarrollo de mejores sistemas, diseño e instalaciones. Planificamos, organizamos, realizamos y controlamos las instalaciones de sistemas de telecomunicaciones. La unidad de desarrollo de aplicaciones se encuentra conformada por un equipo multidisciplinario de profesionales del más alto nivel, gracias a esto nuestros clientes poseen una gran ventaja en relación a la competencia." />
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="INFRAESTRUCTURA, SOLUCIONES MOVILES,CONSULTORIA Y EMPRENDIMIENTO, COMUNICACIONES">
     <meta name="author" content="Cristians Bregante">
-    <meta name="image" content="http://sgtel.pe/dist/img/logo.png">
+    <meta name="image" content="http://sgtel.pe/dist/img2/logo.png">
     <meta property="og:image" content="http://sgtel.pe/dist/img/logo.png">
     <meta property="og:title" content="SGTEL | sgtel.pe">
     <meta property="og:description" content="Trabajamos en el desarrollo de mejores sistemas, diseño e instalaciones. Planificamos, organizamos, realizamos y controlamos las instalaciones de sistemas de telecomunicaciones. La unidad de desarrollo de aplicaciones se encuentra conformada por un equipo multidisciplinario de profesionales del más alto nivel, gracias a esto nuestros clientes poseen una gran ventaja en relación a la competencia.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.sgtel.com">
+    <meta property="og:url" content="http://sgtel.pe/novelty/10-palabras-que-no-debes-incluir-en-linkedin-pt0001">
+    <link rel="canonical" href="http://sgtel.pe/novelty/10-palabras-que-no-debes-incluir-en-linkedin-pt0001" />
     <meta property="og:site_name" content="SGTEL">
-	<meta property="fb:admins" content="{100008345413407}"/>
     <title>SGTEL</title>
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/bootstrap.css">
 	<link rel="shortcut icon" href="<?php echo $baseurl;?>dist/img2/icono.png">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/estilos.css">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/style.css">
 	<link rel="stylesheet" href="<?php echo $baseurl;?>bower_components/components-font-awesome/css/font-awesome.min.css">
-	    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body ng-app="app">
 	<div id="main"  ng-controller="postController">
@@ -137,7 +130,7 @@ include 'app.php';
 		<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
 			<li><a href="<?php echo $baseurl?>">INICIO</a></li>
-			<li><a href="acerca_sgtel.php" class="selected">ACERCA DE SGTEL</a></li>
+			<li><a href="acerca_sgtel.php">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
 				<a>ÁREAS DE NEGOCIO </a>

@@ -24,6 +24,7 @@ include 'app.php';
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/estilos.css">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/style.css">
 	<link rel="stylesheet" href="<?php echo $baseurl;?>bower_components/components-font-awesome/css/font-awesome.min.css">
+	<?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body>
 	<div id="main">

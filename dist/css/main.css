@@ -1,14 +1,14 @@
 @font-face {
-font-family: Lato-Light;
-src: url(fuentes/Lato-Light.ttf);
+font-family: Roboto-Light;
+src: url(fuentes/Roboto-Light.ttf);
 }
 @font-face {
-font-family: Lato-Medium;
-src: url(fuentes/Lato-Medium.ttf);
+font-family: Roboto-Medium;
+src: url(fuentes/Roboto-Medium.ttf);
 }
  @font-face {
-font-family: Euro-Light;
-src: url(fuentes/eurof35.ttf);
+font-family: Roboto-Bold;
+src: url(fuentes/Roboto-Bold.ttf);
 }
 
 .slide h1{
@@ -152,7 +152,7 @@ color: #fff;
 
 .nav > li > .opcmenu{
 color: #0063A8;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 17px;
 padding-left: 25px;
 padding-right: 50px;
@@ -160,7 +160,7 @@ outline-color: transparent;
 }
 .nav > li > .opcactive{
    color: #0097D4; 
-   font-family: Lato-Medium;
+   font-family: Roboto-Medium;
 }
 .nav > li > .opcmenu:hover, .nav > li > .opcmenu:focus {
 color: #1F9BD7;
@@ -169,7 +169,7 @@ text-decoration: none;
 
 .nav > li > .opcmenur{
 color: #0063A8;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 23px;
 }
 
@@ -213,14 +213,14 @@ padding-left: 80px;
 float: left;
 padding-left: 30px;
 padding-right: 60px;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 15px;
 }
 .conttexs{
 width: 80%;
 margin: 0 auto;
 margin-bottom: 5px;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 13px;
 }
 .cuerpo{
@@ -229,7 +229,7 @@ margin-top: 60px;
 .cuerpo .sspan{
 font-size: 16px;
 font-weight: bold;
-font-family: Lato-Medium;
+font-family: Roboto-Medium;
 padding: 20px;
 padding-bottom: 10px;
 padding-left: 5px;
@@ -238,7 +238,7 @@ color: white;
 .titprod{
 font-size: 16px;
 font-weight: bold;
-font-family: Lato-Medium;
+font-family: Roboto-Medium;
 text-align: center;
 }
 .titarea{
@@ -249,7 +249,7 @@ font-weight: bold;
 text-align: center;
 }
 .textarea{
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 16px;
 color: black;
 text-align: justify;
@@ -262,7 +262,7 @@ text-align: right;
 color: white;
 }
 .textslide1{
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 16px;
 color: white;
 text-align: right;
@@ -274,7 +274,7 @@ text-align: left;
 color: white;
 }
 .textslide2{
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 16px;
 color: white;
 text-align: left;
@@ -295,7 +295,7 @@ border-bottom: 1px solid white;
 height: 20px;
 text-align: left;
 font-size: 14px;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 color: white;
 font-weight: 700;
 }
@@ -326,26 +326,26 @@ padding-left: 10px;
 }
 .itemm{
 cursor: pointer;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-weight: bold;
 }
 .itemm2{
 cursor: pointer;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-weight: bold;
 }
 .itemm3{
 cursor: pointer;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-weight: bold;
 }
 .itemm4{
 cursor: pointer;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-weight: bold;
 }
 .hidee{
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 13px;
 color: #004375;
 font-weight: bold;
@@ -353,21 +353,21 @@ text-align: justify;
 padding-right: 5px;
 }
 .hidee2{
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 13px;
 color: #004375;
 font-weight: bold;
 text-align: justify;
 }
 .hidee3{
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 13px;
 color: #004375;
 font-weight: bold;
 text-align: justify;
 }
 .hidee4{
-font-family: Lato-Light;
+font-family: Roboto-Light;
 font-size: 13px;
 color: #004375;
 font-weight: bold;
@@ -412,7 +412,7 @@ padding-top: 45px;
 .success-message{
 display: none;
 color: #FF9115;
-font-family: Lato-Medium;
+font-family: Roboto-Medium;
 font-size: 22px;
 margin-top: -30px;
 margin-left: 25px;
@@ -421,13 +421,13 @@ z-index: 10;
 }
 .titlecont{
 color: #1F9BD7;
-font-family: Lato-Medium;
+font-family: Roboto-Medium;
 font-size: 15px;
 z-index: 10;	
 }
 .error-label{
 color: #0AA734;
-font-family: Lato-Light;
+font-family: Roboto-Light;
 }
 .line{
 width: 300px;
@@ -510,7 +510,7 @@ width: 80%;
 }
 @media only screen and (max-width: 1198px){
 .nav > li > .opcmenu {
-font-family: Lato-Medium;
+font-family: Roboto-Medium;
 font-size: 15px;
 padding-left: 25px;
 padding-right: 20px;

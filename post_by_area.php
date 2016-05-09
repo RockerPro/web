@@ -29,7 +29,7 @@ include 'app.php';
      
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.theme.css">
-
+	<?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body>
 	<div id="main" ng-app="app">
