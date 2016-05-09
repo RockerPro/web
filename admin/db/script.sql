@@ -85,16 +85,6 @@ CREATE PROCEDURE sp_elim_usu(
 id char(9)
 )delete from usuario where codusu = id;
 
-drop PROCEDURE if exists sp_editar_usu;
-CREATE PROCEDURE sp_editar_usu(	
- cod char(9),	
- nom varchar(100),
- mail varchar(50)
- )
-BEGIN
-       update usuario set nomusu=nom, email=mail where codusu=cod;
-	       	 select 'success' res;
-        END $$
 
 CREATE PROCEDURE sp_editar_usu(
  cod char(9),	
@@ -104,7 +94,6 @@ CREATE PROCEDURE sp_editar_usu(
 update usuario set nomusu=nom, email=mail where codusu=cod;
 select 'success' res;
 
-call sp_editar_usu('us0005','cristians bregante','cristians22@gmail.com');
 
 CREATE PROCEDURE sp_change_pass(
  cod char(9),
@@ -183,14 +172,14 @@ where state= 'A' order by fech_create desc limit 3;
 CREATE PROCEDURE sp_related_posts(
  cate varchar(40)
 )
-select codpost, left(title,65) as title, path_url from post 
+select codpost, left(title,65) as title, path_url,url_web from post 
 where category = cate and state = 'A'
 ORDER BY RAND() desc limit 5;
 
 CREATE PROCEDURE sp_xarea_posts(
  cate varchar(40)
 )
-select codpost, title, summary, path_url, fech_create, author from post 
+select codpost, title, summary, path_url, fech_create, author,url_web from post 
 where category = cate and state = 'A'
 ORDER BY fech_create desc;
 

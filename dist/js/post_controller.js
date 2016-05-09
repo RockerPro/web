@@ -15,28 +15,23 @@ var app = angular.module('app', []);
             });
         }
         $scope.load_items();
-        
-
-
-       
-
-    });          
+    });
 
     app.controller('postController', function($scope, $http)
     {
         var get = window.location.pathname.split('/web/novelty/')[1];
-            $http.get(base_url+"/web/admin/api/post.php?a=obtener&id="+get)
+        var cod = get.substr(get.length - 6);
+              console.log(cod);
+            $http.get(base_url+"/web/admin/api/post.php?a=obtener&id="+cod)
             .success(function (res)
             {
              if (res == '') {
                 $scope.view = 'display:none;';
                 $scope.error = 'display:block;';
-                console.log($scope.view);             
              }else{
                 $scope.item = res[0];
                 $scope.view = 'display:block;';
                 $scope.error = 'display:none;';
-                console.log($scope.view);
                 $scope.load_related($scope.item.category);     
              };
             });
@@ -47,6 +42,7 @@ var app = angular.module('app', []);
             .success(function (res)
             {
             $scope.relateds = res;
+            console.log(res);
             }); 
          }
 
@@ -68,6 +64,7 @@ var app = angular.module('app', []);
             .success(function (res)
             {
             $scope.relateds = res;
+            console.log(res);
             }); 
 
          

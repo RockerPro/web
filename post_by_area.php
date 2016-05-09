@@ -29,6 +29,7 @@ include 'app.php';
      
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.theme.css">
+
 </head>
 <body>
 	<div id="main" ng-app="app">
@@ -83,7 +84,7 @@ include 'app.php';
 		                    </div>
 		            	</div>
 	                   	<div class="col-md-12" ng-repeat="related in relateds" style="padding-bottom: 20px;">
-	                   	 	<a class="post_item" href="<?php echo $baseurl ?>novelty/{{related.codpost}}">
+	                   	 	<a class="post_item" href="<?php echo $baseurl ?>novelty/{{related.url_web}}-{{related.codpost}}">
 	                   	 	<div class="col-md-8">
 	                   	 		<p class="titpost2">{{related.title}}</p>
 	                   	 		<div class="summary" ng-bind-html-unsafe="related.summary"></div>
@@ -98,11 +99,11 @@ include 'app.php';
 	                   	 		<p class="nom_author">{{related.author}}</p>
 	                   	 		<div class="calen_post">
 	                   	 			<i class="fa fa-calendar-check-o"></i>
-	                   	 			{{related.fech_create}} 
+	                   	 			{{related.fech_create}}
 	                   	 		</div>
 	                   	 	</div>
-	                   	</div> 
-		            </div>            
+	                   	</div>
+		            </div>
 				</div>
 			</div>
 			<!-- seccion novedades -->

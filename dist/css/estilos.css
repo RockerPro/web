@@ -97,13 +97,14 @@ body{
 	margin-bottom: 5px;
     margin-top: 5px;
     font-weight: bold;
+    text-align: center;
 }
 .contnove a{
 	font-size: 13px;
 	color: #005A97;
 }
 .imgnove{
-    width: 300px;
+    width: 100%;
     height: 116px;
     margin-right: 10px;
 }

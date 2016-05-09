@@ -18,12 +18,21 @@ include 'app.php';
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.sgtel.com">
     <meta property="og:site_name" content="SGTEL">
+	<meta property="fb:admins" content="{100008345413407}"/>
     <title>SGTEL</title>
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/bootstrap.css">
 	<link rel="shortcut icon" href="<?php echo $baseurl;?>dist/img2/icono.png">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/estilos.css">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/style.css">
 	<link rel="stylesheet" href="<?php echo $baseurl;?>bower_components/components-font-awesome/css/font-awesome.min.css">
+	    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </head>
 <body ng-app="app">
 	<div id="main"  ng-controller="postController">
@@ -76,23 +85,26 @@ include 'app.php';
 					<div class="white-tit">
 						<p class="titpost">{{item.title}}</p>
 					</div>
-		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0;">		            	
+		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0;">
 		            	<hr>
 		            	<div class="autor col-md-6">
 		            		<img class="img-circle img-autor" ng-src="<?php echo $baseurl?>dist/img2/line-icon-1.png" 
-		            		alt="icono autor">		            			            		
-		            		<p class="nom-autor">{{item.author}}</p>		            			
+		            		alt="icono autor">
+		            		<p class="nom-autor">{{item.author}}</p>
 		            	</div>
-		            	<div class="fecha_post col-md-6">		            		
+		            	<div class="fecha_post col-md-6">
 		            		<p class="pull-right">
 		            			<i class="fa fa-calendar-check-o"></i>
 		            			{{item.fech_create}}
-		            		</p>	
+		            		</p>
 		            	</div>
 		            	<div class="post-cont row">
 		            		<div ng-bind-html-unsafe="item.content"></div>
 		            	</div>
-		            </div>		            
+		            	<div class="col-md-12">
+	                   	 		<div class="fb-comments" data-href="<?php echo $baseurl ?>novelty/<?php echo $_GET['id']; ?>" data-width="100%" data-numposts="5"></div>
+	                   	 	</div>
+		            </div>
 				</div>
 			</div>
 			<div class="col-md-12"   style="margin-top: 55px;margin-bottom:25px;overflow: hidden;{{error}}">
