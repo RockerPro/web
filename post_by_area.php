@@ -34,47 +34,9 @@ include 'app.php';
 <body>
 	<div id="main" ng-app="app">
 		
-		<header class="cd-main-header">
-			<header class="cabecera">
-				<div class="row">
-					<div class="col-md-1 pull-left">
-						<a href="./"><img class="headlogo" src="<?php echo $baseurl;?>dist/img2/logo.png" alt="logo sgtel"></a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
-						<ul class="listdate">
-							<li>Av. Nicolas Arriola 290 Oficina 311.</li>
-							<li>(+51 1) 340 - 3401</li>
-						</ul>
-					</div>
-					<div class="col-md-2 pull-right">
-						<ul class="listredes">
-							<li class="fb">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li class="tw">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li class="ln">
-								<a href="https://www.linkedin.com/company/sgtel-sac" target="_blank">
-									<i class="fa fa-linkedin"></i>
-								</a>
-							</li>
-						</ul>
-					</div>				
-				</div>
-			</header>
-		
-
-		<ul class="cd-header-buttons">
-			<li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
-		</ul>
-		</header>
+		<?php include 'layouts/cabecera.php' ?>
 		<main class="cd-main-content" ng-controller="postsAreaController">
-			<div class="col-md-9" style="margin-top: 55px;margin-bottom:25px;overflow: hidden;">
+			<div class="col-md-9" style="margin-bottom:25px;overflow: hidden;">
 				<div class="col-md-12" style="margin-top:55px;">					
 		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		            	<div class="contvalor">
@@ -155,31 +117,8 @@ include 'app.php';
                 </ul>
             </li>
 
-			<li class="has-children">
-				<a>NOVEDADES</a>
-				<ul class="cd-nav-icons is-hidden">
-					<li class="go-back"><a href="#0">Volver</a></li>
-					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/infraestructura">
-							Infraestructura
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/soluciones_moviles">
-							Soluciones Móviles
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/consultoria_emprendimiento">
-							Consultoría y Emprendimiento
-							<p></p>
-						</a>
-					</li>
-				</ul>
+			<li>
+				<a class="selected">NOVEDADES</a>
 			</li>
 
 			<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
@@ -223,11 +162,6 @@ include 'app.php';
   
             });
     </script> 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            
-  
-            });
-    </script>
+    <?php include 'layouts/chat.php'; ?>
 </body>
 </html>

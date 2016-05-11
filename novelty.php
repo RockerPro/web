@@ -30,47 +30,9 @@ include 'app.php';
 <body ng-app="app">
 	<div id="main"  ng-controller="postController">
 		
-		<header class="cd-main-header">
-			<header class="cabecera">
-				<div class="row">
-					<div class="col-md-1 pull-left">
-						<a href="./"><img class="headlogo" src="<?php echo $baseurl;?>dist/img2/logo.png" alt="logo sgtel"></a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
-						<ul class="listdate">
-							<li>Av. Nicolas Arriola 290 Oficina 311.</li>
-							<li>(+51 1) 340 - 3401</li>
-						</ul>
-					</div>
-					<div class="col-md-2 pull-right">
-						<ul class="listredes">
-							<li class="fb">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li class="tw">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li class="ln">
-								<a href="https://www.linkedin.com/company/sgtel-sac" target="_blank">
-									<i class="fa fa-linkedin"></i>
-								</a>
-							</li>
-						</ul>
-					</div>				
-				</div>
-			</header>
-		
-
-		<ul class="cd-header-buttons">
-			<li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
-		</ul>
-		</header>		
+		<?php include 'layouts/cabecera.php' ?>		
 		<main class="cd-main-content">
-			<div class="col-md-9"   style="margin-top: 55px;margin-bottom:25px;overflow: hidden;{{view}}">
+			<div class="col-md-9"   style="margin-bottom:25px;overflow: hidden;{{view}}">
 				<div class="col-md-12" style="margin-top:55px;">
 					<img class="imgpost" 
 					ng-src="<?php echo $baseurl?>admin/public/dist/img/posts/{{item.path_url}}"
@@ -100,7 +62,7 @@ include 'app.php';
 		            </div>
 				</div>
 			</div>
-			<div class="col-md-12"   style="margin-top: 55px;margin-bottom:25px;overflow: hidden;{{error}}">
+			<div class="col-md-12"   style="margin-bottom:25px;overflow: hidden;{{error}}">
 				<div class="col-md-12" style="margin-top:55px;">
 					<h1 align="center">404! Pagina no encontrada.</h1>
 					<img style="margin:0 auto;" src="<?php echo $baseurl?>dist/img2/404.png" alt="img 404" class="img-responsive">
@@ -130,7 +92,7 @@ include 'app.php';
 		<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
 			<li><a href="<?php echo $baseurl?>">INICIO</a></li>
-			<li><a href="acerca_sgtel.php">ACERCA DE SGTEL</a></li>
+			<li><a href="<?php echo $baseurl?>acerca_sgtel">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
 				<a>ÁREAS DE NEGOCIO </a>
@@ -200,11 +162,6 @@ include 'app.php';
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>
 	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script> <!-- Resource jQuery -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            
-  
-            });
-    </script>
+    <?php include 'layouts/chat.php'; ?>
 </body>
 </html>

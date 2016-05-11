@@ -14,7 +14,7 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
               params.email = $scope.item.email;  
               params.pass = $scope.item.pass;
                 $http({
-                  url: base_url +'/web/admin/api/usuarios.php',
+                  url: base_url +'/admin/api/usuarios.php',
                   method: "get",
                   params: params
               })   
@@ -34,7 +34,7 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
         $scope.items = [];
         $scope.load_items = function()
         {
-            $http.get(base_url+"/web/admin/api/usuarios.php?a=listar")
+            $http.get(base_url+"/admin/api/usuarios.php?a=listar")
             .success(function (res)
             {
              $scope.items = res;
@@ -57,7 +57,7 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
              closeOnCancel: true }, 
           function(isConfirm){ 
              if (isConfirm) {
-                $http.delete(base_url +'/web/admin/api/usuarios.php?a=eliminar&id=' + id)
+                $http.delete(base_url +'/admin/api/usuarios.php?a=eliminar&id=' + id)
                 .success(function(res) {
                   $scope.items.splice(index, 1);
                 })
@@ -74,7 +74,7 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
 			    $scope.item = {};
 			  }
 
-		$http.get(base_url+"/web/admin/api/usuarios.php?a=obtener")
+		$http.get(base_url+"/admin/api/usuarios.php?a=obtener")
             .success(function (res)
             {
                 $scope.datos = res[0];
@@ -87,7 +87,7 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
               params.nom = $scope.datos.nomusu;
               params.email = $scope.datos.email;
                 $http({
-                  url: base_url +'/web/admin/api/usuarios.php',
+                  url: base_url +'/admin/api/usuarios.php',
                   method: "get",
                   params: params
               })   
@@ -106,7 +106,7 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
               params.pass1 = $scope.pwd.pass1;
               params.pass2 = $scope.pwd.pass2;
                 $http({
-                  url: base_url +'/web/admin/api/usuarios.php',
+                  url: base_url +'/admin/api/usuarios.php',
                   method: "get",
                   params: params
               })   

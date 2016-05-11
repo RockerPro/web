@@ -1,6 +1,6 @@
 
 			<div class="col-md-3 novedades"
-			style="margin-top: 150px;margin-bottom:25px;overflow: hidden;">				
+			style="margin-top: 55px;margin-bottom:25px;overflow: hidden;">				
 				<p class="tit_suscrip">SUSCRIBETE POR EMAIL A NUESTROS ARTÍCULOS</p>
 				<div class="form" style="overflow: hidden;">
 					<form role="form" id="form_sus">

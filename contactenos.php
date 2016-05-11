@@ -34,45 +34,7 @@ include 'app.php';
 <body>
 	<div id="main">
 		
-		<header class="cd-main-header">
-			<header class="cabecera">
-				<div class="row">
-					<div class="col-md-1 pull-left">
-						<a href="./"><img class="headlogo" src="<?php echo $baseurl;?>dist/img2/logo.png" alt="logo sgtel"></a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
-						<ul class="listdate">
-							<li>Av. Nicolas Arriola 290 Oficina 311.</li>
-							<li>(+51 1) 340 - 3401</li>
-						</ul>
-					</div>
-					<div class="col-md-2 pull-right">
-						<ul class="listredes">
-							<li class="fb">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li class="tw">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li class="ln">
-								<a href="https://www.linkedin.com/company/sgtel-sac" target="_blank">
-									<i class="fa fa-linkedin"></i>
-								</a>
-							</li>
-						</ul>
-					</div>				
-				</div>
-			</header>
-		
-
-		<ul class="cd-header-buttons">
-			<li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
-		</ul>
-		</header>
+		<?php include 'layouts/cabecera.php' ?>
 		<main class="cd-main-content">
 			<div class="col-md-12" style="overflow: hidden;">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 direcc">					
@@ -86,8 +48,7 @@ include 'app.php';
 				</div>
 				<div class="col-md-12 col-sm-12 col-xs-6">
 				<h3>Colombia</h3>
-				<p>Av. Nicolás Arriola 290, Of. 311, <br>
-				Carrera 106 N° 16-86, interior <br>
+				<p>Carrera 106 N° 16-86, interior <br>
 				2; Of. 503, Bogotá, Fortibón <br>
 				Centenario <br>
 				T. (57) 3133640282</p>
@@ -95,15 +56,14 @@ include 'app.php';
 				<div class="col-xs-3 visible-xs"></div>
 				<div class="col-md-12 col-sm-12 col-xs-6">
 				<h3>EEUU</h3>
-				<p>Av. Nicolás Arriola 290, Of. 311, <br>
-				5551 Courtyard  <br>
+				<p>5551 Courtyard  <br>
 				Dr. Margate FL <br>
 				Zip 33063 <br>
 				T. (001) - (305) 450 2570</p>
 				</div>
 			</div>	
 			<div class="col-lg-6 col-md-6 col-sm-9 col-xs-12 formu">
-				<div class="col-md-12" style="margin-top:55px;">					
+				<div class="col-md-12">					
 		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		            	<div class="contvalor">
 		            		<p class="titsec">¿CONVERSAMOS?</p>
@@ -164,7 +124,7 @@ include 'app.php';
 			<li><a href="<?php echo $baseurl ?>acerca_sgtel">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
-				<a  class="selected">ÁREAS DE NEGOCIO </a>
+				<a>ÁREAS DE NEGOCIO </a>
 
 				<ul class="cd-nav-icons is-hidden">
 					<li class="go-back"><a href="#0">Volver</a></li>
@@ -218,7 +178,7 @@ include 'app.php';
 				</ul>
 			</li>
 
-			<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
+			<li><a class="selected" href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
 		</ul> <!-- primary-nav -->
 	</nav> <!-- cd-nav -->
 		
@@ -258,11 +218,6 @@ include 'app.php';
   
             });
     </script> 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            
-  
-            });
-    </script>
+    <?php include 'layouts/chat.php'; ?>
 </body>
 </html>

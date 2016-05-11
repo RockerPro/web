@@ -29,61 +29,24 @@ include 'app.php';
      
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.theme.css">
+    <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/animate.css">
     <?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body>
 	<div id="main" ng-app="app">
 		
-		<header class="cd-main-header">
-			<header class="cabecera">
-				<div class="row">
-					<div class="col-md-1 pull-left">
-						<a href="./"><img class="headlogo" src="<?php echo $baseurl;?>dist/img2/logo.png" alt="logo sgtel"></a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
-						<ul class="listdate">
-							<li>Av. Nicolas Arriola 290 Oficina 311.</li>
-							<li>(+51 1) 340 - 3401</li>
-						</ul>
-					</div>
-					<div class="col-md-2 pull-right">
-						<ul class="listredes">
-							<li class="fb">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li class="tw">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li class="ln">
-								<a href="https://www.linkedin.com/company/sgtel-sac" target="_blank">
-									<i class="fa fa-linkedin"></i>
-								</a>
-							</li>
-						</ul>
-					</div>				
-				</div>
-			</header>
-		
-
-		<ul class="cd-header-buttons">
-			<li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
-		</ul>
-		</header>
+		<?php include 'layouts/cabecera.php' ?>
 		<main class="cd-main-content">
-			<div class="col-md-9" style="margin-top: 55px;margin-bottom:25px;overflow: hidden;">
+			<div class="col-md-9" style="margin-bottom:25px;overflow: hidden;">
 				<div class="col-md-12" style="margin-top:55px;">					
 		            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-		            	<div class="subti">
+		            	<div class="subti wow zoomIn" data-wow-delay="0.3s">
 		            		<p class="titsec">ENERGÍA</p>
 			                <div class="divider divider_gray ">
 			                    <span></span><span></span>
 			                </div>
 		            	</div>
-	                    <div class="col-md-12" style="padding-left: 50px;">
+	                    <div class="col-md-12 wow fadeInLeft" data-wow-delay="0.6s" style="padding-left: 50px;">
                                    <ul  class="textarea listaserv">
                                      <li class="itemm2" data-cont="e1" style="color:#004375;list-style:url(<?php echo $baseurl;?>dist/img2/punto.png);">Sistemas eléctricos de baja tensión  </li>
                                      <li class="itemm2" data-cont="e2">Sistemas Eléctricos de Media tensión </li>
@@ -94,7 +57,7 @@ include 'app.php';
                                    </ul>
                                    <br><br>
                                </div>
-                               <div class="col-md-12" style="padding-left: 50px;">
+                               <div class="col-md-12 wow fadeInRight" data-wow-delay="0.9s" style="padding-left: 50px;">
                                     <div class="hidee2" id="e1">
                                         Diseño y ejecución de proyectos de Sistemas Eléctricos de Baja tensión  <br>
                                         • Suministro de equipos para Sistemas Eléctricos de Baja Tensión.  <br>
@@ -145,22 +108,22 @@ include 'app.php';
                                     </div>
                                </div> 
 		            </div>
-		            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-	                    <img class="img-responsive imgdet pull-right" src="<?php echo $baseurl;?>dist/img2/novedades/descarga.svg" alt="imagen energía">
+		            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow zoomIn" data-wow-delay="1.5ss">
+	                    <img class="img-responsive imgdet pull-right" src="<?php echo $baseurl;?>dist/img2/areas/energ.jpg" alt="imagen energía">
 		            </div>		            
 				</div>
 				<div class="col-md-12" style="margin-top:35px;">
-					<div class="col-md-4" style="overflow:hidden;">
-	                    <img class="img-responsive imgdet pull-left" src="<?php echo $baseurl;?>dist/img2/novedades/descarga.svg" alt="imagen energía">
+					<div class="col-md-4 wow zoomIn" data-wow-delay="1.5s" style="overflow:hidden;">
+	                    <img class="img-responsive imgdet pull-left" src="<?php echo $baseurl;?>dist/img2/areas/comu.jpg" alt="imagen energía">
 		            </div>
 		            <div class="col-md-8">
-		            	<div class="subti2">
+		            	<div class="subti2 wow zoomIn" data-wow-delay="0.3s">
 		            		<p class="titsec">COMUNICACIONES</p>
 			                <div class="divider divider_gray ">
 			                    <span></span><span></span>
 			                </div>
 		            	</div>
-	                    <div class="col-md-12">
+	                    <div class="col-md-12 wow fadeInRight" data-wow-delay="0.6s">
                                    <ul  class="textarea listaserv">
                                      <li class="itemm" data-cont="i1" style="color:#004375;list-style:url(<?php echo $baseurl;?>dist/img2/punto.png);">Cableado estructurado</li>
                                      <li class="itemm" data-cont="i2">Fibra óptica</li>
@@ -173,7 +136,7 @@ include 'app.php';
                                    </ul>
                                    <br><br>
                                </div>
-                               <div class="col-md-12" style="padding-left: 50px;">
+                               <div class="col-md-12 wow fadeInLeft" data-wow-delay="0.9s" style="padding-left: 50px;">
                                     <div class="hidee" id="i1">Ofrecemos soluciones y productos para el cableado de su oficina u edificio, con el fin de ofrecerle una conectividad de todos tus equipos activos, de diferentes o igual tecnología, permitiendo la integración con los diferentes servicios que disponga: telefonía, datos, seguridad, domótica, etc…, es decir, todo lo referente al cableado voz-datos para redes de comunicaciones.</div>
                                     <div class="hidee" id="i2">
                                         Nos especializamos en la más avanzada tecnología relacionada con la conectividad, para facilitar la transmisión de datos, voz y video de alto desempeño. Como especialistas en el campo de la fibra óptica, ponemos a su disposición nuestra amplia experiencia con el fin de que usted obtenga los beneficios con soluciones integrales totalmente probadas para seleccionar los mejores productos del mercado. <br>
@@ -290,7 +253,7 @@ include 'app.php';
 			<li><a href="<?php echo $baseurl ?>acerca_sgtel">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
-                <a>ÁREAS DE NEGOCIO </a>
+                <a class="selected">ÁREAS DE NEGOCIO </a>
 
                 <ul class="cd-nav-icons is-hidden">
                     <li class="go-back"><a href="#0">Volver</a></li>
@@ -385,11 +348,10 @@ include 'app.php';
   
             });
     </script> 
+     <script src="<?php echo $baseurl;?>dist/js/wow.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            
-  
-            });
+        new WOW().init();
     </script>
+    <?php include 'layouts/chat.php'; ?>
 </body>
 </html>

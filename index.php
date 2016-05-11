@@ -23,108 +23,61 @@ include 'app.php';
 	<link rel="shortcut icon" href="<?php echo $baseurl;?>dist/img2/icono.png">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/estilos.css">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/style.css">
+    <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/style3.css">
+    <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/animate.css">
 	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/css/menu/demo.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/css/menu/style_alt.css" />
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/css/menu/style_ie.css" />
-	<![endif]-->
-	<!-- jQuery -->
 	<!-- Important Owl stylesheet -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.carousel.css">
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.theme.css">
+    <!-- slider -->
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/slider/css/navstylechange.css" media="screen" />
+    
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/slider/css/settings.css" media="screen" />
 	<?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body ng-app="app">
 	<div id="main">
 		
-		<header class="cd-main-header">
-			<header class="cabecera">
-				<div class="row">
-					<div class="col-md-1 pull-left">
-						<a href="./"><img class="headlogo" src="<?php echo $baseurl;?>dist/img2/logo.png" alt="logo sgtel"></a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs pull-right">
-						<ul class="listdate">
-							<li>Av. Nicolas Arriola 290 Oficina 311.</li>
-							<li>(+51 1) 340 - 3401</li>
-						</ul>
-					</div>
-					<div class="col-md-2 pull-right">
-						<ul class="listredes">
-							<li class="fb">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li class="tw">
-								<a href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li class="ln">
-								<a href="https://www.linkedin.com/company/sgtel-sac" target="_blank">
-									<i class="fa fa-linkedin"></i>
-								</a>
-							</li>
-						</ul>
-					</div>				
-				</div>
-			</header>
-		
-
-		<ul class="cd-header-buttons">
-			<li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
-		</ul>
-		</header>
-		<main class="cd-main-content">
-			<div class="demo-2">
-				<section id="jms-slideshow" class="jms-slideshow">
-				<div class="step" data-color="color-1" data-x="2000" data-y="1000" data-z="3000" data-rotate="-20">
-					<div class="jms-content">
-						<h3>Mejoramos la calidad  de tus redes.</h3>
-						<p>Te acompañamos y asesoramos durante todo el proyecto para que puedas lograr tus objetivos
-							y le garantizamos todo el tiempo que desee.</p>
-					</div>
-				</div>
-				<div class="step" data-color="color-2" data-x="1000" data-z="2000" data-rotate="20">
-					<div class="jms-content">
-						<h3>Sin Innovación, no hay futuro</h3>
-						<p>El mundo cambia y las soluciones empresariales también, por eso la innovación  
-						tecnológica nos permite brindar soluciones móviles que automaticen con éxito tus procesos críticos del negocio.</p>
-					</div>
-				</div>
-				<div class="step" data-color="color-3" data-x="2000" data-y="1500" data-z="1000" data-rotate="20">
-					<div class="jms-content">
-						<h3>Generamos Resultados</h3>
-						<p>Brindamos soluciones integrales para impulsar tu negocio generando valor agregado 
-						para tus clientes,mediante la consultoría empresarial.</p>
-					</div>
-				</div>
-			</section>
-			</div>
+		<?php include 'layouts/cabecera.php'; ?>
+    <?php include 'layouts/slider.php'; ?> 
+		<main class="cd-main-content">					
 			<div class="col-md-12" style="margin-top:25px;">
 			<div class="col-md-9">
 				<div class="tres">
-				<div class="col-md-4 col-sm-4 col-xs-12">
-					<img class="imgarea" src="<?php echo $baseurl;?>dist/img2/areas/infra.jpg" alt="infraestuctura">
-					<div class="title">
-						<p>INFRAESTUCTURA</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 col-xs-12">
-					<img class="imgarea" src="<?php echo $baseurl;?>dist/img2/areas/mobil.jpg" alt="soluciones mobiles">
-					<div class="title">
-						<p>SOLUCIONES MÓVILES</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 col-xs-12">
-					<img class="imgarea" src="<?php echo $baseurl;?>dist/img2/areas/consul.jpg" alt="consultoria">
-					<div class="title">
-						<p>CONSULTORÍA Y EMPRENDIMIENTO</p>
-					</div>
-				</div>
+				<ul class="ch-grid">
+					<li>
+						<a href="<?php echo $baseurl?>areas_negocio/infraestructura">
+							<div class="ch-item ch-img-1  wow bounceIn" data-wow-delay="0.3s">
+								<div class="ch-info">
+									<h3>INFRAESTUCTURA</h3>
+									<p>Ver más</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo $baseurl?>areas_negocio/soluciones_moviles">
+							<div class="ch-item ch-img-2  wow bounceIn" data-wow-delay="0.6s">
+								<div class="ch-info">
+									<h3>SOLUCIONES MÓVILES</h3>
+									<p>Ver más</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo $baseurl?>areas_negocio/consultoria_emprendimiento">
+							<div class="ch-item ch-img-3  wow bounceIn" data-wow-delay="0.9s">
+								<div class="ch-info">
+									<h3>CONSULTORÍA Y EMPRENDIMIENTO</h3>
+									<p>Ver más</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
 				</div>
 				<div class="col-md-12 contcli">
                                <p class="titsec">CLIENTES</p>
@@ -277,19 +230,18 @@ include 'app.php';
 	</div> 
 
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="<?php echo $baseurl;?>bower_components/angular/angular.js"></script>
+    <script src="<?php echo $baseurl;?>bower_components/angular/angular.min.js"></script>
     <script src="<?php echo $baseurl;?>dist/js/post_controller.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script> <!-- Resource jQuery -->
-	<!-- jmpress plugin -->
-		<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/menu/jmpress.js"></script>
-		<!-- jmslideshow plugin : extends the jmpress plugin -->
-		<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/menu/jquery.jmslideshow.js"></script>
-
+	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script>
 	<!-- Include js plugin -->
-    <script src="<?php echo $baseurl;?>dist/carousel/owl.carousel.js"></script>
+    <script src="<?php echo $baseurl;?>dist/carousel/owl.carousel.min.js"></script>
+    <script src="<?php echo $baseurl;?>dist/js/wow.min.js"></script>
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="<?php echo $baseurl;?>dist/slider/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="<?php echo $baseurl;?>dist/slider/js/jquery.themepunch.revolution.min.js"></script>
     <script type="text/javascript">
+    	var revapi;
         $(document).ready(function() {
             /*slider clientes*/
 		 $("#owl-demo").owlCarousel({
@@ -311,25 +263,22 @@ include 'app.php';
           responsiveRefreshRate: 200,
 
         }); 
-  
+
+		//slider
+		revapi = jQuery('.tp-banner').revolution(
+				{
+					delay:9000,
+              startwidth:1170,
+              startheight:500,
+              hideThumbs:10,
+              fullWidth:"on",
+              forceFullWidth:"on"
+
+				});
+  		
             });
+        new WOW().init();
     </script>
-    <script type="text/javascript">
-			$(function() {
-			
-				var jmpressOpts	= {
-					animation		: { transitionDuration : '6.9s' }
-				};
-				
-				$( '#jms-slideshow' ).jmslideshow( $.extend( true, { jmpressOpts : jmpressOpts }, {
-					autoplay	: true,
-					interval	: 6000,
-					bgColorSpeed: '1.9s',
-					arrows		: true
-				}));
-				
-				
-			});
-		</script>
+		<?php include 'layouts/chat.php'; ?>
 </body>
 </html>

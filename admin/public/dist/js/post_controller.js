@@ -22,7 +22,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
 
       // Provide image and alt text for the image dialog
       if (meta.filetype == 'image') {
-        callback('web/public/dist/img/posts/pt0001.jpg', {alt: 'My alt text'});
+        callback('public/dist/img/posts/pt0001.jpg', {alt: 'My alt text'});
       }
 
       // Provide alternative source and posted for the media dialog
@@ -49,7 +49,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
         $scope.items = [];
         $scope.load_items = function()
         {
-            $http.get(base_url+"/web/admin/api/post.php?a=listar")
+            $http.get(base_url+"/admin/api/post.php?a=listar")
             .success(function (res)
             {
              $scope.items = res;
@@ -59,7 +59,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
 
         $scope.change_state = function(item,index,state)
         {
-            $http.get(base_url+"/web/admin/api/post.php?a=state&id="+item)
+            $http.get(base_url+"/admin/api/post.php?a=state&id="+item)
             .success(function (res)
             {
              $scope.load_items();
@@ -80,7 +80,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
              closeOnCancel: true }, 
           function(isConfirm){ 
              if (isConfirm) {
-                $http.delete(base_url +'/web/admin/api/post.php?a=eliminar&id=' + id)
+                $http.delete(base_url +'/admin/api/post.php?a=eliminar&id=' + id)
                 .success(function(res) {
                   $scope.items.splice(index, 1);
                        
@@ -93,9 +93,9 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
              }
           });          
        }
-       var get = window.location.pathname.split('/web/admin/edit/post/')[1];
+       var get = window.location.pathname.split('/admin/edit/post/')[1];
 
-            $http.get(base_url+"/web/admin/api/post.php?a=obtener&id="+get)
+            $http.get(base_url+"/admin/api/post.php?a=obtener&id="+get)
             .success(function (res)
             {
              if (res == '') {
@@ -117,7 +117,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
             $scope.item.img = file;
               file.upload = Upload.upload({
                 method: 'POST',
-                url: '../../../../web/admin/api/post.php?a=editar&id=' + get,
+                url: '../../../../admin/api/post.php?a=editar&id=' + get,
                 data: $scope.item,
               });
 
@@ -143,7 +143,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
             $scope.item.img = file;
             file.upload = Upload.upload({
               method: 'POST',
-              url: '../../../web/admin/api/post.php?a=registrar',
+              url: '../../../admin/api/post.php?a=registrar',
               data: $scope.item,
             });
 

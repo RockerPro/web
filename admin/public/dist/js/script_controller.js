@@ -10,7 +10,7 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
         $scope.item = [];
         $scope.load_item = function()
         {
-            $http.get(base_url+"/web/admin/api/scripts.php?a=listar")
+            $http.get(base_url+"/admin/api/scripts.php?a=listar")
             .success(function (res)
             {
              $scope.item = res[0];
@@ -24,7 +24,7 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
               params.a = 'editar';
               params.cont = $scope.item.content;
                 $http({
-                  url: base_url +'/web/admin/api/scripts.php',
+                  url: base_url +'/admin/api/scripts.php',
                   method: "get",
                   params: params
               })   
