@@ -1,6 +1,6 @@
 'use strict';
 
-var base_url=location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
+var base_url=location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '/web/');
 var app = angular.module('app', ['datatables','hSweetAlert']);
               
     app.controller('userController', function($scope, $http,sweet, $location, $timeout)

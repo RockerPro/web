@@ -16,7 +16,7 @@ var app = angular.module('app', []);
     });
     app.controller('postController', function($scope, $http)
     {
-        var get = window.location.pathname.split('/novelty/')[1];
+        var get = window.location.pathname.split('/novedades/')[1];
         var cod = get.substr(get.length - 6);
               console.log(cod);
             $http.get(base_url+"/admin/api/post.php?a=obtener&id="+cod)

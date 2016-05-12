@@ -51,9 +51,8 @@ include '../../../app/app2.php'; ?>
             <div class="box-footer">
 						<a href="<?php echo $baseurl; ?>users"
 						class="btn btn-danger pull-left">Cancelar</a>
-						<a class="btn btn-success pull-right"
-						ng-click="addUser()">Crear
-						</a>
+						<input type="submit" class="btn btn-success pull-right"
+						ng-click="addUser()" value="Crear">						
 			</div>
 			</form>
             <!-- /.box-body -->

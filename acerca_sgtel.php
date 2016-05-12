@@ -26,7 +26,6 @@ include 'app.php';
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/style5.css">    
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/animate.css">
 	<link rel="stylesheet" href="<?php echo $baseurl;?>bower_components/components-font-awesome/css/font-awesome.min.css">
-	<?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body>
 	<div id="main">
@@ -261,8 +260,7 @@ include 'app.php';
 
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script> <!-- Resource jQuery -->
+	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script>
     <script src="<?php echo $baseurl;?>dist/js/wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();

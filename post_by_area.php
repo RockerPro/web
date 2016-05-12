@@ -29,7 +29,6 @@ include 'app.php';
      
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.theme.css">
-	<?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body>
 	<div id="main" ng-app="app">
@@ -46,7 +45,7 @@ include 'app.php';
 		                    </div>
 		            	</div>
 	                   	<div class="col-md-12" ng-repeat="related in relateds" style="padding-bottom: 20px;">
-	                   	 	<a class="post_item" href="<?php echo $baseurl ?>novelty/{{related.url_web}}-{{related.codpost}}">
+	                   	 	<a class="post_item" href="<?php echo $baseurl ?>novedades/{{related.url_web}}-{{related.codpost}}">
 	                   	 	<div class="col-md-8">
 	                   	 		<p class="titpost2">{{related.title}}</p>
 	                   	 		<div class="summary" ng-bind-html-unsafe="related.summary"></div>
@@ -129,14 +128,13 @@ include 'app.php';
 	</div> 
 
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
     <script src="<?php echo $baseurl;?>dist/js/post_controller.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script> <!-- Resource jQuery -->
+	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script>
 	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/areas.js"></script>
 	<!-- Include js plugin -->
-    <script src="<?php echo $baseurl;?>dist/carousel/owl.carousel.js"></script>
+    <script src="<?php echo $baseurl;?>dist/carousel/owl.carousel.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             /*slider clientes*/

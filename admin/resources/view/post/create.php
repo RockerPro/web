@@ -37,7 +37,7 @@ include '../../../app/app2.php'; ?>
 						<input type="file" ngf-select ng-model="picFile" name="file"    
 							accept="image/*" ngf-max-size="2MB" required
 							ngf-model-invalid="errorFile">
-							<p class="help-block">Dimenciones: px de alto x px de ancho</p>
+							<p class="help-block">Dimenciones: 950px de ancho x 350px de alto</p>
 							<i ng-show="myForm.file.$error.required" style="color:red">* Requerido</i><br>
 							<i ng-show="myForm.file.$error.maxSize"  style="color:red">Archivo demasiado grande 
 							(@{{errorFile.size / 1000000|number:1}}MB): máximo  2MB</i>
@@ -59,6 +59,15 @@ include '../../../app/app2.php'; ?>
 									    <input type="text" class="form-control" name="title" ng-model="item.title" required>
 								        <i ng-show="myForm.title.$error.required" style="color:red">* Requerido</i>
 									 </div>
+									 <div class="form-group">
+									    <label class="control-label">Categoría</label>
+									    <select name="category" class="form-control" required ng-model="select_cat">
+									    	<option value="Infraestructura">Infraestructura</option>
+									    	<option value="Soluciones Móviles">Soluciones Móviles</option>
+									    	<option value="Consuloría y Emprendimiento">Consuloría y Emprendimiento</option>
+									    </select>
+								        <i ng-show="myForm.category.$error.required" style="color:red">* Requerido</i>
+									 </div>
 								     <div class="form-group">
 									    <label class="control-label">Resumen</label>
 									    <textarea ui-tinymce="tinymceOptions" ng-model="item.summary" name="summary" class="form-control nores"cols="30" rows="3" required></textarea>
@@ -68,16 +77,7 @@ include '../../../app/app2.php'; ?>
 									    <label class="control-label">Contenido</label>
 									    <textarea ui-tinymce="tinymceOptions" ng-model="item.content" name="content" class="form-control nores" cols="30" rows="10" required></textarea>
 								        <i ng-show="myForm.content.$error.required" style="color:red">* Requerido</i>
-									 </div>
-								     <div class="form-group">
-									    <label class="control-label">Categoría</label>
-									    <select name="category" class="form-control" required ng-model="select_cat">
-									    	<option value="Infraestructura">Infraestructura</option>
-									    	<option value="Soluciones Móviles">Soluciones Móviles</option>
-									    	<option value="Consuloría y Emprendimiento">Consuloría y Emprendimiento</option>
-									    </select>
-								        <i ng-show="myForm.category.$error.required" style="color:red">* Requerido</i>
-									 </div>
+									 </div>								     
                             </div>
             </div>
             <div class="box-footer">

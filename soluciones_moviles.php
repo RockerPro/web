@@ -30,7 +30,6 @@ include 'app.php';
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.theme.css">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/animate.css">
-    <?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body>
 	<div id="main" ng-app="app">
@@ -170,9 +169,6 @@ include 'app.php';
                                       <div class="item">
                                       <img class="lazyOwl client" data-src="<?php echo $baseurl;?>dist/img2/clients/reniec.png" alt="cliente15">
                                       </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="<?php echo $baseurl;?>dist/img2/clients/telefonica.png" alt="cliente16">
-                                      </div>
                                       <div class="item visible-md">
                                       </div>
                                       <div class="item">
@@ -263,14 +259,13 @@ include 'app.php';
 	</div> 
 
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="<?php echo $baseurl;?>bower_components/angular/angular.js"></script>
+    <script src="<?php echo $baseurl;?>bower_components/angular/angular.min.js"></script>
     <script src="<?php echo $baseurl;?>dist/js/post_controller.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script> <!-- Resource jQuery -->
+	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script>
 	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/areas.js"></script>
 	<!-- Include js plugin -->
-    <script src="<?php echo $baseurl;?>dist/carousel/owl.carousel.js"></script>
+    <script src="<?php echo $baseurl;?>dist/carousel/owl.carousel.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             /*slider clientes*/

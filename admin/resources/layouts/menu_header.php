@@ -57,8 +57,8 @@
         <?php if ($_SESSION['rol']== "A") {
         ?>
         <li id="ac4"><a href="users"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
-        <?php } ?>
         <li id="ac5"><a href="analytics"><i class="fa fa-line-chart"></i> <span>Analytics</span></a></li>
+        <?php } ?>
       </ul>
     </section>
   </aside>

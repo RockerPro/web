@@ -1,6 +1,6 @@
 RewriteEngine on
 Rewriterule ^news/category/(.+) post_by_area.php?id=$1
-Rewriterule ^novelty/(.+) novelty.php?id=$1
+Rewriterule ^novedades/(.+) novelty.php?id=$1
 Rewriterule ^inicio index.php
 Rewriterule ^acerca_sgtel acerca_sgtel.php
 Rewriterule ^areas_negocio/infraestructura infraestructura.php
@@ -9,3 +9,6 @@ Rewriterule ^areas_negocio/consultoria_emprendimiento consultoria_emprendimiento
 Rewriterule ^contactenos contactenos.php
 RewriteCond %{REQUEST_FILENAME} !-f
 ErrorDocument 404 404.html
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|ttf)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>

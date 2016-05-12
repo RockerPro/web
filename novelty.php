@@ -16,8 +16,8 @@ include 'app.php';
     <meta property="og:title" content="SGTEL | sgtel.pe">
     <meta property="og:description" content="Trabajamos en el desarrollo de mejores sistemas, diseño e instalaciones. Planificamos, organizamos, realizamos y controlamos las instalaciones de sistemas de telecomunicaciones. La unidad de desarrollo de aplicaciones se encuentra conformada por un equipo multidisciplinario de profesionales del más alto nivel, gracias a esto nuestros clientes poseen una gran ventaja en relación a la competencia.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://sgtel.pe/novelty/10-palabras-que-no-debes-incluir-en-linkedin-pt0001">
-    <link rel="canonical" href="http://sgtel.pe/novelty/10-palabras-que-no-debes-incluir-en-linkedin-pt0001" />
+    <meta property="og:url" content="<?php echo $ruta; ?>">
+    <link rel="canonical" href="<?php echo $ruta; ?>" />
     <meta property="og:site_name" content="SGTEL">
     <title>SGTEL</title>
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/bootstrap.css">
@@ -57,7 +57,7 @@ include 'app.php';
 		            		<div ng-bind-html-unsafe="item.content"></div>
 		            	</div>
 		            	<div class="col-md-12">
-	                   	 		<div class="fb-comments" data-href="<?php echo $baseurl ?>novelty/<?php echo $_GET['id']; ?>" data-width="100%" data-numposts="5"></div>
+	                   	 		<div class="fb-comments" data-href="<?php echo $baseurl ?>novedades/<?php echo $_GET['id']; ?>" data-width="100%" data-numposts="5"></div>
 	                   	 	</div>
 		            </div>
 				</div>
@@ -157,11 +157,10 @@ include 'app.php';
 	</div> 
 
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
     <script src="<?php echo $baseurl;?>dist/js/post_controller.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script> <!-- Resource jQuery -->
+	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script>
     <?php include 'layouts/chat.php'; ?>
 </body>
 </html>

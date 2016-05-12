@@ -19,6 +19,10 @@ include 'app.php';
     <meta property="og:url" content="http://www.sgtel.com">
     <meta property="og:site_name" content="SGTEL">
     <title>SGTEL</title>
+        <!-- slider -->
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/slider/css/navstylechange.css" media="screen" />
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+  <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/slider/css/settings.css" media="screen" />
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/bootstrap.css">
 	<link rel="shortcut icon" href="<?php echo $baseurl;?>dist/img2/icono.png">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/estilos.css">
@@ -30,59 +34,53 @@ include 'app.php';
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.carousel.css">
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.theme.css">
-    <!-- slider -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/slider/css/navstylechange.css" media="screen" />
-    
-    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/slider/css/settings.css" media="screen" />
-	<?php include 'layouts/redes_sociales.php'; ?>
 </head>
+<?php flush(); ?>
 <body ng-app="app">
 	<div id="main">
-		
-		<?php include 'layouts/cabecera.php'; ?>
+<?php include 'layouts/cabecera.php'; ?>
     <?php include 'layouts/slider.php'; ?> 
-		<main class="cd-main-content">					
-			<div class="col-md-12" style="margin-top:25px;">
-			<div class="col-md-9">
-				<div class="tres">
-				<ul class="ch-grid">
-					<li>
-						<a href="<?php echo $baseurl?>areas_negocio/infraestructura">
-							<div class="ch-item ch-img-1  wow bounceIn" data-wow-delay="0.3s">
-								<div class="ch-info">
-									<h3>INFRAESTUCTURA</h3>
-									<p>Ver más</p>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo $baseurl?>areas_negocio/soluciones_moviles">
-							<div class="ch-item ch-img-2  wow bounceIn" data-wow-delay="0.6s">
-								<div class="ch-info">
-									<h3>SOLUCIONES MÓVILES</h3>
-									<p>Ver más</p>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo $baseurl?>areas_negocio/consultoria_emprendimiento">
-							<div class="ch-item ch-img-3  wow bounceIn" data-wow-delay="0.9s">
-								<div class="ch-info">
-									<h3>CONSULTORÍA Y EMPRENDIMIENTO</h3>
-									<p>Ver más</p>
-								</div>
-							</div>
-						</a>
-					</li>
-				</ul>
-				</div>
-				<div class="col-md-12 contcli">
+<main class="cd-main-content">	
+	<div class="col-md-12" style="margin-top:25px;">
+	<div class="col-md-9">
+<div class="tres">
+<ul class="ch-grid">
+	<li>
+<a href="<?php echo $baseurl?>areas_negocio/infraestructura">
+	<div class="ch-item ch-img-1  wow bounceIn" data-wow-delay="0.3s">
+<div class="ch-info">
+	<h3>INFRAESTUCTURA</h3>
+	<p>Ver más</p>
+</div>
+	</div>
+</a>
+	</li>
+	<li>
+<a href="<?php echo $baseurl?>areas_negocio/soluciones_moviles">
+	<div class="ch-item ch-img-2  wow bounceIn" data-wow-delay="0.6s">
+<div class="ch-info">
+	<h3>SOLUCIONES MÓVILES</h3>
+	<p>Ver más</p>
+</div>
+	</div>
+</a>
+	</li>
+	<li>
+<a href="<?php echo $baseurl?>areas_negocio/consultoria_emprendimiento">
+	<div class="ch-item ch-img-3  wow bounceIn" data-wow-delay="0.9s">
+<div class="ch-info">
+	<h3>CONSULTORÍA Y EMPRENDIMIENTO</h3>
+	<p>Ver más</p>
+</div>
+	</div>
+</a>
+	</li>
+</ul>
+</div>
+<div class="col-md-12 contcli">
                                <p class="titsec">CLIENTES</p>
                                <div class="divider divider_gray ">
-                               		<span></span><span></span>
+                               <span></span><span></span>
                                </div>
                                <br><br>
                               <div id="owl-demo" class="col-md-12 owl-carousel owl-theme owl-loaded">
@@ -131,9 +129,6 @@ include 'app.php';
                                       <div class="item">
                                       <img class="lazyOwl client" data-src="<?php echo $baseurl;?>dist/img2/clients/reniec.png" alt="cliente15">
                                       </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="<?php echo $baseurl;?>dist/img2/clients/telefonica.png" alt="cliente16">
-                                      </div>
                                       <div class="item visible-md">
                                       </div>
                                       <div class="item">
@@ -144,15 +139,15 @@ include 'app.php';
                                       </div>
                               </div>                              
                            </div>
-			</div>
-			<!-- seccion novedades -->
-				<?php
-				include 'layouts/sec_novedades.php'; 
-				?>
-			<!-- fin -->
-		</div>
-		<div class="col-md-12" style="padding: 0;">
-			<div id="footer">
+	</div>
+	<!-- seccion novedades -->
+<?php
+include 'layouts/sec_novedades.php'; 
+?>
+	<!-- fin -->
+</div>
+<div class="col-md-12" style="padding: 0;">
+	<div id="footer">
                 <div class="container">
                     <div class="col-md-1"></div>
                     <div class="col-md-4">Av. Nicolas Arriola 290 Oficina 311.</div>
@@ -160,75 +155,64 @@ include 'app.php';
                     <div class="col-md-4">© 2016. Todos los Derechos Reservados</div>
                 </div>  
             </div>
-		</div>		
-		</main>
-		<nav class="cd-nav">
-		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-			<li><a href="<?php echo $baseurl?>" class="selected">INICIO</a></li>
-			<li><a href="<?php echo $baseurl?>acerca_sgtel">ACERCA DE SGTEL</a></li>
-
-			<li class="has-children">
-				<a>ÁREAS DE NEGOCIO </a>
-
-				<ul class="cd-nav-icons is-hidden">
-					<li class="go-back"><a href="#0">Volver</a></li>
-					<li>
-						<a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/infraestructura">
-							Infraestructura
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/soluciones_moviles">
-							Soluciones Móviles
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/consultoria_emprendimiento">
-							Consultoría y Emprendimiento
-							<p></p>
-						</a>
-					</li>
-				</ul>
-			</li>
-
-			<li class="has-children">
-				<a>NOVEDADES</a>
-				<ul class="cd-nav-icons is-hidden">
-					<li class="go-back"><a href="#0">Volver</a></li>
-					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/infraestructura">
-							Infraestructura
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/soluciones_moviles">
-							Soluciones Móviles
-							<p></p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/consultoria_emprendimiento">
-							Consultoría y Emprendimiento
-							<p></p>
-						</a>
-					</li>
-				</ul>
-			</li>
-
-			<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
-		</ul> <!-- primary-nav -->
+</div>
+</main>
+<nav class="cd-nav">
+<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+	<li><a href="<?php echo $baseurl?>" class="selected">INICIO</a></li>
+	<li><a href="<?php echo $baseurl?>acerca_sgtel">ACERCA DE SGTEL</a></li>
+	<li class="has-children">
+<a>ÁREAS DE NEGOCIO </a>
+<ul class="cd-nav-icons is-hidden">
+	<li class="go-back"><a href="#0">Volver</a></li>
+	<li>
+<a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/infraestructura">
+	Infraestructura
+	<p></p>
+</a>
+	</li>
+	<li>
+<a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/soluciones_moviles">
+	Soluciones Móviles
+	<p></p>
+</a>
+	</li>
+	<li>
+<a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/consultoria_emprendimiento">
+	Consultoría y Emprendimiento
+	<p></p>
+</a>
+	</li>
+</ul>
+	</li>
+	<li class="has-children">
+<a>NOVEDADES</a>
+<ul class="cd-nav-icons is-hidden">
+	<li class="go-back"><a href="#0">Volver</a></li>
+	<li>
+<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/infraestructura">
+	Infraestructura
+	<p></p>
+</a>
+	</li>
+	<li>
+<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/soluciones_moviles">
+	Soluciones Móviles
+	<p></p>
+</a>
+	</li>
+	<li>
+<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/consultoria_emprendimiento">
+	Consultoría y Emprendimiento
+	<p></p>
+</a>
+	</li>
+</ul>
+	</li>
+	<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
+</ul> <!-- primary-nav -->
 	</nav> <!-- cd-nav -->
-		
-		
-	</div> 
-
+	</div>
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/angular/angular.min.js"></script>
     <script src="<?php echo $baseurl;?>dist/js/post_controller.js"></script>
@@ -244,7 +228,7 @@ include 'app.php';
     	var revapi;
         $(document).ready(function() {
             /*slider clientes*/
-		 $("#owl-demo").owlCarousel({
+ $("#owl-demo").owlCarousel({
           items : 4,
           itemsDesktop : [1000,4], //5 items between 1000px and 901px
           itemsDesktopSmall : [900,4], // betweem 900px and 668px
@@ -261,24 +245,21 @@ include 'app.php';
           pagination : true,
           responsive: true,
           responsiveRefreshRate: 200,
-
         }); 
-
-		//slider
-		revapi = jQuery('.tp-banner').revolution(
-				{
-					delay:9000,
-              startwidth:1170,
-              startheight:500,
-              hideThumbs:10,
-              fullWidth:"on",
-              forceFullWidth:"on"
-
-				});
-  		
+//slider
+revapi = jQuery('.tp-banner').revolution(
+{
+	delay:9000,
+            startwidth:1170,
+            startheight:500,
+            fullScreen:"on",
+            forceFullWidth:"on",
+            minFullScreenHeight:"320",
+            fullScreenOffsetContainer: "header"
+});  
             });
         new WOW().init();
     </script>
-		<?php include 'layouts/chat.php'; ?>
+<?php include 'layouts/chat.php'; ?>
 </body>
 </html>

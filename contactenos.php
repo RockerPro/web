@@ -29,7 +29,6 @@ include 'app.php';
      
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/carousel/owl.theme.css">
-	<?php include 'layouts/redes_sociales.php'; ?>
 </head>
 <body>
 	<div id="main">
@@ -187,37 +186,9 @@ include 'app.php';
 
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/jquery.mobile.custom.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script> <!-- Resource jQuery -->
+	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script>
 	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/areas.js"></script>
 	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/sendmail.js"></script>
-	<!-- Include js plugin -->
-    <script src="<?php echo $baseurl;?>dist/carousel/owl.carousel.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*slider clientes*/
-		 $("#owl-demo").owlCarousel({
-          items : 4,
-          itemsDesktop : [1000,4], //5 items between 1000px and 901px
-          itemsDesktopSmall : [900,4], // betweem 900px and 668px
-          itemsTablet: [668,3], //2 items between 668 and 0
-          itemsMobile : [540,2], // 2 items between 540 and 0
-          lazyLoad : true,
-          loop:true,
-          autoplayTimeout:2000,
-          autoPlay : true,
-          margin:10,
-          slideSpeed: 2000, 
-          autoPlay: 2000,
-          stopOnHover : true,
-          pagination : true,
-          responsive: true,
-          responsiveRefreshRate: 200,
-
-        }); 
-  
-            });
-    </script> 
     <?php include 'layouts/chat.php'; ?>
 </body>
 </html>

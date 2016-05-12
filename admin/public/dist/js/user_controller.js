@@ -1,14 +1,19 @@
 'use strict';
 
-var base_url=location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
+var base_url=location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '/web/');
 var app = angular.module('app', ['datatables','hSweetAlert']);
               
     app.controller('userController', function($scope, $http,sweet, $location, $timeout)
     {	
+      $scope.redirect = function() {
+            window.location = base_url + "admin/users";  
+          }
+                
+
     	$scope.item = {};
     	$scope.addUser = function() { 
           var params = {};
-
+            if (params != '') {
               params.a = 'registrar';
               params.nom = $scope.item.nom;
               params.email = $scope.item.email;  
@@ -20,15 +25,20 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
               })   
                       .success(function(res){
                           if (res[0].res == 'fail') {
-                          	sweet.show('', 'Ya hay un usuario registrado con ese email', 'error');
+                            sweet.show('', 'Ya hay un usuario registrado con ese email', 'error');
                           }else if (res[0].res == 'success') {
-                          	sweet.show('', 'Item registrado', 'success');
-                          };   
-                          $scope.limpiar();                                           
+                            sweet.show('', 'Item registrado', 'success');
+                            $scope.limpiar();
+                            $timeout ($scope.redirect, 500);  
+                          };                                           
                       })
                       .error(function(res){
                         sweet.show('', 'Error inesperado', 'error');
-                        });         
+                        });   
+            }else{
+              sweet.show('', 'Complete todos los campos correctamente', 'error');
+            };
+                    
         }
 
         $scope.items = [];

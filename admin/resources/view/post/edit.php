@@ -40,7 +40,7 @@ include '../../../app/app2.php'; ?>
 						<input type="file" ngf-select ng-model="picFile" name="file"    
 							accept="image/*" ngf-max-size="2MB" 
 							ngf-model-invalid="errorFile">
-							<p class="help-block">Dimenciones: px de alto x px de ancho</p>
+							<p class="help-block">Dimenciones: 950px de ancho x 350px de alto</p>
 							<i ng-show="myForm.file.$error.required" style="color:red">* Requerido</i><br>
 							<i ng-show="myForm.file.$error.maxSize"  style="color:red">Archivo demasiado grande 
 							(@{{errorFile.size / 1000000|number:1}}MB): máximo  2MB</i>

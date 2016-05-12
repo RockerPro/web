@@ -1,7 +1,7 @@
 
 			<div class="col-md-3 novedades" style="margin-top: 55px;margin-bottom:25px;overflow: hidden;{{view}}">				
 				<p class="titsec">Post Relacionados</p>
-				<a class="col-md-12 col-sm-4 col-ms-6 col-xs-12 wow bounceIn" href="<?php echo $baseurl?>novelty/{{related.url_web}}-{{related.codpost}}"
+				<a class="col-md-12 col-sm-4 col-ms-6 col-xs-12 wow bounceIn" href="<?php echo $baseurl?>novedades/{{related.url_web}}-{{related.codpost}}"
 				 ng-repeat="related in relateds" class="post_item" >
 					<div class="contnove">
 						<img class="img-responsive imgnove" 

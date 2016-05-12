@@ -1,6 +1,6 @@
 'use strict';
 
-var base_url=location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
+var base_url=location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '/web/');
 var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui.tinymce']);
               
     app.controller('postController', function($scope, $http,sweet, $location, Upload, $timeout)
@@ -8,6 +8,8 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
 
       /* textarea edito options*/
       $scope.tinymceOptions = {
+      relative_urls : 0,
+remove_script_host : 0,
     automatic_uploads: true,
     file_browser_callback: function(field_name, url, type, win) {
     win.document.getElementById(field_name).value = 'my browser value';
@@ -112,12 +114,13 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
 
         $scope.editPost = function(file) {
               if (file == null) {
-              sweet.show('', 'Item guardado exitosamente', 'success');
+              // sweet.show('', 'Item guardado exitosamente', 'success');
+              $timeout ($scope.redirect, 500);  
             }
             $scope.item.img = file;
               file.upload = Upload.upload({
                 method: 'POST',
-                url: '../../../../admin/api/post.php?a=editar&id=' + get,
+                url: base_url+"/admin/api/post.php?a=editar&id=" + get,
                 data: $scope.item,
               });
 
@@ -131,7 +134,8 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
                   sweet.show('', 'Error Inesperado', 'error');
               }, function (evt) {
                 file.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total));
-                sweet.show('', 'Item actualizado exitosamente', 'success');
+                // sweet.show('', 'Item actualizado exitosamente', 'success');
+                $timeout ($scope.redirect, 500);  
               });
           }
           $scope.item = [];
@@ -143,7 +147,7 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
             $scope.item.img = file;
             file.upload = Upload.upload({
               method: 'POST',
-              url: '../../../admin/api/post.php?a=registrar',
+              url: base_url+"/admin/api/post.php?a=registrar",
               data: $scope.item,
             });
 
@@ -151,7 +155,8 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
               $timeout(function () {
                 file.result = response.data;
               });
-              sweet.show('', 'Item guardado exitosamente', 'success');
+              // sweet.show('', 'Item guardado exitosamente', 'success');
+              $timeout ($scope.redirect, 500);  
 
             }, function (response) {
               if (response.status > 0)
@@ -162,6 +167,8 @@ var app = angular.module('app', ['datatables','hSweetAlert', 'ngFileUpload', 'ui
             });
           }
 
-          
+          $scope.redirect = function() {
+            window.location = base_url + "admin/post";  
+          }  
 
     });          
