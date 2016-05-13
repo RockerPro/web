@@ -12,11 +12,11 @@ include 'app.php';
     <meta name="keywords" content="INFRAESTRUCTURA, SOLUCIONES MOVILES,CONSULTORIA Y EMPRENDIMIENTO, COMUNICACIONES">
     <meta name="author" content="Cristians Bregante">
     <meta name="image" content="http://sgtel.pe/dist/img2/logo.png">
-    <meta property="og:image" content="http://sgtel.pe/dist/img/logo.png">
+    <meta property="og:image" content="http://sgtel.pe/dist/img2/logo.png">
     <meta property="og:title" content="SGTEL | sgtel.pe">
     <meta property="og:description" content="Trabajamos en el desarrollo de mejores sistemas, diseño e instalaciones. Planificamos, organizamos, realizamos y controlamos las instalaciones de sistemas de telecomunicaciones. La unidad de desarrollo de aplicaciones se encuentra conformada por un equipo multidisciplinario de profesionales del más alto nivel, gracias a esto nuestros clientes poseen una gran ventaja en relación a la competencia.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="<?php echo $ruta; ?>">
+    <!-- <meta property="og:url" content="<?php echo $ruta; ?>"> -->
     <link rel="canonical" href="<?php echo $ruta; ?>" />
     <meta property="og:site_name" content="SGTEL">
     <title>SGTEL</title>

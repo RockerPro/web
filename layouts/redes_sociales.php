@@ -1,6 +1,6 @@
-<!-- <meta property="fb:admins" content="100008345413407"/> -->
 <meta property="fb:app_id" content="1774999642714124">
 <meta property="fb:admins" content="sgtel.latinoamerica"/>
+<meta property="fb:admins" content="100008345413407"/>
 <script>
   window.fbAsyncInit = function() {
     FB.init({

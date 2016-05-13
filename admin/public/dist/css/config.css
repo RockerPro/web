@@ -1,3 +1,4 @@
+@font-face{font-family:Roboto-Light;src:url(../../../../dist/css/fuentes/Roboto-Light.ttf);}
 .opt{
 	cursor:pointer;
 	font-size: 18px;
@@ -13,4 +14,48 @@
 }
 .nores{
 	resize:none;
+}
+.bg-1{
+    background-color: #8497BE !important;
+    color: white;
+    font-family: Roboto-Light;
+}
+.bg-2{
+    background-color: #29B24B !important;
+    color: white;
+    font-family: Roboto-Light;
+}
+.bg-3{
+    background-color: #3B5998 !important;
+    color: white;
+    font-family: Roboto-Light;
+}
+.bg-4{
+    background-color: #1DA1F2 !important;
+    color: white;
+    font-family: Roboto-Light;
+}
+.bg-5{
+    background-color: #F79820 !important;
+    color: white;
+    font-family: Roboto-Light;
+}
+.bg-6{
+    background-color: #FF6C2C !important;
+    color: white;
+    font-family: Roboto-Light;
+}
+.bg-7{
+    background-color: #009587 !important;
+    color: white;
+    font-family: Roboto-Light;
+}
+.bg-8{
+    background-color: #F34235 !important;
+    color: white;
+    font-family: Roboto-Light;
+}
+.titcard{
+	font-family: Roboto-Light;
+	font-size: 33px;
 }
