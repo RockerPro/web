@@ -8,6 +8,7 @@ Rewriterule ^coments resources/view/coments/index.php
 Rewriterule ^perfil resources/view/users/edit.php
 Rewriterule ^users resources/view/users/index.php
 Rewriterule ^create/users resources/view/users/create.php
+Rewriterule ^edit/users/(.+) resources/view/users/edituser.php?id=$1
 Rewriterule ^analytics resources/view/analytics/index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 ErrorDocument 404 404.html

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>http://sgtel.pe/</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/areas_negocio/infraestructura</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/areas_negocio/soluciones_moviles</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/areas_negocio/consultoria_emprendimiento</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/novedades/{{item.url_web}}-{{item.codpost}}</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/acerca_sgtel</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/news/category/infraestructura</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/news/category/soluciones_moviles</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/news/category/consultoria_emprendimiento</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/contactenos</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/novedades/{{related.url_web}}-{{related.codpost}}</loc>
+</url>
+<url>
+  <loc>http://sgtel.pe/document/brochure.pdf</loc>
+  <lastmod>2016-05-10T21:37:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://sgtel.pe/acerca_sgtel.php</loc>
+</url>
+</urlset>

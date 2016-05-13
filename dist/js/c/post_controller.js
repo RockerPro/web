@@ -43,12 +43,12 @@ var app = angular.module('app', []);
     });
     app.controller('postAreaController', function($scope, $http)
     {
-          var get = window.location.pathname.split('/areas_negocio/')[1];
+          var get = window.location.pathname.split('/areas-negocio/')[1];
           if (get == 'infraestructura') {
           	$scope.cate = 'Infraestructura';
-          }else if (get == 'soluciones_moviles') {
+          }else if (get == 'soluciones-moviles') {
           	$scope.cate = 'Soluciones Móviles';
-          }else if (get == 'consultoria_emprendimiento') {
+          }else if (get == 'consultoria-emprendimiento') {
           	$scope.cate = 'Consuloría y Emprendimiento';
           };
          	 $http.get(base_url+"/admin/api/post.php?a=related&cat="+$scope.cate)
@@ -60,12 +60,12 @@ var app = angular.module('app', []);
     });
     app.controller('postsAreaController', function($scope, $http)
     {
-          var get = window.location.pathname.split('/news/category/')[1];
+          var get = window.location.pathname.split('/noticias/categoria/')[1];
           if (get == 'infraestructura') {
           	$scope.cate = 'Infraestructura';
-          }else if (get == 'soluciones_moviles') {
+          }else if (get == 'soluciones-moviles') {
           	$scope.cate = 'Soluciones Móviles';
-          }else if (get == 'consultoria_emprendimiento') {
+          }else if (get == 'consultoria-emprendimiento') {
           	$scope.cate = 'Consuloría y Emprendimiento';
           };
          	 $http.get(base_url+"/admin/api/post.php?a=category&cat="+$scope.cate)

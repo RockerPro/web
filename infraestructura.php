@@ -38,13 +38,13 @@ include 'app.php';
 		<main class="cd-main-content">
 			<div class="col-md-9" style="margin-bottom:25px;overflow: hidden;">
 				<div class="col-md-12" style="margin-top:55px;">					
-		            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-		            	<div class="subti wow zoomIn" data-wow-delay="0.3s">
-		            		<p class="titsec">ENERGÍA</p>
-			                <div class="divider divider_gray ">
-			                    <span></span><span></span>
-			                </div>
-		            	</div>
+                <div class="contvalor wow zoomIn" data-wow-delay="0.3s" style="margin-top: -35px;">
+                    <p class="titsec">ENERGÍA</p>
+                      <div class="divider divider_gray ">
+                          <span></span><span></span>
+                      </div>
+                  </div>
+		            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">		            	
 	                    <div class="col-md-12 wow fadeInLeft" data-wow-delay="0.6s" style="padding-left: 50px;">
                                    <ul  class="textarea listaserv">
                                      <li class="itemm2" data-cont="e1" style="color:#004375;list-style:url(<?php echo $baseurl;?>dist/img2/punto.png);">Sistemas eléctricos de baja tensión  </li>
@@ -112,16 +112,17 @@ include 'app.php';
 		            </div>		            
 				</div>
 				<div class="col-md-12" style="margin-top:35px;">
-					<div class="col-md-4 wow zoomIn" data-wow-delay="1.5s" style="overflow:hidden;">
+                <div class="contvalor wow zoomIn" data-wow-delay="0.3s" style="margin-top: -35px;">
+                    <p class="titsec">COMUNICACIONES</p>
+                      <div class="divider divider_gray ">
+                          <span></span><span></span>
+                      </div>
+                  </div>
+					      <div class="col-md-4 wow zoomIn" data-wow-delay="1.5s" style="overflow:hidden;">
 	                    <img class="img-responsive imgdet pull-left" src="<?php echo $baseurl;?>dist/img2/areas/comu.jpg" alt="imagen energía">
 		            </div>
-		            <div class="col-md-8">
-		            	<div class="subti2 wow zoomIn" data-wow-delay="0.3s">
-		            		<p class="titsec">COMUNICACIONES</p>
-			                <div class="divider divider_gray ">
-			                    <span></span><span></span>
-			                </div>
-		            	</div>
+                
+		            <div class="col-md-8">		            	
 	                    <div class="col-md-12 wow fadeInRight" data-wow-delay="0.6s">
                                    <ul  class="textarea listaserv">
                                      <li class="itemm" data-cont="i1" style="color:#004375;list-style:url(<?php echo $baseurl;?>dist/img2/punto.png);">Cableado estructurado</li>
@@ -234,22 +235,13 @@ include 'app.php';
                                       </div>
                               	</div>                             
                 </div>
-			<div class="col-md-12" style="padding: 0;">
-				<div id="footer">
-	                <div class="container">
-	                    <div class="col-md-1"></div>
-	                    <div class="col-md-4">Av. Nicolas Arriola 290 Oficina 311.</div>
-	                    <div class="col-md-2"> (+51 1) 340 - 3401</div>
-	                    <div class="col-md-4">© 2016. Todos los Derechos Reservados</div>
-	                </div>  
-	            </div>
-			</div>
+			<?php include 'layouts/footer.php' ?>
 
 		</main>
 		<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
 			<li><a href="<?php echo $baseurl ?>">INICIO</a></li>
-			<li><a href="<?php echo $baseurl ?>acerca_sgtel">ACERCA DE SGTEL</a></li>
+			<li><a href="<?php echo $baseurl ?>acerca-sgtel">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
                 <a class="selected">ÁREAS DE NEGOCIO </a>
@@ -257,21 +249,21 @@ include 'app.php';
                 <ul class="cd-nav-icons is-hidden">
                     <li class="go-back"><a href="#0">Volver</a></li>
                     <li>
-                        <a class="cd-nav-item " href="<?php echo $baseurl ?>areas_negocio/infraestructura">
+                        <a class="cd-nav-item " href="<?php echo $baseurl ?>areas-negocio/infraestructura">
                             Infraestructura
                             <p></p>
                         </a>
                     </li>
 
                     <li>
-                        <a class="cd-nav-item " href="<?php echo $baseurl ?>areas_negocio/soluciones_moviles">
+                        <a class="cd-nav-item " href="<?php echo $baseurl ?>areas-negocio/soluciones-moviles">
                             Soluciones Móviles
                             <p></p>
                         </a>
                     </li>
 
                     <li>
-                        <a class="cd-nav-item " href="<?php echo $baseurl ?>areas_negocio/consultoria_emprendimiento">
+                        <a class="cd-nav-item " href="<?php echo $baseurl ?>areas-negocio/consultoria-emprendimiento">
                             Consultoría y Emprendimiento
                             <p></p>
                         </a>
@@ -284,21 +276,21 @@ include 'app.php';
                 <ul class="cd-nav-icons is-hidden">
                     <li class="go-back"><a href="#0">Volver</a></li>
                     <li>
-                        <a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/infraestructura">
+                        <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/infraestructura">
                             Infraestructura
                             <p></p>
                         </a>
                     </li>
 
                     <li>
-                        <a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/soluciones_moviles">
+                        <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/soluciones-moviles">
                             Soluciones Móviles
                             <p></p>
                         </a>
                     </li>
 
                     <li>
-                        <a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/consultoria_emprendimiento">
+                        <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/consultoria-emprendimiento">
                             Consultoría y Emprendimiento
                             <p></p>
                         </a>
@@ -317,8 +309,8 @@ include 'app.php';
     <script src="<?php echo $baseurl;?>bower_components/angular/angular.min.js"></script>
     <script src="<?php echo $baseurl;?>dist/js/post_controller.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script> 
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/areas.js"></script>
+	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script>
+  <script type="text/javascript" src="<?php echo $baseurl;?>dist/js/areas.js"></script>
 	<!-- Include js plugin -->
     <script src="<?php echo $baseurl;?>dist/carousel/owl.carousel.min.js"></script>
     <script type="text/javascript">

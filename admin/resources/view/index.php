@@ -119,6 +119,8 @@ include '../../app/app2.php'; ?>
           </div>
         </div>
         <!-- ./col -->
+        <?php if ($_SESSION['rol']== "A") {
+        ?>
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-8">
@@ -133,6 +135,7 @@ include '../../app/app2.php'; ?>
           </div>
         </div>
         <!-- ./col -->
+        <?php } ?>
       </div>
     </section>
   </div>

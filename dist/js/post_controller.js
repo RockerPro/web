@@ -41,12 +41,12 @@ var app = angular.module('app', []);
     });
     app.controller('postAreaController', function($scope, $http)
     {
-          var get = window.location.pathname.split('/areas_negocio/')[1];
+          var get = window.location.pathname.split('/areas-negocio/')[1];
           if (get == 'infraestructura') {
           	$scope.cate = 'Infraestructura';
-          }else if (get == 'soluciones_moviles') {
+          }else if (get == 'soluciones-moviles') {
           	$scope.cate = 'Soluciones Móviles';
-          }else if (get == 'consultoria_emprendimiento') {
+          }else if (get == 'consultoria-emprendimiento') {
           	$scope.cate = 'Consuloría y Emprendimiento';
           };
          	 $http.get(base_url+"/admin/api/post.php?a=related&cat="+$scope.cate)
@@ -57,12 +57,12 @@ var app = angular.module('app', []);
     });
     app.controller('postsAreaController', function($scope, $http)
     {
-          var get = window.location.pathname.split('/news/category/')[1];
+          var get = window.location.pathname.split('/noticias/categoria/')[1];
           if (get == 'infraestructura') {
           	$scope.cate = 'Infraestructura';
-          }else if (get == 'soluciones_moviles') {
+          }else if (get == 'soluciones-moviles') {
           	$scope.cate = 'Soluciones Móviles';
-          }else if (get == 'consultoria_emprendimiento') {
+          }else if (get == 'consultoria-emprendimiento') {
           	$scope.cate = 'Consuloría y Emprendimiento';
           };
          	 $http.get(base_url+"/admin/api/post.php?a=category&cat="+$scope.cate)
@@ -71,31 +71,3 @@ var app = angular.module('app', []);
             $scope.relateds = res;
             });
     });
-jQuery(document).ready(function() {
-  /*suscribe foorm */
-  $('.success-message2').hide();
-	$('.error-message').hide();
-     $('#form_sus').submit(function(e) {
-		e.preventDefault();
-		var form = $(this);
-	    var postdata = form.serialize();
-	    $.ajax({
-	        type: 'POST',
-	        url: base_url+'/layouts/subscribe.php',
-	        data: postdata,
-	        dataType: 'json',
-	        success: function(json) {
-	            if(json.valid == 0) {
-	                $('.success-message2').hide();
-	                $('.error-message').hide();
-	                $('.error-message').html(json.message);
-	                $('.error-message').fadeIn();
-	            }else {
-	                $('.error-message').hide();
-	                $('.success-message2').hide();
-	                form.hide();
-	                $('.success-message2').html(json.message);
-	                $('.success-message2').fadeIn();
-	            }
-	        }
-	    });});});

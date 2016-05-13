@@ -9,7 +9,7 @@
 							<input type="text" class="form-control" name="email" placeholder="Email..." >						
 						</div>
 						<div class="form-group">
-							<input type="submit" class="btn btn-success pull-right">
+							<input type="submit" value="Suscribirse" class="btn btn-success pull-right">
 						</div>
 					</form>
 					<p class="success-message2"></p>
@@ -20,17 +20,17 @@
 				<div class="categorias">
 					<ul class="list_cate">
 						<li>
-							<a href="<?php echo $baseurl?>news/category/infraestructura">
+							<a href="<?php echo $baseurl?>noticias/categoria/infraestructura">
 								#Infraestructura
 							</a>
 						</li>
 						<li>
-							<a href="<?php echo $baseurl?>news/category/soluciones_moviles">
+							<a href="<?php echo $baseurl?>noticias/categoria/soluciones-moviles">
 								#SolucionesMóviles
 							</a>
 						</li>
 						<li>
-							<a href="<?php echo $baseurl?>news/category/consultoria_emprendimiento">
+							<a href="<?php echo $baseurl?>noticias/categoria/consultoria-emprendimiento">
 								#ConsultoríayEmprendimiento
 							</a>
 						</li>

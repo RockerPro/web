@@ -14,24 +14,19 @@
 		var path = window.location.pathname.split('/web/admin/')[1];
 
             if (path == 'inicio') {
-                 $("#ac1").addClass("active");
-                 console.log(path);
+                 $("#ac1").addClass("active");                 
             }
             if (path == 'post') {
-                 $("#ac2").addClass("active");
-                 console.log(path);
+                 $("#ac2").addClass("active");                 
             }
             if (path == 'users') {
-                 $("#ac4").addClass("active");
-                 console.log(path);
+                 $("#ac4").addClass("active");                 
             }
             if (path == 'analytics') {
-                 $("#ac5").addClass("active");
-                 console.log(path);
+                 $("#ac5").addClass("active");                 
             }
             if (path == 'coments') {
-                 $("#ac3").addClass("active");
-                 console.log(path);
+                 $("#ac3").addClass("active");                 
             }
 
 	});

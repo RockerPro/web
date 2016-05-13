@@ -36,7 +36,7 @@ include 'app.php';
 		<?php include 'layouts/cabecera.php' ?>
 		<main class="cd-main-content" ng-controller="postsAreaController">
 			<div class="col-md-9" style="margin-bottom:25px;overflow: hidden;">
-				<div class="col-md-12" style="margin-top:55px;">					
+				<div class="col-md-12" style="margin-top:15px;">					
 		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		            	<div class="contvalor">
 		            		<p class="titsec">{{cate}}</p>
@@ -71,22 +71,13 @@ include 'app.php';
                 <?php
                 include 'layouts/suscribe.php'; 
                 ?>
-            <!-- fin --> 			<div class="col-md-12" style="padding: 0;">
-				<div id="footer">
-	                <div class="container">
-	                    <div class="col-md-1"></div>
-	                    <div class="col-md-4">Av. Nicolas Arriola 290 Oficina 311.</div>
-	                    <div class="col-md-2"> (+51 1) 340 - 3401</div>
-	                    <div class="col-md-4">© 2016. Todos los Derechos Reservados</div>
-	                </div>  
-	            </div>
-			</div>
+            <!-- fin --> 			<?php include 'layouts/footer.php' ?>
 
 		</main>
 		<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
 			<li><a href="<?php echo $baseurl?>">INICIO</a></li>
-			<li><a href="<?php echo $baseurl?>acerca_sgtel">ACERCA DE SGTEL</a></li>
+			<li><a href="<?php echo $baseurl?>acerca-sgtel">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
                 <a>ÁREAS DE NEGOCIO </a>
@@ -94,21 +85,21 @@ include 'app.php';
                 <ul class="cd-nav-icons is-hidden">
                     <li class="go-back"><a href="#0">Volver</a></li>
                     <li>
-                        <a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/infraestructura">
+                        <a class="cd-nav-item " href="<?php echo $baseurl?>areas-negocio/infraestructura">
                             Infraestructura
                             <p></p>
                         </a>
                     </li>
 
                     <li>
-                        <a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/soluciones_moviles">
+                        <a class="cd-nav-item " href="<?php echo $baseurl?>areas-negocio/soluciones-moviles">
                             Soluciones Móviles
                             <p></p>
                         </a>
                     </li>
 
                     <li>
-                        <a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/consultoria_emprendimiento">
+                        <a class="cd-nav-item " href="<?php echo $baseurl?>areas-negocio/consultoria-emprendimiento">
                             Consultoría y Emprendimiento
                             <p></p>
                         </a>
@@ -116,8 +107,29 @@ include 'app.php';
                 </ul>
             </li>
 
-			<li>
+			<li class="has-children">
 				<a class="selected">NOVEDADES</a>
+        <ul class="cd-nav-icons is-hidden">
+            <li class="go-back"><a href="#0">Volver</a></li>
+            <li>
+          <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/infraestructura">
+            Infraestructura
+            <p></p>
+          </a>
+            </li>
+            <li>
+          <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/soluciones-moviles">
+            Soluciones Móviles
+            <p></p>
+          </a>
+            </li>
+            <li>
+          <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/consultoria-emprendimiento">
+            Consultoría y Emprendimiento
+            <p></p>
+          </a>
+            </li>
+          </ul>
 			</li>
 
 			<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
@@ -132,7 +144,6 @@ include 'app.php';
     <script src="<?php echo $baseurl;?>dist/js/post_controller.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/main.js"></script>
-	<script type="text/javascript" src="<?php echo $baseurl;?>dist/js/areas.js"></script>
 	<!-- Include js plugin -->
     <script src="<?php echo $baseurl;?>dist/carousel/owl.carousel.min.js"></script>
     <script type="text/javascript">

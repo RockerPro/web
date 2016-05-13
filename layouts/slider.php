@@ -8,7 +8,7 @@
 					<img src="<?php echo $baseurl?>dist/img2/images/1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 					<!-- LAYERS -->
 					<div class="tp-caption large_bold_white_25 customin customout tp-resizeme"
-						data-x="220"
+						data-x="170"
 						data-y="154"
 						data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
@@ -41,7 +41,7 @@
 					<img src="<?php echo $baseurl?>dist/img2/images/2.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 					<!-- LAYERS -->
 					<div class="tp-caption large_bold_white_25 customin customout tp-resizeme"
-						data-x="300"
+						data-x="240"
 						data-y="154"
 						data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
@@ -75,7 +75,7 @@
 					<img src="<?php echo $baseurl?>dist/img2/images/3.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 					<!-- LAYERS -->
 					<div class="tp-caption large_bold_white_25 customin customout tp-resizeme"
-						data-x="340"
+						data-x="300"
 						data-y="154"
 						data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"

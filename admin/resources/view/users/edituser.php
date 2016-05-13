@@ -12,14 +12,15 @@ include '../../../app/app2.php'; ?>
 
   <?php include '../../layouts/menu_header.php'; ?>
   
-  <div class="content-wrapper" ng-controller="userController">
+  <div class="content-wrapper" ng-controller="OtherUserController">
     <section class="content-header">
       <h1>
-        Editar Perfil
+        Editar Usuario
       </h1>
       <ol class="breadcrumb">
         <li><a href="<?php echo $baseurl; ?>inicio"><i class="fa fa-dashboard"></i> Panel de Control</a></li>
-        <li><i class="fa fa-user"></i> Editar Perfil</li>
+        <li><a href="<?php echo $baseurl; ?>users"><i class="fa fa-users"></i> Usuarios</a></li>
+        <li><i class="fa fa-hsahtag"></i> Editar Usuario</li>
       </ol>
     </section>
 

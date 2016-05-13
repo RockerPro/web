@@ -77,22 +77,13 @@ include 'app.php';
 				include 'layouts/related_novedades.php'; 
 				?>
 			<!-- fin -->		
-			<div class="col-md-12" style="padding: 0;">
-				<div id="footer">
-	                <div class="container">
-	                    <div class="col-md-1"></div>
-	                    <div class="col-md-4">Av. Nicolas Arriola 290 Oficina 311.</div>
-	                    <div class="col-md-2"> (+51 1) 340 - 3401</div>
-	                    <div class="col-md-4">© 2016. Todos los Derechos Reservados</div>
-	                </div>  
-	            </div>
-			</div>
+			<?php include 'layouts/footer.php' ?>
 
 		</main>
 		<nav class="cd-nav">
 		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
 			<li><a href="<?php echo $baseurl?>">INICIO</a></li>
-			<li><a href="<?php echo $baseurl?>acerca_sgtel">ACERCA DE SGTEL</a></li>
+			<li><a href="<?php echo $baseurl?>acerca-sgtel">ACERCA DE SGTEL</a></li>
 
 			<li class="has-children">
 				<a>ÁREAS DE NEGOCIO </a>
@@ -100,21 +91,21 @@ include 'app.php';
 				<ul class="cd-nav-icons is-hidden">
 					<li class="go-back"><a href="#0">Volver</a></li>
 					<li>
-						<a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/infraestructura">
+						<a class="cd-nav-item " href="<?php echo $baseurl?>areas-negocio/infraestructura">
 							Infraestructura
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/soluciones_moviles">
+						<a class="cd-nav-item " href="<?php echo $baseurl?>areas-negocio/soluciones-moviles">
 							Soluciones Móviles
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item " href="<?php echo $baseurl?>areas_negocio/consultoria_emprendimiento">
+						<a class="cd-nav-item " href="<?php echo $baseurl?>areas-negocio/consultoria-emprendimiento">
 							Consultoría y Emprendimiento
 							<p></p>
 						</a>
@@ -127,21 +118,21 @@ include 'app.php';
 				<ul class="cd-nav-icons is-hidden">
 					<li class="go-back"><a href="#0">Volver</a></li>
 					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/infraestructura">
+						<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/infraestructura">
 							Infraestructura
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/soluciones_moviles">
+						<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/soluciones-moviles">
 							Soluciones Móviles
 							<p></p>
 						</a>
 					</li>
 
 					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>news/category/consultoria_emprendimiento">
+						<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/consultoria-emprendimiento">
 							Consultoría y Emprendimiento
 							<p></p>
 						</a>

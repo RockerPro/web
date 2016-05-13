@@ -132,4 +132,70 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
                         });         
         }
 
-  });  
+  });
+
+  app.controller('OtherUserController', function($scope, $http,sweet, $location, $timeout)
+    { 
+      $scope.redirect = function() {
+            window.location = base_url + "admin/users";  
+          }
+      $scope.limpiar = function(){
+          $scope.pwd = {};
+        }
+
+     var get = window.location.pathname.split('/admin/edit/users/')[1];
+    $http.get(base_url+"/admin/api/usuarios.php?a=traer&id="+get)
+            .success(function (res)
+            {
+                $scope.datos = res[0];
+                console.log(res)
+            });
+
+        $scope.editUser = function() { 
+          var params = {};
+
+              params.a = 'actualizar';
+              params.id = $scope.datos.codusu;
+              params.nom = $scope.datos.nomusu;
+              params.email = $scope.datos.email;
+                $http({
+                  url: base_url +'/admin/api/usuarios.php',
+                  method: "get",
+                  params: params
+              })   
+                      .success(function(res){
+                          sweet.show('', 'Datos Actualizados', 'success');
+                           $timeout ($scope.redirect, 800);                                        
+                      })
+                      .error(function(res){
+                        sweet.show('', 'Error inesperado', 'error');
+                        });         
+        }
+
+        $scope.chkpass = function() { 
+          var params = {};
+
+              params.a = 'userpass';
+              params.id = $scope.datos.codusu;
+              params.pass1 = $scope.pwd.pass1;
+              params.pass2 = $scope.pwd.pass2;
+                $http({
+                  url: base_url +'/admin/api/usuarios.php',
+                  method: "get",
+                  params: params
+              })   
+                      .success(function(res){
+                          if (res == 'true') {
+                            sweet.show('', 'Contraseña Actualizada', 'success');
+                            $scope.limpiar();
+                             $timeout ($scope.redirect, 800);     
+                          }else{
+                            sweet.show('', 'Las Contraseñas no coinciden', 'error');    
+                          };                              
+                      })
+                      .error(function(res){
+                        sweet.show('', 'Error inesperado', 'error');
+                        });         
+        }
+
+  });   

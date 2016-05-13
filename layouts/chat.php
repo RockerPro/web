@@ -11,3 +11,14 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+<!-- Google Analytics -->
+<?php
+require_once 'php/scripts.model.php';
+$model = new PostsModel();
+
+        $data = $model->Listar();
+        $script = json_encode($data[0]->{'content'});
+        echo substr($script, 1); 
+
+?>

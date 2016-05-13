@@ -9,7 +9,7 @@ body{background:url(../img2/cream_pixels.png);}
 .listdate{list-style:none;margin-top:10px;padding-left:0;font-family:Roboto-Light;}
 .listredes li{float:left;padding:4px 8px 4px 8px;margin:2px;color:white;border-radius:5px;}
 .listredes li a{color:white;}
-.listredes .fb{background:#44619D;}
+.listredes .fb{background:#3B5998;}
 .listredes .tw{background:#1DA1F2;}
 .listredes .ln{background:#005582;}
 .imgarea{width:100%;}
@@ -25,7 +25,7 @@ body{background:url(../img2/cream_pixels.png);}
 .contcli p{margin-top:35px;text-align:center;}
 .contvalor{margin-top:25px;margin-bottom:25px;}
 .contvalor p{margin-top:35px;text-align:center;}
-#footer{height:auto;display:block;width:100%;background:#2364A6;z-index:9;text-align:center;color:#f2f2f2;padding-top:15px;padding-bottom:15px;opacity:0.8;overflow:hidden;padding-right: 30px;}
+#footer{height:auto;display:block;width:100%;background:#0B3054;z-index:9;text-align:center;color:#f2f2f2;padding-top:15px;padding-bottom:15px;opacity:0.8;overflow:hidden;padding-right: 30px;}
 .tres{}
 .novedades{border-left:1px solid silver;overflow:hidden;}
 .conttext{font-size:22px;text-align:center;}
@@ -58,7 +58,7 @@ body{background:url(../img2/cream_pixels.png);}
 .subti3 p{}
 .subti3 div{width:410px;}
 .conttext2{font-family:Roboto-Light;font-size:22px;text-align:justify;}
-.imgdet{width:300px;margin-top:50px;}
+.imgdet{width:300px;}
 .descarga{margin-top:20px;padding-bottom:20px;padding-top:20px;border-top:1px solid silver;webkit-transition:1s ease-in-out;-moz-transition:1s ease-in-out;-o-transition:1s ease-in-out;transition:1s ease-in-out;}
 .descarga h2{text-align:center;font-family:Roboto-Light;font-size:22px;font-weight:bold;color:#0064AA;text-decoration:none;}
 .descarga a{text-decoration:none;}
@@ -75,7 +75,9 @@ body{background:url(../img2/cream_pixels.png);}
 .direcc div p{font-family:Roboto-Light;font-size:18px;line-height:1.2;color:#0064AA;}
 .success-message{display:none;color:#0AA734;font-family:Roboto-Light;font-weight:bold;font-size:23px;margin-top:-39px;margin-left:25px;position:fixed;z-index:10;}
 .success-message2{color:#0AA734;font-family:Roboto-Light;font-weight:bold;font-size:23px;text-align:center;}
+.success-message3{color:#0AA734;font-family:Roboto-Light;font-weight:bold;font-size:23px;text-align:center;}
 .error-message{color:red;font-family:Roboto-Light;}
+.error-message2{color:#00EF00;font-family:Roboto-Light;text-align: left;}
 .camp{height:70px;}
 .contacinput{color:#989898;font-family:Roboto-Light;font-weight:bold;font-weight:500;font-size:22px;line-height:22px;background-color:transparent;border:1.9px solid #0064AA;transition:all 0.3s;padding:13px;margin-bottom:3px;width:100%;box-sizing:border-box;outline:0;}
 .error-label{color:#F7534B;font-family:Roboto-Light;font-weight:bold;}
@@ -102,6 +104,10 @@ body{background:url(../img2/cream_pixels.png);}
 .nom_author{float:left;}
 .calen_post{float:right;}
 .tit_suscrip{text-align:center;font-size:20px;}
+.tit_footer{text-align:left;font-size:15px;height: 45px;font-weight: bold;margin-top: 20px;}
+.tit_follow{text-align:center;font-size:15px;height: 45px;font-weight: bold;margin-top: 20px;}
+.footer-box-text p{text-align: left;};
+.footer-box-text p a{color: white;};
 .list_cate{list-style:none;}
 .news{font-size:24px;font-family:Roboto-Light;margin-left:15px;}
 .ch-grid{margin:20px 0 0 0;padding:0;list-style:none;display:block;text-align:center;width:100%;}
@@ -110,10 +116,10 @@ body{background:url(../img2/cream_pixels.png);}
 .ch-grid:after{clear:both;}
 .ch-grid li{width:220px;height:220px;display:inline-block;margin:20px;}
 .contval{height:250px;}
+.direcciones{padding-left: 50px;}
 @media only screen and (max-width:1200px){.title p{font-size:13px;}
 .title{margin-top:-34px;}
 @media only screen and (max-width:1169px){.jms-wrapper{top:-63px;}
-.direcc{margin-top:80px;}
 .formu{margin-top:0px;}
 .mapa{margin-top:50px;}
 .box h2{font-size:20px;}
@@ -138,6 +144,7 @@ body{background:url(../img2/cream_pixels.png);}
 .box h2{font-size:22px;}
 .box p{font-size:18px;}
 .cabecera{padding-top:20px;padding-bottom:20px;}
+.direcciones {padding-left: 0px;}
 }
 @media only screen and (max-width:505px){.circle{width:140px;height:140px;padding:10px;}
 .circle h3{font-size:15.3px;margin-top:35px;}

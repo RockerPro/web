@@ -65,6 +65,9 @@ include '../../../app/app2.php'; ?>
                                 <a class="opt" data-toggle="tooltip" title="Eliminar">
                                   <i ng-click="delete_user(item.codusu,$index)" class="fa fa-trash"></i>
                                 </a>
+                                <a href="<?php echo $baseurl ?>edit/users/{{item.codusu}}" class="opt" data-toggle="tooltip" title="Editar">
+                                  <i class="fa fa-pencil"></i>
+                                </a>
                               </td>
                             </tr>
                       </tbody>
