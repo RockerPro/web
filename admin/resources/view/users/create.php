@@ -1,5 +1,9 @@
 <?php session_start();
-include '../../../app/app2.php'; ?>
+include '../../../app/app2.php'; 
+if ($_SESSION["rol"] != 'A') {
+ header('Location: inicio');
+}
+?>
 <!DOCTYPE html>
 <html>
 <?php include '../../layouts/head.php'; ?>
@@ -34,7 +38,16 @@ include '../../../app/app2.php'; ?>
             <form role="form">
             <div class="box-body">
 							<div class="col-sm-12">
-								     <div class="form-group">
+								   <div class="form-group">
+                      <label class="control-label">Rol</label>
+                      <select name="category" class="form-control" required ng-model="select_rol">
+                        <option value=""></option>
+                        <option value="U">Creador de Contenidos</option>
+                        <option value="C">Community Manager</option>                        
+                      </select>
+                        <i ng-show="myForm.category.$error.required" style="color:red">* Requerido</i>
+                   </div>
+                   <div class="form-group">
 									    <label class="control-label">Nombre</label>
 									    <input type="text" class="form-control" ng-model="item.nom" required>
 									 </div>

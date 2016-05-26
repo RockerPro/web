@@ -37,39 +37,102 @@ include 'app.php';
 		<?php include 'layouts/cabecera.php' ?>
 		<main class="cd-main-content">
 			<div class="col-md-9" style="margin-bottom:25px;overflow: hidden;">
-				<div class="col-md-12" style="margin-top:55px;">					
-                <div class="contvalor wow zoomIn" data-wow-delay="0.3s" style="margin-top: -35px;">
-                    <p class="titsec">ENERGÍA</p>
-                      <div class="divider divider_gray ">
-                          <span></span><span></span>
-                      </div>
-                  </div>
-		            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">		            	
-	                    <div class="col-md-12 wow fadeInLeft" data-wow-delay="0.6s" style="padding-left: 50px;">
+				<div class="col-md-12" style="margin-top:55px;">          
+                <div class="contvalor wow fadeIn" data-wow-delay="0.3s" style="margin-top: 0px;">
+                  <img src="<?php echo $baseurl?>dist/img2/banners/cabless.jpg" class="img-responsive" alt="TECNOLOGIA SGTEL">    
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">                  
+                              <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s" style="">
                                    <ul  class="textarea listaserv">
-                                     <li class="itemm2" data-cont="e1" style="color:#004375;list-style:url(<?php echo $baseurl;?>dist/img2/punto.png);">Sistemas eléctricos de baja tensión  </li>
-                                     <li class="itemm2" data-cont="e2">Sistemas Eléctricos de Media tensión </li>
-                                     <li class="itemm2" data-cont="e3">Sistemas de Electrificación Urbana </li>
-                                     <li class="itemm2" data-cont="e4">Sub estaciones eléctricas</li>
-                                     <li class="itemm2" data-cont="e5">Lineas de transmisión y distribución </li>
-                                     <li class="itemm2d" data-cont="e6" style="font-weight: bold;">UPS y banco de baterías.</li>
+                                     <li class="itemm5" data-cont="t1" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>Fibra óptica</li>
+                                     <li class="itemm5" data-cont="t2"><i class="fa fa-circle punto"></i>Cableado estructurado</li>
+                                     <li class="itemm5" data-cont="t3"><i class="fa fa-circle punto"></i>Enlaces Inalámbricos</li>
+                                     <li class="itemm5" data-cont="t4"><i class="fa fa-circle punto"></i>Seguridad Electrónica</li>
                                    </ul>
                                    <br><br>
                                </div>
-                               <div class="col-md-12 wow fadeInRight" data-wow-delay="0.9s" style="padding-left: 50px;">
+                               <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.9s">
+                                    <div class="hidee5" id="t1">
+                                        Nos especializamos en la más avanzada tecnología relacionada con la conectividad, para facilitar la transmisión de datos, voz y video de alto desempeño. Como especialistas en el campo de la fibra óptica, ponemos a su disposición nuestra amplia experiencia con el fin de que usted obtenga los beneficios con soluciones integrales totalmente probadas para seleccionar los mejores productos del mercado. <br>
+
+                                        Nos especializamos en el diseño, fabricación de cables a la medida, ensamble, soluciones a la medida, para cualquier instalación, sin importar la magnitud de su proyecto. Al conocer las necesidades de nuestros clientes, hacemos que sus sistemas de telecomunicación sean capaces de cumplir totalmente con los aspectos más innovadores y lograr que su impacto sea capaz de evolucionar mantener positivamente la operación de su empresa.
+                                    </div>
+                                    <div class="hidee5" id="t2">Ofrecemos soluciones y productos para el cableado de su oficina u edificio, con el fin de ofrecerle una conectividad de todos tus equipos activos, de diferentes o igual tecnología, permitiendo la integración con los diferentes servicios que disponga: telefonía, datos, seguridad, domótica, etc…, es decir, todo lo referente al cableado voz-datos para redes de comunicaciones.</div>
+                                    <div class="hidee5" id="t3">
+                                        Los enlaces inalámbricos ofrecen la posibilidad de conectar a Internet lugares de difícil acceso donde no existen otras posibilidades de servicios de telecomunicaciones. A través de los enlaces inalámbricos se puede transportar datos y voz (Voz IP - VoIP) con una calidad y velocidad muy superior a las conexiones Internet vía satélite.
+                                        Estos enlaces se realizan desde un punto donde exista la posibilidad de contratar un acceso a Internet hasta el punto donde sea necesaria dicha conexión.
+                                    </div>
+                                    <div class="hidee5" id="t4">
+                                        Evaluación del Sistema de Seguridad Electrónica con el que cuenta el local, Instalación y Mantenimiento de Sistemas de Seguridad Electrónicos, Asesoría en instalaciones de seguridad electrónica.
+                                    </div>                                    
+                               </div> 
+                </div>              
+        </div>
+        <div class="col-md-12" style="margin-top:35px;" id="telecomunicaciones">
+                <div class="contvalor wow fadeIn" data-wow-delay="0.3s" style="margin-top: 35px;">
+                  <img src="<?php echo $baseurl?>dist/img2/banners/banner-2.jpg" class="img-responsive" alt="COMUNICACIONES SGTEL">    
+                </div>             
+                <div class="col-md-12">                  
+                              <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+                                   <ul  class="textarea listaserv">
+                                     <li class="itemm" data-cont="i1" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>Proyectos de Planta Externa y Planta Interna</li>
+                                     <li class="itemm" data-cont="i2"><i class="fa fa-circle punto"></i>Auditoria de Instalaciones HFC DTH</li>
+                                     <li class="itemm" data-cont="i3"><i class="fa fa-circle punto"></i>Instalación de Antenas Satelitales</li>
+                                     <li class="itemm" data-cont="i4"><i class="fa fa-circle punto"></i>Redes de Transporte de Radios</li>
+                                   </ul>
+                                   <br><br>
+                               </div>
+                               <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.9s">
+                                    <div class="hidee" id="i1">
+                                        Consiste en realizar tendido de cable coaxial y/o fibra óptica ya sea aéreo o subterráneo, desde la central o HUB hacia los TAP's ubicados en postes, para posteriormente brindar servicio a los clientes (usuarios). <br>
+                                        Servicio que consiste en ampliar la capacidad de la central o HUB (Headend), a solicitud del cliente, mejorando el Up Stream como el Down Stream (ancho de banda), la calidad de imagen, voz y datos. <br>
+                                    </div>
+                                    <div class="hidee" id="i2">Auditoria de Instalaciones HFC DTH</div>
+                                    <div class="hidee" id="i3">
+                                        Brindar servicio de cable a los usuarios a través de instalación de antenas parabólicas, dichas antenas captan la señal del satélite y la distribuyen al usuario, mediante decodificadores.
+                                    </div>
+                                    <div class="hidee" id="i4">
+                                        Redes de Transporte de Radios
+                                    </div>
+                               </div>
+                </div>
+        </div>
+        <div class="col-md-12" style="margin-top:55px;" id="energia">					
+                <div class="contvalor wow fadeIn" data-wow-delay="0.3s" style="margin-top: 35px;">
+                  <img src="<?php echo $baseurl?>dist/img2/banners/banner-3.jpg" class="img-responsive" alt="ENERGIA Y OBRAS CIVILES SGTEL">    
+                </div>
+		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">		            	
+	                             <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+                                   <ul  class="textarea listaserv">
+                                     <li class="itemm2" data-cont="e1" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>UPS y banco de baterías</li> 
+                                     <li class="itemm2" data-cont="e2"><i class="fa fa-circle punto"></i>Sistemas eléctricos de baja tensión  </li>
+                                     <li class="itemm2" data-cont="e3"><i class="fa fa-circle punto"></i>Sistemas Eléctricos de Media tensión </li>
+                                     <li class="itemm2" data-cont="e4"><i class="fa fa-circle punto"></i>Sistemas de Electrificación Urbana </li>
+                                     <li class="itemm2" data-cont="e5"><i class="fa fa-circle punto"></i>Sub estaciones eléctricas</li>
+                                     <li class="itemm2" data-cont="e6"><i class="fa fa-circle punto"></i>Lineas de transmisión y distribución </li>  
+                                     <li class="itemm2" data-cont="e7"><i class="fa fa-circle punto"></i>Saneamiento </li>  
+                                     <li class="itemm2" data-cont="e8"><i class="fa fa-circle punto"></i>Obras Civíles, pistas y veredas </li>  
+                                     <li class="itemm2" data-cont="e9"><i class="fa fa-circle punto"></i>Remodelaciones </li>                                     
+                                   </ul>
+                                   <br><br>
+                               </div>
+                               <div class="col-md-6 wow fadeInRight" data-wow-delay="0.9s">
                                     <div class="hidee2" id="e1">
+                                        UPS y banco de baterías
+                                    </div>
+                                    <div class="hidee2" id="e2">
                                         Diseño y ejecución de proyectos de Sistemas Eléctricos de Baja tensión  <br>
                                         • Suministro de equipos para Sistemas Eléctricos de Baja Tensión.  <br>
                                         • Estudios de cargas en edificaciones. <br>
                                         • Mantenimiento predictivo, preventivo y correctivo de las instalaciones. <br>
                                         • Servicio de supervisión de proyectos de Sistemas Eléctricos de Baja Tensión. <br>
                                     </div>
-                                    <div class="hidee2" id="e2">
+                                    <div class="hidee2" id="e3">
                                         Instalación y mantenimiento de subestaciones eléctricas de media y baja tensión, transformadores y tableros generales de distribución. <br>
                                         Suministro e instalación de postes de media y baja tensión. 
                                         Instalación de sistemas de alumbrado interior y exterior, toma corrientes comercial e industrial, alimentación eléctrica de maquinas y equipos. 
                                     </div>
-                                    <div class="hidee2" id="e3">
+                                    <div class="hidee2" id="e4">
                                         • Estudios de factibilidad, proyectos eléctricos. <br>
                                         • Instalación eléctrica alta, media y baja tensión. <br>
                                         • Alumbrado público y conexión a domicilio <br>
@@ -89,10 +152,10 @@ include 'app.php';
                                         • Instalación de iluminación interior <br>
                                         • Instalación de sistemas de iluminación de emergencia. <br>
                                     </div>
-                                    <div class="hidee2" id="e4">
+                                    <div class="hidee2" id="e5">
                                         Montaje y desmontaje de líneas de redes eléctricas de alta media y baja tensión. Instalación de sub estación.<br>
                                     </div>
-                                    <div class="hidee2" id="e5">
+                                    <div class="hidee2" id="e6">
                                         Líneas de transmisión hasta 500kV <br>
                                         • Montaje de Líneas de transmisión hasta 500Kv <br>
                                         • Suministro de estructuras metálicas y equipos relacionados a la línea de transmisión. <br>
@@ -102,68 +165,18 @@ include 'app.php';
                                         • Mejor relación precio – calidad para la construcción de su proyecto, garantizado bajo el cumplimiento de las normas vigentes. <br>
                                         • Servicio postventa con capacidad de atención ante emergencias. <br>   
                                     </div>
-                                    <div class="hidee2" id="e6">
-                                        
+                                    <div class="hidee2" id="e7">
+                                        Saneamiento
                                     </div>
+                                    <div class="hidee2" id="e8">
+                                        Obras Civíles, pistas y veredas
+                                    </div>
+                                    <div class="hidee2" id="e9">
+                                        Remodelaciones
+                                    </div>                                   
                                </div> 
-		            </div>
-		            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow zoomIn" data-wow-delay="1.5ss">
-	                    <img class="img-responsive imgdet pull-right" src="<?php echo $baseurl;?>dist/img2/areas/energ.jpg" alt="imagen energía">
-		            </div>		            
-				</div>
-				<div class="col-md-12" style="margin-top:35px;">
-                <div class="contvalor wow zoomIn" data-wow-delay="0.3s" style="margin-top: -35px;">
-                    <p class="titsec">COMUNICACIONES</p>
-                      <div class="divider divider_gray ">
-                          <span></span><span></span>
-                      </div>
-                  </div>
-					      <div class="col-md-4 wow zoomIn" data-wow-delay="1.5s" style="overflow:hidden;">
-	                    <img class="img-responsive imgdet pull-left" src="<?php echo $baseurl;?>dist/img2/areas/comu.jpg" alt="imagen energía">
-		            </div>
-                
-		            <div class="col-md-8">		            	
-	                    <div class="col-md-12 wow fadeInRight" data-wow-delay="0.6s">
-                                   <ul  class="textarea listaserv">
-                                     <li class="itemm" data-cont="i1" style="color:#004375;list-style:url(<?php echo $baseurl;?>dist/img2/punto.png);">Cableado estructurado</li>
-                                     <li class="itemm" data-cont="i2">Fibra óptica</li>
-                                     <li class="itemm" data-cont="i3">Seguridad Electrónica</li>
-                                     <li class="itemm" data-cont="i4">Proyectos de Planta Externa y Planta Interna</li>
-                                     <li class="itemm" data-cont="i5">Instalación de radio Bases, micro-celdas, Antenas</li>
-                                     <li class="itemmd" data-cont="i6" style="font-weight: bold;">Auditoria de Instalaciones HFC DTH</li>
-                                     <li class="itemm" data-cont="i7">Instalación de Antenas Satelitales</li>
-                                     <li class="itemm" data-cont="i8">Enlaces Inalámbricos</li>
-                                   </ul>
-                                   <br><br>
-                               </div>
-                               <div class="col-md-12 wow fadeInLeft" data-wow-delay="0.9s" style="padding-left: 50px;">
-                                    <div class="hidee" id="i1">Ofrecemos soluciones y productos para el cableado de su oficina u edificio, con el fin de ofrecerle una conectividad de todos tus equipos activos, de diferentes o igual tecnología, permitiendo la integración con los diferentes servicios que disponga: telefonía, datos, seguridad, domótica, etc…, es decir, todo lo referente al cableado voz-datos para redes de comunicaciones.</div>
-                                    <div class="hidee" id="i2">
-                                        Nos especializamos en la más avanzada tecnología relacionada con la conectividad, para facilitar la transmisión de datos, voz y video de alto desempeño. Como especialistas en el campo de la fibra óptica, ponemos a su disposición nuestra amplia experiencia con el fin de que usted obtenga los beneficios con soluciones integrales totalmente probadas para seleccionar los mejores productos del mercado. <br>
-
-                                        Nos especializamos en el diseño, fabricación de cables a la medida, ensamble, soluciones a la medida, para cualquier instalación, sin importar la magnitud de su proyecto. Al conocer las necesidades de nuestros clientes, hacemos que sus sistemas de telecomunicación sean capaces de cumplir totalmente con los aspectos más innovadores y lograr que su impacto sea capaz de evolucionar mantener positivamente la operación de su empresa.
-                                    </div>
-                                    <div class="hidee" id="i3">
-                                        Evaluación del Sistema de Seguridad Electrónica con el que cuenta el local, Instalación y Mantenimiento de Sistemas de Seguridad Electrónicos, Asesoría en instalaciones de seguridad electrónica.
-                                    </div>
-                                    <div class="hidee" id="i4">
-                                        Consiste en realizar tendido de cable coaxial y/o fibra óptica ya sea aéreo o subterráneo, desde la central o HUB hacia los TAP's ubicados en postes, para posteriormente brindar servicio a los clientes (usuarios). <br>
-                                        Servicio que consiste en ampliar la capacidad de la central o HUB (Headend), a solicitud del cliente, mejorando el Up Stream como el Down Stream (ancho de banda), la calidad de imagen, voz y datos. <br>
-                                    </div>
-                                    <div class="hidee" id="i5">
-                                        Consiste en ampliar la señal celular de las estaciones base a través de instalaciones de enlaces microondas, para evitar que las comunicaciones se vean interrumpidas.
-                                    </div>
-                                    <div class="hidee" id="i6">6</div>
-                                    <div class="hidee" id="i7">
-                                        Brindar servicio de cable a los usuarios a través de instalación de antenas parabólicas, dichas antenas captan la señal del satélite y la distribuyen al usuario, mediante decodificadores.
-                                    </div>
-                                    <div class="hidee" id="i8">
-                                        Los enlaces inalámbricos ofrecen la posibilidad de conectar a Internet lugares de difícil acceso donde no existen otras posibilidades de servicios de telecomunicaciones. A través de los enlaces inalámbricos se puede transportar datos y voz (Voz IP - VoIP) con una calidad y velocidad muy superior a las conexiones Internet vía satélite.
-                                        Estos enlaces se realizan desde un punto donde exista la posibilidad de contratar un acceso a Internet hasta el punto donde sea necesaria dicha conexión.
-                                    </div>
-                               </div>
-		            </div>
-				</div>
+		            </div>            
+				</div>				
 			</div>
 			<!-- seccion novedades -->
                 <?php
@@ -171,7 +184,7 @@ include 'app.php';
                 ?>
             <!-- fin -->    
 			<div class="col-md-12 contcli">
-                     <p class="titsec">CLIENTES</p>
+                     <p class="titsec" style="width: 200px;">CLIENTES</p>
                                	<div class="divider divider_gray ">
                                		<span></span><span></span>
                                	</div>
@@ -222,9 +235,6 @@ include 'app.php';
                                       <div class="item">
                                       <img class="lazyOwl client" data-src="<?php echo $baseurl;?>dist/img2/clients/reniec.png" alt="cliente15">
                                       </div>
-                                      <div class="item">
-                                      <img class="lazyOwl client" data-src="<?php echo $baseurl;?>dist/img2/clients/telefonica.png" alt="cliente16">
-                                      </div>
                                       <div class="item visible-md">
                                       </div>
                                       <div class="item">
@@ -239,68 +249,126 @@ include 'app.php';
 
 		</main>
 		<nav class="cd-nav">
-		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-			<li><a href="<?php echo $baseurl ?>">INICIO</a></li>
-			<li><a href="<?php echo $baseurl ?>acerca-sgtel">ACERCA DE SGTEL</a></li>
+            <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+                <li><a href="<?php echo $baseurl ?>">INICIO</a></li>
+                <li><a href="<?php echo $baseurl ?>acerca-sgtel">ACERCA DE SGTEL</a></li>
 
-			<li class="has-children">
-                <a class="selected">ÁREAS DE NEGOCIO </a>
+                <li class="has-children">
+                    <a class="selected">ÁREAS DE NEGOCIO </a>
 
-                <ul class="cd-nav-icons is-hidden">
-                    <li class="go-back"><a href="#0">Volver</a></li>
-                    <li>
-                        <a class="cd-nav-item " href="<?php echo $baseurl ?>areas-negocio/infraestructura">
-                            Infraestructura
-                            <p></p>
-                        </a>
-                    </li>
+                    <ul class="cd-secondary-nav is-hidden">
+                        <li class="go-back"><a href="#0">Volver</a></li>
+                        <li  class="has-children">
+                            <a class="nocur">
+                                Infraestructura
+                                <p></p>
+                            </a>                        
+                            <ul class="is-hidden" style="padding-left: 10px;">
+                                <li class="go-back"><a href="#0">Volver</a></li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/infraestructura">Tecnología</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/infraestructura#telecomunicaciones">Telecomunicaciones</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/infraestructura#energia">Energía y obra civil</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a class="cd-nav-item " href="<?php echo $baseurl ?>areas-negocio/soluciones-moviles">
-                            Soluciones Móviles
-                            <p></p>
-                        </a>
-                    </li>
+                        <li  class="has-children">
+                            <a class="nocur">
+                                Soluciones Tecnológicas
+                            </a>    
+                            <!-- movil-->                   
+                            <ul class="is-hidden visible-md visible-sm visible-xs" style="padding-left: 10px;">
+                                <li class="go-back"><a href="#0">Volver</a></li>
+                                <li class="has-children">
+                                    <a href="#0">Software</a>
+                                    <ul class="cd-primary-nav is-hidden">
+                                        <li class="go-back"><a href="#0">Volver</a></li>
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children">
+                                    <a href="#0">Social Media</a>
+                                    <ul class="cd-primary-nav is-hidden">
+                                        <li class="go-back"><a href="#0">Volver</a></li>
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- escritorio-->
+                            <ul class="is-hidden visible-lg" style="padding-left: 10px;">
+                                <li class="go-back"><a href="#0">Volver</a></li>
+                                <li class="">
+                                    <a  class="nocur">Software</a>
+                                    <ul class="">
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a  class="nocur">Social Media</a>
+                                    <ul class="">
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a class="cd-nav-item " href="<?php echo $baseurl ?>areas-negocio/consultoria-emprendimiento">
-                            Consultoría y Emprendimiento
-                            <p></p>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+                        <li>
+                            <a class="cd-nav-item nocur">
+                                APOYO EMPRESARIAL
+                                <p></p>
+                            </a>
+                            <ul class="is-hidden" style="padding-left: 10px;">
+                                <li class="go-back"><a href="#0">Volver</a></li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial">Consultoría</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial#emprendimiento">Emprendimiento</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
 
-			<li class="has-children">
-                <a>NOVEDADES</a>
-                <ul class="cd-nav-icons is-hidden">
-                    <li class="go-back"><a href="#0">Volver</a></li>
-                    <li>
-                        <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/infraestructura">
-                            Infraestructura
-                            <p></p>
-                        </a>
-                    </li>
+                <li class="has-children">
+                    <a>NOVEDADES</a>
+                    <ul class="cd-nav-icons is-hidden" style="padding-left: 0px;">
+                        <li class="go-back"><a href="#0">Volver</a></li>
+                        <li>
+                            <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/infraestructura">
+                                Infraestructura
+                                <p></p>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/soluciones-moviles">
-                            Soluciones Móviles
-                            <p></p>
-                        </a>
-                    </li>
+                        <li  >
+                            <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/soluciones-tecnologicas">
+                                Soluciones Tecnológicas
+                                <p></p>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/consultoria-emprendimiento">
-                            Consultoría y Emprendimiento
-                            <p></p>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+                        <li style="list-style:none;">
+                            <a  class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/apoyo-empresarial">
+                                APOYO EMPRESARIAL
+                                <p></p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
-			<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
-		</ul> <!-- primary-nav -->
-	</nav> <!-- cd-nav -->
+                <li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
+            </ul> <!-- primary-nav -->
+        </nav> <!-- cd-nav -->
 		
 		
 	</div> 

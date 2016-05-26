@@ -1,5 +1,11 @@
 <?php session_start();
-include '../../../app/app2.php'; ?>
+include '../../../app/app2.php'; 
+if ($_SESSION["rol"] == 'A' || $_SESSION["rol"] == 'U') {
+ 
+}else{
+header('Location: inicio');
+}
+?>
 <!DOCTYPE html>
 <html>
 <?php include '../../layouts/head.php'; ?>
@@ -63,8 +69,8 @@ include '../../../app/app2.php'; ?>
 									    <label class="control-label">Categoría</label>
 									    <select name="category" class="form-control" required ng-model="select_cat">
 									    	<option value="Infraestructura">Infraestructura</option>
-									    	<option value="Soluciones Móviles">Soluciones Móviles</option>
-									    	<option value="Consuloría y Emprendimiento">Consuloría y Emprendimiento</option>
+									    	<option value="Soluciones Tecnológicas">Soluciones Tecnológicas</option>
+									    	<option value="Apoyo Empresarial">Apoyo Empresarial</option>
 									    </select>
 								        <i ng-show="myForm.category.$error.required" style="color:red">* Requerido</i>
 									 </div>

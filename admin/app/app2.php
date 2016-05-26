@@ -10,7 +10,4 @@ if (isset($_SESSION["access"])) {
 } else {
 	header('Location: ../admin');
 }
-// if ($_SESSION["rol"] != 'A') {
-// 	header('Location: php/controller/login.controller.php?salir=exit');
-// }
 ?>

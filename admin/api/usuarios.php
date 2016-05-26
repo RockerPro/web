@@ -17,6 +17,7 @@ switch($action) {
     case 'registrar': 	
 		    $array = array();
             $array[] = $_GET['nom'];
+            $array[] = $_GET['rol'];
             $array[] = $_GET['email'];
             $array[] = sha1($_GET['pass']);
  		    $id =  $model->Nuevo($array);
@@ -25,7 +26,7 @@ switch($action) {
     case 'editar':  	
 		    $array = array();
 		    $array[] = $_SESSION["id"];
-            $array[] = $_GET['nom'];
+        $array[] = $_GET['rol'];            
             $array[] = $_GET['email'];
  		    $id =  $model->Editar($array);
              $_SESSION["nombre"] = $_GET['nom'];
@@ -56,6 +57,7 @@ switch($action) {
     case 'actualizar':    
         $array = array();
         $array[] = $_GET["id"];
+        $array[] = $_GET['nom'];
             $array[] = $_GET['nom'];
             $array[] = $_GET['email'];
         $id =  $model->Editar($array);

@@ -1,5 +1,6 @@
 <?php session_start();
-include '../../../app/app2.php'; ?>
+include '../../../app/app2.php'; 
+?>
 <!DOCTYPE html>
 <html>
 <?php include '../../layouts/head.php'; ?>

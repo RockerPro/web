@@ -14,11 +14,11 @@ s0.parentNode.insertBefore(s1,s0);
 
 <!-- Google Analytics -->
 <?php
-require_once 'php/scripts.model.php';
-$model = new PostsModel();
+// require_once 'php/scripts.model.php';
+// $model = new PostsModel();
 
-        $data = $model->Listar();
-        $script = json_encode($data[0]->{'content'});
-        echo substr($script, 1); 
+//         $data = $model->Listar();
+//         $script = json_encode($data[0]->{'content'});
+//         echo substr($script, 1); 
 
 ?>

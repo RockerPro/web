@@ -52,13 +52,14 @@ call sp_login('usuario123@gmail.com','3c55950f0400029902b056c1492f4cc040898c79')
 drop procedure if exists sp_listar_usu;
 create procedure sp_listar_usu()
 select codusu,nomusu,rol,email,fech_create from usuario
-where rol = 'U';
+where rol = 'U' or rol = 'C';
 
 select * from usuario
 
 DELIMITER $$
 drop procedure if exists sp_nuevo_usu;
-CREATE PROCEDURE sp_nuevo_usu(	
+CREATE PROCEDURE sp_nuevo_usu(
+ rl char(3),	
  nom varchar(100),
  mail varchar(50),
  pas mediumtext
@@ -71,7 +72,7 @@ BEGIN
        		 select 'fail' res, 'El usuario ya existe' res2;       
 	     	ELSE   
 			   SET co = (select concat('us',right(concat('000',right(IFNULL(max(codusu),'000'),3)+1),4)) AS cod from usuario);
-          	insert into usuario (codusu,nomusu, email,pass) values(co,nom,mail,SHA1(pas));
+          	insert into usuario (codusu,rol,nomusu, email,pass) values(co,nom,rl,mail,SHA1(pas));
 	       	 select 'success' res, co;
 	     	END IF;
         END $$

@@ -1,5 +1,9 @@
 <?php session_start();
-include '../../../app/app2.php'; ?>
+include '../../../app/app2.php'; 
+if ($_SESSION["rol"] != 'A') {
+ header('Location: inicio');
+}
+?>
 <!DOCTYPE html>
 <html>
 <?php include '../../layouts/head.php'; ?>
@@ -57,6 +61,9 @@ include '../../../app/app2.php'; ?>
                                 </t>
                                 <t ng-if="item.rol == 'U'">
                                   Creador de Contenidos
+                                </t>
+                                <t ng-if="item.rol == 'C'">
+                                  Community Manager
                                 </t>
                               </td>
                               <td>{{item.email}}</td> 

@@ -23,6 +23,7 @@ include 'app.php';
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/slider/css/navstylechange.css" media="screen" />
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
   <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/slider/css/settings.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>dist/slider/css/style.css" media="screen" />
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/bootstrap.css">
 	<link rel="shortcut icon" href="<?php echo $baseurl;?>dist/img2/icono.png">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/estilos.css">
@@ -43,44 +44,53 @@ include 'app.php';
 <main class="cd-main-content">	
 	<div class="col-md-12" style="margin-top:25px;">
 	<div class="col-md-9">
-<div class="tres">
-<ul class="ch-grid">
-	<li>
-<a href="<?php echo $baseurl?>areas-negocio/infraestructura">
-	<div class="ch-item ch-img-1  wow bounceIn" data-wow-delay="0.3s">
-<div class="ch-info">
-	<h3>INFRAESTUCTURA</h3>
-	<p>Ver más</p>
-</div>
-	</div>
-</a>
-	</li>
-	<li>
-<a href="<?php echo $baseurl?>areas-negocio/soluciones-moviles">
-	<div class="ch-item ch-img-2  wow bounceIn" data-wow-delay="0.6s">
-<div class="ch-info">
-	<h3>SOLUCIONES MÓVILES</h3>
-	<p>Ver más</p>
-</div>
-	</div>
-</a>
-	</li>
-	<li>
-<a href="<?php echo $baseurl?>areas-negocio/consultoria-emprendimiento">
-	<div class="ch-item ch-img-3  wow bounceIn" data-wow-delay="0.9s">
-<div class="ch-info">
-	<h3>CONSULTORÍA Y EMPRENDIMIENTO</h3>
-	<p>Ver más</p>
-</div>
-	</div>
-</a>
-	</li>
-</ul>
-</div>
+  <div class="tres">
+    <ul class="ch-grid">
+      	<li>
+          <a href="<?php echo $baseurl?>areas-negocio/infraestructura">
+          	<div class="ch-item ch-img-1  wow bounceIn" data-wow-delay="0.3s">
+            <div class="ch-info">
+            	<h3>VER MÁS</h3>
+            </div>
+          	</div>
+          </a>
+          <div class="ball-tit btt1 wow zoomIn" data-wow-delay="0.5s">
+            <p style="margin-top: 7px;">INFRAESTRUCTURA</p>
+          </div>
+      	</li>
+      	<li>
+          <a href="<?php echo $baseurl?>areas-negocio/software-para-soluciones-moviles">
+          	<div class="ch-item ch-img-2  wow bounceIn" data-wow-delay="0.7s">
+            <div class="ch-info">
+            	<h3>VER MÁS</h3>
+            </div>
+          	</div>
+          </a>
+          <div class="ball-tit btt2 wow zoomIn" data-wow-delay="0.9s">
+            <p>
+            SOLUCIONES TECNOLÓGICAS
+            </p>
+          </div>
+      	</li>
+      	<li>
+          <a href="<?php echo $baseurl?>areas-negocio/apoyo-empresarial">
+          	<div class="ch-item ch-img-3  wow bounceIn" data-wow-delay="1.1s">
+            <div class="ch-info">
+            	<h3>VER MÁS</h3>
+            </div>
+          	</div>
+          </a>
+          <div class="ball-tit btt3 wow zoomIn" data-wow-delay="1.3s">
+            <p>
+              CONSULTORÍA Y EMPRENDIMIENTO
+            </p>
+          </div>
+      	</li>
+    </ul>
+  </div>
 <div class="col-md-12 contcli">
-                               <p class="titsec">CLIENTES</p>
+                               <p class="titsec" style="width: 250px;">CLIENTES</p>
                                <div class="divider divider_gray ">
-                               <span></span><span></span>
                                </div>
                                <br><br>
                               <div id="owl-demo" class="col-md-12 owl-carousel owl-theme owl-loaded">
@@ -151,60 +161,126 @@ include 'layouts/sec_novedades.php';
 </div>
 </main>
 <nav class="cd-nav">
-<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-	<li><a href="<?php echo $baseurl?>" class="selected">INICIO</a></li>
-	<li><a href="<?php echo $baseurl?>acerca-sgtel">ACERCA DE SGTEL</a></li>
-	<li class="has-children">
-<a>ÁREAS DE NEGOCIO </a>
-<ul class="cd-nav-icons is-hidden">
-	<li class="go-back"><a href="#0">Volver</a></li>
-	<li>
-<a class="cd-nav-item " href="<?php echo $baseurl?>areas-negocio/infraestructura">
-	Infraestructura
-	<p></p>
-</a>
-	</li>
-	<li>
-<a class="cd-nav-item " href="<?php echo $baseurl?>areas-negocio/soluciones-moviles">
-	Soluciones Móviles
-	<p></p>
-</a>
-	</li>
-	<li>
-<a class="cd-nav-item " href="<?php echo $baseurl?>areas-negocio/consultoria-emprendimiento">
-	Consultoría y Emprendimiento
-	<p></p>
-</a>
-	</li>
-</ul>
-	</li>
-	<li class="has-children">
-<a>NOVEDADES</a>
-<ul class="cd-nav-icons is-hidden">
-	<li class="go-back"><a href="#0">Volver</a></li>
-	<li>
-<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/infraestructura">
-	Infraestructura
-	<p></p>
-</a>
-	</li>
-	<li>
-<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/soluciones-moviles">
-	Soluciones Móviles
-	<p></p>
-</a>
-	</li>
-	<li>
-<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/consultoria-emprendimiento">
-	Consultoría y Emprendimiento
-	<p></p>
-</a>
-	</li>
-</ul>
-	</li>
-	<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
-</ul> <!-- primary-nav -->
-	</nav> <!-- cd-nav -->
+      <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+        <li><a class="selected" href="<?php echo $baseurl ?>">INICIO</a></li>
+        <li><a href="<?php echo $baseurl ?>acerca-sgtel">ACERCA DE SGTEL</a></li>
+
+        <li class="has-children">
+          <a>ÁREAS DE NEGOCIO </a>
+
+          <ul class="cd-secondary-nav is-hidden">
+            <li class="go-back"><a href="#0">Volver</a></li>
+            <li  class="has-children">
+              <a class="nocur">
+                Infraestructura
+                <p></p>
+              </a>            
+              <ul class="is-hidden" style="padding-left: 10px;">
+                <li class="go-back"><a href="#0">Volver</a></li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/infraestructura">Tecnología</a>
+                </li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/infraestructura#telecomunicaciones">Telecomunicaciones</a>
+                </li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/infraestructura#energia">Energía y obra civil</a>
+                </li>
+              </ul>
+            </li>
+
+            <li  class="has-children">
+              <a class="nocur">
+                Soluciones Tecnológicas
+              </a>  
+              <!-- movil-->         
+              <ul class="is-hidden visible-md visible-sm visible-xs" style="padding-left: 10px;">
+                <li class="go-back"><a href="#0">Volver</a></li>
+                <li class="has-children">
+                  <a href="#0">Software</a>
+                  <ul class="cd-primary-nav is-hidden">
+                    <li class="go-back"><a href="#0">Volver</a></li>
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#0">Social Media</a>
+                  <ul class="cd-primary-nav is-hidden">
+                    <li class="go-back"><a href="#0">Volver</a></li>
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- escritorio-->
+              <ul class="is-hidden visible-lg" style="padding-left: 10px;">
+                <li class="go-back"><a href="#0">Volver</a></li>
+                <li class="">
+                  <a  class="nocur">Software</a>
+                  <ul class="">
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a  class="nocur">Social Media</a>
+                  <ul class="">
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="cd-nav-item nocur">
+                APOYO EMPRESARIAL
+                <p></p>
+              </a>
+              <ul class="is-hidden" style="padding-left: 10px;">
+                <li class="go-back"><a href="#0">Volver</a></li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial">Consultoría</a>
+                </li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial#emprendimiento">Emprendimiento</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="has-children">
+          <a>NOVEDADES</a>
+          <ul class="cd-nav-icons is-hidden" style="padding-left: 0px;">
+            <li class="go-back"><a href="#0">Volver</a></li>
+            <li>
+              <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/infraestructura">
+                Infraestructura
+                <p></p>
+              </a>
+            </li>
+
+            <li  >
+              <a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/soluciones-tecnologicas">
+                Soluciones Tecnológicas
+                <p></p>
+              </a>
+            </li>
+
+            <li style="list-style:none;">
+              <a  class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/apoyo-empresarial">
+                APOYO EMPRESARIAL
+                <p></p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
+      </ul> <!-- primary-nav -->
+    </nav> <!-- cd-nav -->
 	</div>
     <script src="<?php echo $baseurl;?>bower_components/jquery/dist/jquery.min.js"></script>
     <script src="<?php echo $baseurl;?>bower_components/angular/angular.min.js"></script>

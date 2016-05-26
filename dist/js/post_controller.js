@@ -42,12 +42,13 @@ var app = angular.module('app', []);
     app.controller('postAreaController', function($scope, $http)
     {
           var get = window.location.pathname.split('/areas-negocio/')[1];
+          console.log(get)
           if (get == 'infraestructura') {
           	$scope.cate = 'Infraestructura';
-          }else if (get == 'soluciones-moviles') {
-          	$scope.cate = 'Soluciones Móviles';
-          }else if (get == 'consultoria-emprendimiento') {
-          	$scope.cate = 'Consuloría y Emprendimiento';
+          }else if (get == 'software-para-soluciones-moviles' || get == 'social-media' ) {
+          	$scope.cate = 'Soluciones Tecnológicas';
+          }else if (get == 'apoyo-empresarial') {
+          	$scope.cate = 'Apoyo Empresarial';
           };
          	 $http.get(base_url+"/admin/api/post.php?a=related&cat="+$scope.cate)
             .success(function (res)
@@ -60,10 +61,10 @@ var app = angular.module('app', []);
           var get = window.location.pathname.split('/noticias/categoria/')[1];
           if (get == 'infraestructura') {
           	$scope.cate = 'Infraestructura';
-          }else if (get == 'soluciones-moviles') {
-          	$scope.cate = 'Soluciones Móviles';
-          }else if (get == 'consultoria-emprendimiento') {
-          	$scope.cate = 'Consuloría y Emprendimiento';
+          }else if (get == 'soluciones-tecnologicas') {
+          	$scope.cate = 'Soluciones Tecnológicas';
+          }else if (get == 'apoyo-empresarial') {
+          	$scope.cate = 'Apoyo Empresarial';
           };
          	 $http.get(base_url+"/admin/api/post.php?a=category&cat="+$scope.cate)
             .success(function (res)

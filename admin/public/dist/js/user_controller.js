@@ -11,13 +11,19 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
                 
 
     	$scope.item = {};
+      $scope.$watch('select_rol', function() {
+            $scope.item.rol = $scope.select_rol;
+      })
+
     	$scope.addUser = function() { 
           var params = {};
             if (params != '') {
               params.a = 'registrar';
+              params.rol = $scope.item.rol;
               params.nom = $scope.item.nom;
               params.email = $scope.item.email;  
               params.pass = $scope.item.pass;
+              console.log(params)
                 $http({
                   url: base_url +'/admin/api/usuarios.php',
                   method: "get",
@@ -95,6 +101,7 @@ var app = angular.module('app', ['datatables','hSweetAlert']);
 
               params.a = 'editar';
               params.nom = $scope.datos.nomusu;
+              params.rol = $scope.item.rol;
               params.email = $scope.datos.email;
                 $http({
                   url: base_url +'/admin/api/usuarios.php',

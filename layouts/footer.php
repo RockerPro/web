@@ -6,7 +6,7 @@
 		                		<p class="tit_footer">CONTÁCTENOS</p>
 		                		<div class="footer-box-text">
 			                        <p><i class="fa fa-map-marker"></i> Av. Nicolas Arriola 290 Oficina 311.</p>
-		                            <p><i class="fa fa-clock-o"></i> Horario de Atención: 09:00 am - 06:00 pm</p>
+		                            <p><i class="fa fa-clock-o"></i> Atención: Lunes a Viernes de 9:00am - 6:00pm</p>
 			                        <p><i class="fa fa-phone"></i> Teléfono:  (+51 1) 340 - 3401</p>
 			                        <p><i class="fa fa-envelope"></i> Email: <a style="color: white;" href="mailto:informes@sgtel.pe" target="_blank">informes@sgtel.pe</a>
 		                       		</p>
@@ -28,11 +28,11 @@
 											<i class="fa fa-twitter"></i>
 										</a>
 									</li>
-									<!-- <li class="ln" style="margin-left: 10px;">
+									<li class="ln" style="margin-left: 10px;">
 										<a href="https://www.linkedin.com/company/sgtel-sac" target="_blank">
 											<i class="fa fa-linkedin"></i>
 										</a>
-									</li> -->
+									</li>
 								</ul>
 		                	</div>
 		                	<div class="col-md-4">
@@ -43,7 +43,7 @@
 											<input type="text" class="form-control" name="email" placeholder="Email..." >						
 										</div>
 										<div class="form-group col-md-4">
-											<input type="submit" value="Suscribirse" class="btn btn-success pull-right">
+											<input type="submit" value="Suscribirse" class="btn btn-orange pull-right">
 										</div>
 									</form>
 									<p class="success-message3"></p>

@@ -3,7 +3,7 @@ include '../../app/app2.php'; ?>
 <!DOCTYPE html>
 <html>
 <?php include '../layouts/head.php'; ?>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini" ng-app="app">
 <div class="wrapper">
 
   <?php include '../layouts/menu_header.php'; ?>
@@ -19,9 +19,12 @@ include '../../app/app2.php'; ?>
     </section>
 
     <!-- contenedor principal -->
-    <section class="content">
+    <section class="content" ng-controller="dashController">
       <div class="row">
-        <div class="col-lg-3 col-xs-6">
+        <?php if ($_SESSION['rol']== "A" || $_SESSION['rol']== "C" ) {
+        ?>
+        
+        <div class="col-lg-3 col-xs-6 tarjeta" ng-click="redirect('1')">              
           <!-- small box -->
           <div class="small-box bg-1">
             <div class="inner">
@@ -33,9 +36,10 @@ include '../../app/app2.php'; ?>
             </div>
             <a target="_blank" href="https://developers.facebook.com/tools/comments/1774999642714124" class="small-box-footer">Ir <i class="fa fa-arrow-circle-right"></i></a>
           </div>
-        </div>
+          
+        </div>        
         <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-lg-3 col-xs-6 tarjeta" ng-click="redirect('2')">
           <!-- small box -->
           <div class="small-box bg-2">
             <div class="inner">
@@ -49,7 +53,7 @@ include '../../app/app2.php'; ?>
           </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-lg-3 col-xs-6 tarjeta" ng-click="redirect('3')">
           <!-- small box -->
           <div class="small-box bg-3">
             <div class="inner">
@@ -59,11 +63,11 @@ include '../../app/app2.php'; ?>
             <div class="icon">
               <i class="ion-social-facebook"></i>
             </div>
-            <a target="_blank" href="https://www.facebook.com/" class="small-box-footer">Ir <i class="fa fa-arrow-circle-right"></i></a>
+            <a target="_blank" href="https://www.facebook.com/SGTEL-548123528682318/?ref=aymt_homepage_panel" class="small-box-footer">Ir <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-lg-3 col-xs-6 tarjeta" ng-click="redirect('4')">
           <!-- small box -->
           <div class="small-box bg-4">
             <div class="inner">
@@ -73,11 +77,14 @@ include '../../app/app2.php'; ?>
             <div class="icon">
               <i class="ion-social-twitter"></i>
             </div>
-            <a target="_blank" href="https://twitter.com" class="small-box-footer">Ir <i class="fa fa-arrow-circle-right"></i></a>
+            <a target="_blank" href="https://twitter.com/sgtelatam" class="small-box-footer">Ir <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
+        <?php } ?> 
+        <?php if ($_SESSION['rol']== "A") {
+        ?>
         <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-lg-3 col-xs-6 tarjeta" ng-click="redirect('5')">
           <!-- small box -->
           <div class="small-box bg-5">
             <div class="inner">
@@ -91,7 +98,7 @@ include '../../app/app2.php'; ?>
           </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-lg-3 col-xs-6 tarjeta" ng-click="redirect('6')">
           <!-- small box -->
           <div class="small-box bg-6">
             <div class="inner">
@@ -104,8 +111,26 @@ include '../../app/app2.php'; ?>
             <a target="_blank" href="http://sgtel.pe/cpanel" class="small-box-footer">Ir <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
+        <!-- ./col -->               
+        <div class="col-lg-3 col-xs-6 tarjeta" ng-click="redirect('7')">
+          <!-- small box -->
+          <div class="small-box bg-8">
+            <div class="inner">
+              <h3 class="titcard">Creadores</h3>
+              <p>Creadores de Contenido</p>
+            </div>
+            <div class="icon">
+              <i class="ion-ios-people"></i>
+            </div>
+            <a href="<?php echo $baseurl; ?>users" class="small-box-footer">Ir <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
         <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
+        <?php } ?>
+
+        <?php if ($_SESSION['rol']== "U" || $_SESSION['rol']== "A") {
+        ?>
+        <div class="col-lg-3 col-xs-6 tarjeta" ng-click="redirect('8')">
           <!-- small box -->
           <div class="small-box bg-7">
             <div class="inner">
@@ -118,23 +143,7 @@ include '../../app/app2.php'; ?>
             <a href="<?php echo $baseurl; ?>post" class="small-box-footer">Ir <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
-        <!-- ./col -->
-        <?php if ($_SESSION['rol']== "A") {
-        ?>
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-8">
-            <div class="inner">
-              <h3 class="titcard">Usuarios</h3>
-              <p>Creadores de Contenido</p>
-            </div>
-            <div class="icon">
-              <i class="ion-ios-people"></i>
-            </div>
-            <a href="<?php echo $baseurl; ?>users" class="small-box-footer">Ir <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
+        <!-- ./col --> 
         <?php } ?>
       </div>
     </section>
@@ -146,7 +155,9 @@ include '../../app/app2.php'; ?>
 
 <!-- REQUIRED JS SCRIPTS -->
 <?php include '../layouts/scripts.php'; ?>
-
+<script src="<?php echo $baseurl.'public/bower_components/angular-datatables/dist/angular-datatables.min.js';?>"></script> 
+<!-- Controlador -->
+<script src="<?php echo $baseurl.'public/dist/js/dashboard_controller.js';?>"></script>
 
 </body>
 

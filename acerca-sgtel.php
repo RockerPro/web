@@ -18,7 +18,7 @@ include 'app.php';
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.sgtel.com">
     <meta property="og:site_name" content="SGTEL">
-    <title>SGTEL</title>
+    <title>SGTEL</title>	
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/bootstrap.css">
 	<link rel="shortcut icon" href="<?php echo $baseurl;?>dist/img2/icono.png">
     <link rel="stylesheet" href="<?php echo $baseurl;?>dist/css/estilos.css">
@@ -39,14 +39,18 @@ include 'app.php';
                     frescas e innovadoras que permiten brindar soluciones integrales a medida de los 
                     objetivos de nuestros clientes.</p>                                                    
                 </div>
-				<div class="col-md-12 contvalor">
-                    <p class="titsec wow fadeInUp" data-wow-delay="0.6s">VALOR AGREGADO</p>
-                    <div class="divider divider_gray wow fadeInUp" data-wow-delay="0.6s">
-                               		<span></span><span></span>
-                    </div>
+				<div class="col-md-12 contcli">
+                    <div class="wow fadeInUp" data-wow-delay="0.6s">
+	                    <p class="titsec" style="width: 350px;">NUESTRO VALOR AGREGADO</p>
+	                    <div class="divider divider_gray">
+	                    </div>
+					</div>
+					<br>
+				</div>
+				<div class="col-md-12" style="margin-bottom:50px;overflow: hidden;">
                     <br>
-                    <div class="col-md-4 col-sm-4 col-xs-12 wow zoomIn" data-wow-delay="0.9s">
-						<div class="box">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-ms-12 col-xs-12 wow zoomIn" data-wow-delay="0.9s">
+						<div class="box box1">
 							<div class="icon">
 								<img src="<?php echo $baseurl;?>dist/img2/icons/aseso.png">
 							</div>
@@ -54,8 +58,8 @@ include 'app.php';
 							<p></p><p>Contamos con un staff multidisciplinario.</p><p></p>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-4 col-xs-12 wow zoomIn" data-wow-delay="1.2s">
-						<div class="box">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-ms-12 col-xs-12 wow zoomIn" data-wow-delay="1.2s">
+						<div class="box box2">
 							<div class="icon">
 								<img src="<?php echo $baseurl;?>dist/img2/icons/expec.png">
 							</div>
@@ -63,8 +67,9 @@ include 'app.php';
 							<p></p><p>Respetamos nuestro compromiso adicionando mejoras en el proyecto.</p><p></p>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-4 col-xs-12 wow zoomIn" data-wow-delay="1.5s">
-						<div class="box">
+					<div class="col-sm-3 visible-sm"></div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-ms-12 col-xs-12 wow zoomIn" data-wow-delay="1.5s">
+						<div class="box box3">
 							<div class="icon">
 								<img src="<?php echo $baseurl;?>dist/img2/icons/garan.png">
 							</div>
@@ -73,44 +78,35 @@ include 'app.php';
 						</div>
 					</div>                                   
 	            </div>
-	            <div class="col-md-12 contvalor wow fadeInLeft" data-wow-delay="0.6s">
-                    <p class="titsec">PREMIOS Y RECOMENDACIONES</p>
-                    <div class="divider divider_gray ">
-                               		<span></span><span></span>
-                    </div>
+	            <div class="col-md-12 mis-vis">	            
+	            <div class="col-md-6 contvalor mision wow zoomIn" data-wow-delay="0.9s">
+                    <p class="titsec" style="color: #004783;">MISIÓN</p>                    
                     <p class="conttext">
-                    	BBVA Premio camino al éxito (impacto social). <br>
-                    </p>                                  
-	            </div>
-	            <div class="col-md-6 contvalor wow fadeInRight" data-wow-delay="0.9s">
-                    <p class="titsec">MISIÓN</p>
-                    <div class="divider divider_gray ">
-                               		<span></span><span></span>
-                    </div>
-                    <p class="conttext">
-                    	Contribuir continuamente al logro de los objetivos de nuestros <br>
-                    	clientes, formando alianzas estratégicas, agregando valor a sus <br>
+                    	Contribuir continuamente al logro de los objetivos de nuestros
+                    	clientes, formando alianzas estratégicas, agregando valor a sus
                     	negocios y brindándoles un servicio diferenciado.
                     </p>                                  
 	            </div>
-	            <div class="col-md-6 contvalor wow fadeInLeft" data-wow-delay="1.2s">
-                    <p class="titsec">VISIÓN</p>
-                    <div class="divider divider_gray ">
-                               		<span></span><span></span>
-                    </div>
+	            <div class="col-md-6 contvalor wow zoomIn" data-wow-delay="1.2s">
+                    <p class="titsec" style="color: #004783;">VISIÓN</p>
                     <p class="conttext">
                     	En el 2021 ser reconocidos como un referente de soluciones <br>
                     	tecnológicas integrales a nivel regional.
                     </p>                                  
 	            </div>
-	            <div class="col-md-12 contvalor bg1 wow fadeIn">
+	            </div>
+	            <div class="col-md-12 contcli bg1 wow fadeIn">
 	            	<div class="bg2"></div>
-                    <p class="titsec">VALORES</p>
+	            	<div class=" wow zoomIn" data-wow-delay="0.6s">
+                    <p class="titsec" style="width:250px;">VALORES</p>
                     <div class="divider divider_gray ">
                                		<span></span><span></span>
                     </div>
+                    </div>
+                </div>
+                <div class="col-md-12 bg1 wow fadeIn">
                     <ul class="ch-grid">
-					<li>
+					<li style="width: 220px;height: 220px;">
 						<div class="ch-item wow zoomIn" data-wow-delay="0.3s">				
 							<div class="ch-info-wrap">
 								<div class="ch-info">
@@ -122,8 +118,11 @@ include 'app.php';
 								</div>
 							</div>
 						</div>
+						<div class="ball-tit btt1 wow zoomIn" data-wow-delay="0.5s">
+				            <p style="margin-top: 20px;font-weight:bold;">COMPROMISO</p>
+				        </div>
 					</li>
-					<li>
+					<li style="width: 220px;height: 220px;">
 						<div class="ch-item wow zoomIn" data-wow-delay="0.6s">
 							<div class="ch-info-wrap">
 								<div class="ch-info">
@@ -135,8 +134,11 @@ include 'app.php';
 								</div>
 							</div>
 						</div>
+						<div class="ball-tit btt1 wow zoomIn" data-wow-delay="0.5s">
+				            <p style="margin-top: 20px;font-weight:bold;">CALIDAD</p>
+				        </div>
 					</li>
-					<li>
+					<li style="width: 220px;height: 220px;">
 						<div class="ch-item wow zoomIn" data-wow-delay="0.9s">
 							<div class="ch-info-wrap">
 								<div class="ch-info">
@@ -148,8 +150,11 @@ include 'app.php';
 								</div>
 							</div>
 						</div>
+						<div class="ball-tit btt1 wow zoomIn" data-wow-delay="0.5s">
+				            <p style="margin-top: 20px;font-weight:bold;">COMUNICACIÓN</p>
+				        </div>
 					</li>
-					<li>
+					<li style="width: 220px;height: 220px;">
 						<div class="ch-item wow zoomIn" data-wow-delay="1.2s">
 							<div class="ch-info-wrap">
 								<div class="ch-info">
@@ -161,8 +166,11 @@ include 'app.php';
 								</div>
 							</div>
 						</div>
+						<div class="ball-tit btt1 wow zoomIn" data-wow-delay="0.5s">
+				            <p style="margin-top: 20px;font-weight:bold;">INNOVACIÓN</p>
+				        </div>
 					</li>
-					<li>
+					<li style="width: 220px;height: 220px;">
 						<div class="ch-item wow zoomIn" data-wow-delay="1.5s">
 							<div class="ch-info-wrap">
 								<div class="ch-info">
@@ -174,8 +182,43 @@ include 'app.php';
 								</div>
 							</div>
 						</div>
+						<div class="ball-tit btt1 wow zoomIn" data-wow-delay="0.5s">
+				            <p style="margin-top: 20px;font-weight:bold;">INTEGRIDAD</p>
+				        </div>
 					</li>
 				</ul>                                
+	            </div>
+	            <div class="col-md-12 contcli">
+                    <div class="wow fadeInUp" data-wow-delay="0.6s">
+	                    <p class="titsec" style="width: 350px;">PREMIOS OBTENIDOS</p>
+	                    <div class="divider divider_gray">
+	                    </div>
+					</div>
+					<div class="col-md-6 col-sm-12 col-ms-12 col-xs-12 wow zoomIn" data-wow-delay="0.8s">
+						<div class="col-md-6">
+							<img class="img-responsive icon-premio"
+							src="<?php echo $baseurl ?>dist/img2/icons/premios.png" alt="BBVA Premio camino al éxito">
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive img-premio" src="<?php echo $baseurl ?>dist/img2/camino-al-exito.jpg" alt="premio camino-al-exito">
+							<p class="premio">
+	                    	BBVA Premio camino al éxito (Categoría: Innovación - impacto social). <br>
+	                    	</p> 
+						</div>						
+					</div>
+					<div class="col-md-6 col-sm-12 col-ms-12 col-xs-12 wow zoomIn" data-wow-delay="1.0s">
+						<div class="col-md-6">
+							<img class="img-responsive icon-premio"
+							src="<?php echo $baseurl ?>dist/img2/icons/premios.png" alt="Concurso Innovate Perú">
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive img-premio" src="<?php echo $baseurl ?>dist/img2/innovate-peru.png" alt="premio innovate-peru">
+							<p class="premio">
+	                    	Concurso Innovate Perú (Categoría: Innovación). <br>
+	                    	</p> 
+						</div>						
+					</div>
+                                                     
 	            </div>				
 			</div>						
 			</div>
@@ -183,68 +226,126 @@ include 'app.php';
 
 		</main>
 		<nav class="cd-nav">
-		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-			<li><a href="<?php echo $baseurl ?>">INICIO</a></li>
-			<li><a href="<?php echo $baseurl ?>acerca-sgtel.php" class="selected">ACERCA DE SGTEL</a></li>
+			<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+				<li><a href="<?php echo $baseurl ?>">INICIO</a></li>
+				<li><a class="selected" href="<?php echo $baseurl ?>acerca-sgtel">ACERCA DE SGTEL</a></li>
 
-			<li class="has-children">
-				<a>ÁREAS DE NEGOCIO </a>
+				<li class="has-children">
+					<a>ÁREAS DE NEGOCIO </a>
 
-				<ul class="cd-nav-icons is-hidden">
-					<li class="go-back"><a href="#0">Volver</a></li>
-					<li>
-						<a class="cd-nav-item " href="<?php echo $baseurl ?>areas-negocio/infraestructura">
-							Infraestructura
-							<p></p>
-						</a>
-					</li>
+					<ul class="cd-secondary-nav is-hidden">
+						<li class="go-back"><a href="#0">Volver</a></li>
+						<li  class="has-children">
+							<a class="nocur">
+								Infraestructura
+								<p></p>
+							</a>						
+							<ul class="is-hidden" style="padding-left: 10px;">
+								<li class="go-back"><a href="#0">Volver</a></li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/infraestructura">Tecnología</a>
+								</li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/infraestructura#telecomunicaciones">Telecomunicaciones</a>
+								</li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/infraestructura#energia">Energía y obra civil</a>
+								</li>
+							</ul>
+						</li>
 
-					<li>
-						<a class="cd-nav-item " href="<?php echo $baseurl ?>areas-negocio/soluciones-moviles">
-							Soluciones Móviles
-							<p></p>
-						</a>
-					</li>
+						<li  class="has-children">
+							<a class="nocur">
+								Soluciones Tecnológicas
+							</a>	
+							<!-- movil-->					
+							<ul class="is-hidden visible-md visible-sm visible-xs" style="padding-left: 10px;">
+								<li class="go-back"><a href="#0">Volver</a></li>
+								<li class="has-children">
+									<a href="#0">Software</a>
+									<ul class="cd-primary-nav is-hidden">
+										<li class="go-back"><a href="#0">Volver</a></li>
+										<li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
+										<li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
+									</ul>
+								</li>
+								<li class="has-children">
+									<a href="#0">Social Media</a>
+									<ul class="cd-primary-nav is-hidden">
+										<li class="go-back"><a href="#0">Volver</a></li>
+										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
+										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- escritorio-->
+							<ul class="is-hidden visible-lg" style="padding-left: 10px;">
+								<li class="go-back"><a href="#0">Volver</a></li>
+								<li class="">
+									<a  class="nocur">Software</a>
+									<ul class="">
+										<li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
+										<li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
+									</ul>
+								</li>
+								<li class="">
+									<a  class="nocur">Social Media</a>
+									<ul class="">
+										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
+										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
 
-					<li>
-						<a class="cd-nav-item " href="<?php echo $baseurl ?>areas-negocio/consultoria-emprendimiento">
-							Consultoría y Emprendimiento
-							<p></p>
-						</a>
-					</li>
-				</ul>
-			</li>
+						<li>
+							<a class="cd-nav-item nocur">
+								APOYO EMPRESARIAL
+								<p></p>
+							</a>
+							<ul class="is-hidden" style="padding-left: 10px;">
+								<li class="go-back"><a href="#0">Volver</a></li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial">Consultoría</a>
+								</li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial#emprendimiento">Emprendimiento</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
 
-			<li class="has-children">
-				<a>NOVEDADES</a>
-				<ul class="cd-nav-icons is-hidden">
-					<li class="go-back"><a href="#0">Volver</a></li>
-					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/infraestructura">
-							Infraestructura
-							<p></p>
-						</a>
-					</li>
+				<li class="has-children">
+					<a>NOVEDADES</a>
+					<ul class="cd-nav-icons is-hidden" style="padding-left: 0px;">
+						<li class="go-back"><a href="#0">Volver</a></li>
+						<li>
+							<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/infraestructura">
+								Infraestructura
+								<p></p>
+							</a>
+						</li>
 
-					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/soluciones-moviles">
-							Soluciones Móviles
-							<p></p>
-						</a>
-					</li>
+						<li  >
+							<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/soluciones-tecnologicas">
+								Soluciones Tecnológicas
+								<p></p>
+							</a>
+						</li>
 
-					<li>
-						<a class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/consultoria-emprendimiento">
-							Consultoría y Emprendimiento
-							<p></p>
-						</a>
-					</li>
-				</ul>
-			</li>
+						<li style="list-style:none;">
+							<a  class="cd-nav-item" href="<?php echo $baseurl ?>noticias/categoria/apoyo-empresarial">
+								APOYO EMPRESARIAL
+								<p></p>
+							</a>
+						</li>
+					</ul>
+				</li>
 
-			<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
-		</ul> <!-- primary-nav -->
-	</nav> <!-- cd-nav -->
+				<li><a href="<?php echo $baseurl ?>contactenos">CONTÁCTENOS</a></li>
+			</ul> <!-- primary-nav -->
+		</nav> <!-- cd-nav -->
 		
 		
 	</div> 

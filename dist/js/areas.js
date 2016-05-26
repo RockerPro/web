@@ -1,5 +1,18 @@
 	 $(document).ready(function() {
 
+	 	/*tecnologia*/
+		$(".hidee5").hide();
+		$("#t1").show();	
+		$(".itemm5").click(function() {
+			var lol  =  $(this).data("cont");
+			$(".hidee5").hide();		
+			$("#"+lol).fadeIn();
+			$(".itemm5").css("color","black");
+			$(".itemm5").css("list-style","none");
+			$(".itemm5").css("background","#d0d0d0");
+			$(this).css("background","#0082c4");		
+			$(this).css("color","white");		
+		});
 		/*comunicaciones*/
 		$(".hidee").hide();
 		$("#i1").show();	
@@ -8,9 +21,10 @@
 			$(".hidee").hide();		
 			$("#"+lol).fadeIn();
 			$(".itemm").css("color","black");
-			$(".itemm").css("list-style","none");	
-			$(this).css("list-style","url(dist/img2/punto.png)");		
-			$(this).css("color","#004375");		
+			$(".itemm").css("list-style","none");		
+			$(".itemm").css("background","#d0d0d0");
+			$(this).css("background","#0082c4");		
+			$(this).css("color","white");		
 		});
 		/*energia*/
 		$(".hidee2").hide();
@@ -21,9 +35,11 @@
 			$("#"+lol2).fadeIn();
 			$(".itemm2").css("color","black");
 			$(".itemm2").css("list-style","none");	
-			$(this).css("list-style","url(dist/img2/punto.png)");		
-			$(this).css("color","#004375");		
+			$(".itemm2").css("background","#d0d0d0");
+			$(this).css("background","#0082c4");		
+			$(this).css("color","white");		
 		});
+
 		/*SOLUCIONES MOVILES*/
 		$(".hidee3").hide();
 		$("#s1").show();	
@@ -33,8 +49,9 @@
 			$("#"+lol3).fadeIn();
 			$(".itemm3").css("color","black");
 			$(".itemm3").css("list-style","none");	
-			$(this).css("list-style","url(dist/img2/punto.png)");		
-			$(this).css("color","#004375");		
+			$(".itemm3").css("background","#d0d0d0");
+			$(this).css("background","#0082c4");		
+			$(this).css("color","white");	
 		});
 		/*consultoria y emprendimiento*/
 		$(".hidee4").hide();
@@ -45,7 +62,7 @@
 			$("#"+lol4).fadeIn();
 			$(".itemm4").css("color","black");
 			$(".itemm4").css("list-style","none");	
-			$(this).css("list-style","url(dist/img2/punto.png)");		
+			// $(this).css("list-style","url(dist/img2/punto.png)");		
 			$(this).css("color","#004375");		
 		});
 	

@@ -1,5 +1,11 @@
 <?php session_start();
-include '../../../app/app2.php'; ?>
+include '../../../app/app2.php'; 
+if ($_SESSION["rol"] == 'A' || $_SESSION["rol"] == 'U') {
+ 
+}else{
+header('Location: inicio');
+}
+?>
 <!DOCTYPE html>
 <html>
 <?php include '../../layouts/head.php'; ?>

@@ -1,0 +1,11 @@
+User-agent: * 
+Disallow: /admin 
+Disallow: /dist
+Disallow: /layouts 
+Disallow: /php
+Disallow: /bower_components
+Disallow: /404.php 
+Disallow: /app.php
+Disallow: /correo.php
+sitemap: http://sgtel.pe/sitemap.xml
+

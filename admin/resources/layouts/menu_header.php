@@ -27,8 +27,10 @@
                   <?php 
                     if ($_SESSION['rol'] == 'A') {
                       echo $_SESSION["nombre"] . ' - Adminstrador';
-                    }else{
+                    }elseif ($_SESSION['rol'] == 'U') {
                       echo $_SESSION["nombre"] . ' - Creador de Contenidos';
+                    }elseif ($_SESSION['rol'] == 'C'){
+                      echo $_SESSION["nombre"] . ' - Community Manager';
                     }
                   ?>
                 </p>
@@ -38,7 +40,7 @@
                   <a href="<?php echo $baseurl; ?>perfil" class="btn btn-default btn-flat">Ver Perfil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="controller/login.controller.php?salir=exit" class="btn btn-default btn-flat">Cerrar Sesión</a>
+                  <a href="<?php echo $baseurl; ?>controller/login.controller.php?salir=exit" class="btn btn-default btn-flat">Cerrar Sesión</a>
                 </div>
               </li>
             </ul>
@@ -52,11 +54,13 @@
       <ul class="sidebar-menu">
         <li class="header">Menu de Navegación</li>
         <li id="ac1"><a href="<?php echo $baseurl; ?>inicio"><i class="fa fa-dashboard"></i> <span>Panel de Control</span></a></li>
+        <?php if ($_SESSION['rol']== "A" || $_SESSION['rol']== "U") {
+        ?>
         <li id="ac2"><a href="<?php echo $baseurl; ?>post"><i class="fa fa-hashtag"></i> <span>Posts</span></a></li>
-        <!-- <li id="ac3"><a href="comentarios"><i class="fa fa-comment"></i> <span>Comentarios</span></a></li> -->
+        <?php } ?>
         <?php if ($_SESSION['rol']== "A") {
         ?>
-        <li id="ac4"><a href="<?php echo $baseurl; ?>users"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
+        <li id="ac4"><a href="<?php echo $baseurl; ?>users"><i class="fa fa-users"></i> <span>Creadores</span></a></li>
         <li id="ac5"><a href="<?php echo $baseurl; ?>analytics"><i class="fa fa-line-chart"></i> <span>Analytics</span></a></li>
         <?php } ?>
       </ul>

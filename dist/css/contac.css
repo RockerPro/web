@@ -144,7 +144,7 @@
   text-align: left;
   pointer-events: none;
   color: #999;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 /* Form Label Content */
@@ -179,7 +179,7 @@
 }
 
 /* Basic Buttons */
-.btn {
+/*.btn {
   display: inline-block;
   padding: 0.6em 1.5em;
   border-radius: 2px;
@@ -193,10 +193,10 @@
   font-size: 1.6rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: all 0.2s ease;
-}
-.btn:focus, .btn:hover {
+}*/
+/*.btn:focus, .btn:hover {
   background-color: #0d8aee;
-}
+}*/
 .btn.btn-block {
   width: 100%;
   display: block;

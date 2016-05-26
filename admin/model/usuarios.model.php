@@ -28,7 +28,7 @@ class UsuariosModel
 	}
 
 	public function Nuevo($data){
-		$stm = $this->pdo->prepare("call sp_nuevo_usu(?,?,?)");	
+		$stm = $this->pdo->prepare("call sp_nuevo_usu(?,?,?,?)");	
 		$stm->execute($data);
 		return $stm->fetchAll(PDO::FETCH_OBJ);
 	}

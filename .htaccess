@@ -4,9 +4,17 @@ Rewriterule ^novedades/(.+) novelty.php?id=$1
 Rewriterule ^inicio index.php
 Rewriterule ^acerca-sgtel acerca-sgtel.php
 Rewriterule ^areas-negocio/infraestructura infraestructura.php
-Rewriterule ^areas-negocio/soluciones-moviles soluciones-moviles.php
-Rewriterule ^areas-negocio/consultoria-emprendimiento consultoria-emprendimiento.php
+Rewriterule ^areas-negocio/software-para-soluciones-moviles software-para-soluciones-moviles.php
+Rewriterule ^areas-negocio/social-media social-media.php
+Rewriterule ^areas-negocio/apoyo-empresarial apoyo-empresarial.php
 Rewriterule ^contactenos contactenos.php
+Rewriterule ^app/seci apps/seci.php
+Rewriterule ^app/encuestas apps/encuestas.php
+Rewriterule ^app/iris-gps apps/iris-gps.php
+Rewriterule ^app/soluciona apps/soluciona.php
+Rewriterule ^app/medidor apps/medidor.php
+Rewriterule ^app/contugas apps/contugas.php
+Rewriterule ^app/gestor-comercial apps/gestor-comercial.php
 RewriteCond %{REQUEST-FILENAME} !-f
 ErrorDocument 404 /web/404.php 
 <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|ttf)$">

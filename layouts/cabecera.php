@@ -22,11 +22,11 @@
 									<i class="fa fa-twitter"></i>
 								</a>
 							</li>
-							<!-- <li class="ln">
+							<li class="ln">
 								<a href="https://www.linkedin.com/company/sgtel-sac" target="_blank">
 									<i class="fa fa-linkedin"></i>
 								</a>
-							</li> -->
+							</li>
 						</ul>
 					</div>				
 				</div>
