@@ -29,7 +29,7 @@
 										</a>
 									</li>
 									<li class="ln" style="margin-left: 10px;">
-										<a href="https://www.linkedin.com/company/sgtel-sac" target="_blank">
+										<a href="https://www.linkedin.com/company/sgtel" target="_blank">
 											<i class="fa fa-linkedin"></i>
 										</a>
 									</li>

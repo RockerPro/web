@@ -104,20 +104,20 @@ include 'app.php';
 		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">		            	
 	                             <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
                                    <ul  class="textarea listaserv">
-                                     <li class="itemm2" data-cont="e1" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>UPS y banco de baterías</li> 
-                                     <li class="itemm2" data-cont="e2"><i class="fa fa-circle punto"></i>Sistemas eléctricos de baja tensión  </li>
+                                     <li class="itemm22" data-cont="e1"><i class="fa fa-circle punto"></i>UPS y banco de baterías</li> 
+                                     <li class="itemm2" data-cont="e2" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>Sistemas eléctricos de baja tensión  </li>
                                      <li class="itemm2" data-cont="e3"><i class="fa fa-circle punto"></i>Sistemas Eléctricos de Media tensión </li>
                                      <li class="itemm2" data-cont="e4"><i class="fa fa-circle punto"></i>Sistemas de Electrificación Urbana </li>
                                      <li class="itemm2" data-cont="e5"><i class="fa fa-circle punto"></i>Sub estaciones eléctricas</li>
                                      <li class="itemm2" data-cont="e6"><i class="fa fa-circle punto"></i>Lineas de transmisión y distribución </li>  
-                                     <li class="itemm2" data-cont="e7"><i class="fa fa-circle punto"></i>Saneamiento </li>  
-                                     <li class="itemm2" data-cont="e8"><i class="fa fa-circle punto"></i>Obras Civíles, pistas y veredas </li>  
-                                     <li class="itemm2" data-cont="e9"><i class="fa fa-circle punto"></i>Remodelaciones </li>                                     
+                                     <li class="itemm22" data-cont="e7"><i class="fa fa-circle punto"></i>Saneamiento </li>  
+                                     <li class="itemm22" data-cont="e8"><i class="fa fa-circle punto"></i>Obras Civíles, pistas y veredas </li>  
+                                     <li class="itemm22" data-cont="e9"><i class="fa fa-circle punto"></i>Remodelaciones </li>                                     
                                    </ul>
                                    <br><br>
                                </div>
                                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.9s">
-                                    <div class="hidee2" id="e1">
+                                    <div class="hidee2" id="e11">
                                         UPS y banco de baterías
                                     </div>
                                     <div class="hidee2" id="e2">
@@ -179,9 +179,40 @@ include 'app.php';
 				</div>				
 			</div>
 			<!-- seccion novedades -->
-                <?php
-                include 'layouts/postArea_novedades.php'; 
-                ?>
+                <div class="col-md-3 novedades" ng-controller="postAreaController" style="margin-top: 55px;margin-bottom:25px;overflow: hidden;">               
+                <p class="tit_suscrip"><c style="color:#ff761a">SUSCRIBETE</c> POR EMAIL A NUESTROS ARTÍCULOS</p>
+                <div class="form" style="overflow: hidden;">
+                    <form role="form" id="form_sus">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="text" class="form-control" name="email" placeholder="Email..." >                       
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Suscribirse" class="btn btn-success pull-right">
+                        </div>
+                    </form>
+                    <p class="success-message2"></p>
+                    <p class="error-message"></p>
+                </div>              
+                <hr class="hr_post"><br>
+                <p class="titsec news"><i class="fa fa-exclamation-circle"></i> Post Relacionados</p>
+                <div class="col-md-12" style="overflow:hidden;">
+                    <a class="col-md-12 col-sm-4 col-ms-6 col-xs-12 wow bounceIn" href="<?php echo $baseurl?>novedades/{{related.url_web}}-{{related.codpost}}"
+                     ng-repeat="related in relateds" class="post_item" >
+                        <div class="contnove" title="{{related.title}}">
+                            <img class="img-responsive imgnove" 
+                            ng-src="<?php echo $baseurl;?>admin/public/dist/img/posts/{{related.path_url}}">
+                            <p>{{related.title}}</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-12 descarga">
+                    <a href="<?php echo $baseurl;?>document/<?php echo str_replace("/areas-negocio/", "", $_SERVER['REQUEST_URI'])?>.pdf" download>
+                    <h2>DESCARGAR BROCHURE</h2>
+                    <img class="img-responsive icondwl" src="<?php echo $baseurl;?>dist/img2/icons/download.svg" alt="descargar brochure">
+                    </a>
+                </div>
+            </div>
             <!-- fin -->    
 			<div class="col-md-12 contcli">
                      <p class="titsec" style="width: 200px;">CLIENTES</p>
@@ -253,8 +284,74 @@ include 'app.php';
                 <li><a href="<?php echo $baseurl ?>">INICIO</a></li>
                 <li><a href="<?php echo $baseurl ?>acerca-sgtel">ACERCA DE SGTEL</a></li>
 
-                <li class="has-children">
-                    <a class="selected">ÁREAS DE NEGOCIO </a>
+                <!-- escritorio-->
+                <li class="has-children visible-lg">
+                    <a>ÁREAS DE NEGOCIO </a>
+
+                    <ul class="cd-secondary-nav is-hidden">
+                        <li class="go-back"><a href="#0">Volver</a></li>
+                        <li  class="has-children">
+                            <a href="<?php echo $baseurl ?>areas-negocio/infraestructura">
+                                Infraestructura
+                                <p></p>
+                            </a>                        
+                            <ul class="is-hidden" style="padding-left: 10px;">
+                                <li class="go-back"><a href="#0">Volver</a></li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/infraestructura">Tecnología</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/infraestructura#telecomunicaciones">Telecomunicaciones</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/infraestructura#energia">Energía y obra civil</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li  class="has-children">
+                            <a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">
+                                Soluciones Tecnológicas
+                            </a>
+                            <ul class="is-hidden" style="padding-left: 10px;">
+                                <li class="go-back"><a href="#0">Volver</a></li>
+                                <li class="">
+                                    <a  href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Software</a>
+                                    <ul class="">
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a  href="<?php echo $baseurl ?>areas-negocio/social-media">Social Media</a>
+                                    <ul class="">
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
+                                        <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial" class="cd-nav-item">
+                                APOYO EMPRESARIAL
+                                <p></p>
+                            </a>
+                            <ul class="is-hidden" style="padding-left: 10px;">
+                                <li class="go-back"><a href="#0">Volver</a></li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial">Consultoría</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial#emprendimiento">Emprendimiento</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- movil-->
+                <li class="has-children visible-md visible-sm visible-xs">
+                    <a>ÁREAS DE NEGOCIO </a>
 
                     <ul class="cd-secondary-nav is-hidden">
                         <li class="go-back"><a href="#0">Volver</a></li>
@@ -280,12 +377,11 @@ include 'app.php';
                         <li  class="has-children">
                             <a class="nocur">
                                 Soluciones Tecnológicas
-                            </a>    
-                            <!-- movil-->                   
-                            <ul class="is-hidden visible-md visible-sm visible-xs" style="padding-left: 10px;">
+                            </a>                    
+                            <ul class="is-hidden" style="padding-left: 10px;">
                                 <li class="go-back"><a href="#0">Volver</a></li>
                                 <li class="has-children">
-                                    <a href="#0">Software</a>
+                                    <a href="#0">Softwware</a>
                                     <ul class="cd-primary-nav is-hidden">
                                         <li class="go-back"><a href="#0">Volver</a></li>
                                         <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
@@ -296,24 +392,6 @@ include 'app.php';
                                     <a href="#0">Social Media</a>
                                     <ul class="cd-primary-nav is-hidden">
                                         <li class="go-back"><a href="#0">Volver</a></li>
-                                        <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
-                                        <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <!-- escritorio-->
-                            <ul class="is-hidden visible-lg" style="padding-left: 10px;">
-                                <li class="go-back"><a href="#0">Volver</a></li>
-                                <li class="">
-                                    <a  class="nocur">Software</a>
-                                    <ul class="">
-                                        <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
-                                        <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
-                                    </ul>
-                                </li>
-                                <li class="">
-                                    <a  class="nocur">Social Media</a>
-                                    <ul class="">
                                         <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
                                         <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
                                     </ul>

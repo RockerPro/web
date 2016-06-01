@@ -80,7 +80,73 @@ include '../app.php';
         <li><a href="<?php echo $baseurl ?>">INICIO</a></li>
         <li><a href="<?php echo $baseurl ?>acerca-sgtel">ACERCA DE SGTEL</a></li>
 
-        <li class="has-children">
+        <!-- escritorio-->
+        <li class="has-children visible-lg">
+          <a>ÁREAS DE NEGOCIO </a>
+
+          <ul class="cd-secondary-nav is-hidden">
+            <li class="go-back"><a href="#0">Volver</a></li>
+            <li  class="has-children">
+              <a href="<?php echo $baseurl ?>areas-negocio/infraestructura">
+                Infraestructura
+                <p></p>
+              </a>            
+              <ul class="is-hidden" style="padding-left: 10px;">
+                <li class="go-back"><a href="#0">Volver</a></li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/infraestructura">Tecnología</a>
+                </li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/infraestructura#telecomunicaciones">Telecomunicaciones</a>
+                </li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/infraestructura#energia">Energía y obra civil</a>
+                </li>
+              </ul>
+            </li>
+
+            <li  class="has-children">
+              <a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">
+                Soluciones Tecnológicas
+              </a>
+              <ul class="is-hidden" style="padding-left: 10px;">
+                <li class="go-back"><a href="#0">Volver</a></li>
+                <li class="">
+                  <a  href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Software</a>
+                  <ul class="">
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a  href="<?php echo $baseurl ?>areas-negocio/social-media">Social Media</a>
+                  <ul class="">
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
+                    <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial" class="cd-nav-item">
+                APOYO EMPRESARIAL
+                <p></p>
+              </a>
+              <ul class="is-hidden" style="padding-left: 10px;">
+                <li class="go-back"><a href="#0">Volver</a></li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial">Consultoría</a>
+                </li>
+                <li>
+                  <a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial#emprendimiento">Emprendimiento</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- movil-->
+        <li class="has-children visible-md visible-sm visible-xs">
           <a>ÁREAS DE NEGOCIO </a>
 
           <ul class="cd-secondary-nav is-hidden">
@@ -107,12 +173,11 @@ include '../app.php';
             <li  class="has-children">
               <a class="nocur">
                 Soluciones Tecnológicas
-              </a>  
-              <!-- movil-->         
-              <ul class="is-hidden visible-md visible-sm visible-xs" style="padding-left: 10px;">
+              </a>          
+              <ul class="is-hidden" style="padding-left: 10px;">
                 <li class="go-back"><a href="#0">Volver</a></li>
                 <li class="has-children">
-                  <a href="#0">Software</a>
+                  <a href="#0">Softwware</a>
                   <ul class="cd-primary-nav is-hidden">
                     <li class="go-back"><a href="#0">Volver</a></li>
                     <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
@@ -123,24 +188,6 @@ include '../app.php';
                   <a href="#0">Social Media</a>
                   <ul class="cd-primary-nav is-hidden">
                     <li class="go-back"><a href="#0">Volver</a></li>
-                    <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
-                    <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- escritorio-->
-              <ul class="is-hidden visible-lg" style="padding-left: 10px;">
-                <li class="go-back"><a href="#0">Volver</a></li>
-                <li class="">
-                  <a  class="nocur">Software</a>
-                  <ul class="">
-                    <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
-                    <li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
-                  </ul>
-                </li>
-                <li class="">
-                  <a  class="nocur">Social Media</a>
-                  <ul class="">
                     <li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
                     <li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
                   </ul>

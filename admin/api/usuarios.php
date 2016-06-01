@@ -26,7 +26,7 @@ switch($action) {
     case 'editar':  	
 		    $array = array();
 		    $array[] = $_SESSION["id"];
-        $array[] = $_GET['rol'];            
+        $array[] = $_GET['nom'];            
             $array[] = $_GET['email'];
  		    $id =  $model->Editar($array);
              $_SESSION["nombre"] = $_GET['nom'];
@@ -58,8 +58,8 @@ switch($action) {
         $array = array();
         $array[] = $_GET["id"];
         $array[] = $_GET['nom'];
-            $array[] = $_GET['nom'];
-            $array[] = $_GET['email'];
+        // $array[] = $_GET['nom'];
+        $array[] = $_GET['email'];
         $id =  $model->Editar($array);
         echo json_encode('ok');
         break;

@@ -39,6 +39,38 @@ include 'app.php';
                     frescas e innovadoras que permiten brindar soluciones integrales a medida de los 
                     objetivos de nuestros clientes.</p>                                                    
                 </div>
+                <div class="col-md-12 contcli">
+                    <div class="wow fadeInUp" data-wow-delay="0.6s">
+	                    <p class="titsec" style="width: 350px;">PREMIOS OBTENIDOS</p>
+	                    <div class="divider divider_gray">
+	                    </div>
+					</div>
+					<div class="col-md-6 col-sm-12 col-ms-12 col-xs-12 wow zoomIn" data-wow-delay="0.8s">
+						<div class="col-md-12">
+							<img class="img-responsive icon-premio"
+							src="<?php echo $baseurl ?>dist/img2/icons/premios.png" alt="BBVA Premio camino al éxito">
+						</div>
+						<div class="col-md-12">
+							<img class="img-responsive img-premio" src="<?php echo $baseurl ?>dist/img2/camino-al-exito.jpg" alt="premio camino-al-exito">
+							<p class="premio">
+	                    	BBVA Premio camino al éxito (Categoría: Innovación - impacto social). <br>
+	                    	</p> 
+						</div>						
+					</div>
+					<div class="col-md-6 col-sm-12 col-ms-12 col-xs-12 wow zoomIn" data-wow-delay="1.0s">
+						<div class="col-md-12">
+							<img class="img-responsive icon-premio"
+							src="<?php echo $baseurl ?>dist/img2/icons/premios.png" alt="Concurso Innovate Perú">
+						</div>
+						<div class="col-md-12">
+							<img class="img-responsive img-premio" src="<?php echo $baseurl ?>dist/img2/innovate-peru.png" alt="premio innovate-peru">
+							<p class="premio">
+	                    	Concurso Innovate Perú (Categoría: Innovación). <br>
+	                    	</p> 
+						</div>						
+					</div>
+                                                     
+	            </div>
 				<div class="col-md-12 contcli">
                     <div class="wow fadeInUp" data-wow-delay="0.6s">
 	                    <p class="titsec" style="width: 350px;">NUESTRO VALOR AGREGADO</p>
@@ -187,39 +219,7 @@ include 'app.php';
 				        </div>
 					</li>
 				</ul>                                
-	            </div>
-	            <div class="col-md-12 contcli">
-                    <div class="wow fadeInUp" data-wow-delay="0.6s">
-	                    <p class="titsec" style="width: 350px;">PREMIOS OBTENIDOS</p>
-	                    <div class="divider divider_gray">
-	                    </div>
-					</div>
-					<div class="col-md-6 col-sm-12 col-ms-12 col-xs-12 wow zoomIn" data-wow-delay="0.8s">
-						<div class="col-md-6">
-							<img class="img-responsive icon-premio"
-							src="<?php echo $baseurl ?>dist/img2/icons/premios.png" alt="BBVA Premio camino al éxito">
-						</div>
-						<div class="col-md-6">
-							<img class="img-responsive img-premio" src="<?php echo $baseurl ?>dist/img2/camino-al-exito.jpg" alt="premio camino-al-exito">
-							<p class="premio">
-	                    	BBVA Premio camino al éxito (Categoría: Innovación - impacto social). <br>
-	                    	</p> 
-						</div>						
-					</div>
-					<div class="col-md-6 col-sm-12 col-ms-12 col-xs-12 wow zoomIn" data-wow-delay="1.0s">
-						<div class="col-md-6">
-							<img class="img-responsive icon-premio"
-							src="<?php echo $baseurl ?>dist/img2/icons/premios.png" alt="Concurso Innovate Perú">
-						</div>
-						<div class="col-md-6">
-							<img class="img-responsive img-premio" src="<?php echo $baseurl ?>dist/img2/innovate-peru.png" alt="premio innovate-peru">
-							<p class="premio">
-	                    	Concurso Innovate Perú (Categoría: Innovación). <br>
-	                    	</p> 
-						</div>						
-					</div>
-                                                     
-	            </div>				
+	            </div>	            				
 			</div>						
 			</div>
 			<?php include 'layouts/footer.php' ?>
@@ -229,8 +229,73 @@ include 'app.php';
 			<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
 				<li><a href="<?php echo $baseurl ?>">INICIO</a></li>
 				<li><a class="selected" href="<?php echo $baseurl ?>acerca-sgtel">ACERCA DE SGTEL</a></li>
+				<!-- escritorio-->
+				<li class="has-children visible-lg">
+					<a>ÁREAS DE NEGOCIO </a>
 
-				<li class="has-children">
+					<ul class="cd-secondary-nav is-hidden">
+						<li class="go-back"><a href="#0">Volver</a></li>
+						<li  class="has-children">
+							<a href="<?php echo $baseurl ?>areas-negocio/infraestructura">
+								Infraestructura
+								<p></p>
+							</a>						
+							<ul class="is-hidden" style="padding-left: 10px;">
+								<li class="go-back"><a href="#0">Volver</a></li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/infraestructura">Tecnología</a>
+								</li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/infraestructura#telecomunicaciones">Telecomunicaciones</a>
+								</li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/infraestructura#energia">Energía y obra civil</a>
+								</li>
+							</ul>
+						</li>
+
+						<li  class="has-children">
+							<a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">
+								Soluciones Tecnológicas
+							</a>
+							<ul class="is-hidden" style="padding-left: 10px;">
+								<li class="go-back"><a href="#0">Volver</a></li>
+								<li class="">
+									<a  href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Software</a>
+									<ul class="">
+										<li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
+										<li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
+									</ul>
+								</li>
+								<li class="">
+									<a  href="<?php echo $baseurl ?>areas-negocio/social-media">Social Media</a>
+									<ul class="">
+										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
+										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial" class="cd-nav-item">
+								APOYO EMPRESARIAL
+								<p></p>
+							</a>
+							<ul class="is-hidden" style="padding-left: 10px;">
+								<li class="go-back"><a href="#0">Volver</a></li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial">Consultoría</a>
+								</li>
+								<li>
+									<a href="<?php echo $baseurl ?>areas-negocio/apoyo-empresarial#emprendimiento">Emprendimiento</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- movil-->
+				<li class="has-children visible-md visible-sm visible-xs">
 					<a>ÁREAS DE NEGOCIO </a>
 
 					<ul class="cd-secondary-nav is-hidden">
@@ -257,12 +322,11 @@ include 'app.php';
 						<li  class="has-children">
 							<a class="nocur">
 								Soluciones Tecnológicas
-							</a>	
-							<!-- movil-->					
-							<ul class="is-hidden visible-md visible-sm visible-xs" style="padding-left: 10px;">
+							</a>					
+							<ul class="is-hidden" style="padding-left: 10px;">
 								<li class="go-back"><a href="#0">Volver</a></li>
 								<li class="has-children">
-									<a href="#0">Software</a>
+									<a href="#0">Softwware</a>
 									<ul class="cd-primary-nav is-hidden">
 										<li class="go-back"><a href="#0">Volver</a></li>
 										<li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
@@ -273,24 +337,6 @@ include 'app.php';
 									<a href="#0">Social Media</a>
 									<ul class="cd-primary-nav is-hidden">
 										<li class="go-back"><a href="#0">Volver</a></li>
-										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
-										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
-									</ul>
-								</li>
-							</ul>
-							<!-- escritorio-->
-							<ul class="is-hidden visible-lg" style="padding-left: 10px;">
-								<li class="go-back"><a href="#0">Volver</a></li>
-								<li class="">
-									<a  class="nocur">Software</a>
-									<ul class="">
-										<li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles">Empresa y Gobierno</a></li>
-										<li><a href="<?php echo $baseurl ?>areas-negocio/software-para-soluciones-moviles#pymes">PyMEs</a></li>
-									</ul>
-								</li>
-								<li class="">
-									<a  class="nocur">Social Media</a>
-									<ul class="">
 										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media">Marketing Digital</a></li>
 										<li><a href="<?php echo $baseurl ?>areas-negocio/social-media#ecommerce">eCommerce</a></li>
 									</ul>
@@ -315,7 +361,6 @@ include 'app.php';
 						</li>
 					</ul>
 				</li>
-
 				<li class="has-children">
 					<a>NOVEDADES</a>
 					<ul class="cd-nav-icons is-hidden" style="padding-left: 0px;">

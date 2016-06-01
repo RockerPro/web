@@ -26,10 +26,10 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-12 descarga">
- 					<a href="<?php echo $baseurl;?>document/brochure.pdf" download>
+				<!-- <div class="col-md-12 descarga">
+ 					<a href="<?php echo $baseurl;?>document/<?php echo str_replace("/web/areas-negocio/", "", $_SERVER['REQUEST_URI'])?>.pdf" download>
  					<h2>DESCARGAR BROCHURE</h2>
  					<img class="img-responsive icondwl" src="<?php echo $baseurl;?>dist/img2/icons/download.svg" alt="descargar brochure">
  					</a>
- 				</div>
+ 				</div> -->
 			</div>

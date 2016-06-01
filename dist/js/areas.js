@@ -28,7 +28,7 @@
 		});
 		/*energia*/
 		$(".hidee2").hide();
-		$("#e1").show();	
+		$("#e2").show();	
 		$(".itemm2").click(function() {
 			var lol2  =  $(this).data("cont");
 			$(".hidee2").hide();		

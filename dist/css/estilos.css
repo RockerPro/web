@@ -35,7 +35,7 @@
 .conttext{font-size:22px;text-align:center;}
 .contcli .premio{font-size:16px;font-weight: bold;text-align:center;margin-top: 5px;z-index: -1;margin-bottom: 35px;}
 .contcli .img-premio{width: 170px;margin: 0 auto;}
-.contcli .icon-premio{margin-top: 25px;float: right !important;}
+.contcli .icon-premio{margin-top: 25px;margin: 0 auto;margin-bottom: 15px;}
 .contvalor .conttext2{font-size:22px;text-align:justify;}
 .contvalor .conttext2 ul li{font-size:22px;text-align:justify;}
 .box{float:left;width:100%;height:290px;padding:0 12.5% 40px 12.5%;text-align:center;border-radius: 10px;margin-top:67px;background-color:#fff;}
@@ -80,6 +80,7 @@
 .textarea{font-family:Roboto-Light;font-size:16px;color:black;text-align:justify;padding:20px;line-height:1.3;}
 .listaserv{list-style:none;/*border-left:1px solid black;*/padding-top:0px;padding-bottom:0px;padding-left:0px;}
 .itemm, .itemm2, .itemm3, .itemm4, .itemm5{cursor:pointer;font-family:Roboto-Light;font-weight:bold;border-left: 30px solid #0082c4;margin: 10px;padding: 10px;background:#d0d0d0}
+.itemmm, .itemm22, .itemm33, .itemm44, .itemm55{cursor:pointer;font-family:Roboto-Light;font-weight:bold;border-left: 30px solid #0082c4;margin: 10px;padding: 10px;background:#d0d0d0}
 .textarea li .punto{position: absolute;margin-left: -30px;margin-top: 6px;font-size: 10px;}
 .hidee, .hidee2, .hidee3, .hidee4, .hidee5{font-family:Roboto-Light;font-size:16px;text-align:justify;}
 .imgapp{margin: 0 auto;margin-bottom:15px;cursor: pointer;}
