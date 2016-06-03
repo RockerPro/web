@@ -6,6 +6,7 @@
 .tp-caption-demo .tp-caption{position:relative !important;display:inline-block;margin-bottom:10px;margin-right:20px !important;}
 .tit-slider{background:url(bg.png);background-size:cover;background-repeat:no-repeat;color:white;font-weight:bold;line-height:1.1;padding-top:10px;padding-bottom:10px;padding-left:1010px;margin-left:-1000px;padding-right:30px;position:relative;}
 ye{color:#d5b127;}
+.hash{color:#1680B9;font-weight: bold;font-size: 35px;}
 .text-slider{font-size:17px;line-height:1.5;}
 .tp-caption.whitedivider3px{color:#000000;text-shadow:none;background-color:rgb(255, 255, 255);background-color:rgba(255, 255, 255, 1);text-decoration:none;min-width:408px;min-height:3px;background-position:initial initial;background-repeat:initial initial;border-width:0px;border-color:#000000;border-style:none;}
 .tp-caption.finewide_large_white{color:#ffffff;text-shadow:none;font-size:60px;line-height:60px;font-weight:300;font-family:Roboto-Light;background-color:transparent;text-decoration:none;text-transform:uppercase;letter-spacing:8px;border-width:0px;border-color:rgb(0, 0, 0);border-style:none;}
@@ -27,7 +28,7 @@ ye{color:#d5b127;}
 .tp-caption.small_text{position:absolute;color:#fff;text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);font-weight:700;font-size:14px;line-height:20px;font-family:Arial;margin:0px;border-width:0px;border-style:none;white-space:nowrap;}
 .tp-caption.medium_text{position:absolute;color:#fff;text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);font-weight:700;font-size:20px;line-height:20px;font-family:Arial;margin:0px;border-width:0px;border-style:none;white-space:nowrap;}
 .tp-caption.large_bold_white_25{font-size:55px;line-height:65px;font-weight:700;font-family:Roboto-Light;color:#fff;text-decoration:none;background-color:transparent;text-align:center;text-shadow:#000 0px 5px 10px;border-width:0px;border-color:rgb(255, 255, 255);border-style:none;}
-.tp-caption.medium_text_shadow{font-size:25px;line-height:25px;font-weight:600;padding-left:15px;font-family:Roboto-Light;color:#fff;text-decoration:none;background-color:transparent;text-align:left;text-shadow:#000 0px 5px 10px;border-width:0px;border-color:rgb(255, 255, 255);border-style:none;}
+.tp-caption.medium_text_shadow{font-size:25px;line-height:25px;font-weight:600;padding-left:15px;font-family:Roboto-Light;color:#fff;text-decoration:none;background-color:transparent;text-align:left;text-shadow:#000 0px 5px 5px;border-width:0px;border-color:rgb(255, 255, 255);border-style:none;}
 .tp-caption.large_text{position:absolute;color:#fff;text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);font-weight:700;font-size:40px;line-height:40px;font-family:Arial;margin:0px;border-width:0px;border-style:none;white-space:nowrap;}
 .tp-caption.medium_bold_grey{font-size:30px;line-height:30px;font-weight:800;font-family:Roboto-Light;color:rgb(102, 102, 102);text-decoration:none;background-color:transparent;text-shadow:none;margin:0px;padding:1px 4px 0px;border-width:0px;border-color:rgb(255, 214, 88);border-style:none;}
 .tp-caption.very_large_text{position:absolute;color:#fff;text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);font-weight:700;font-size:60px;line-height:60px;font-family:Arial;margin:0px;border-width:0px;border-style:none;white-space:nowrap;letter-spacing:-2px;}
@@ -96,9 +97,13 @@ ye{color:#d5b127;}
 }
 @media only screen and (min-width:480px) and (max-width:767px){.tp-simpleresponsive .button{padding:4px 8px 3px;line-height:25px !important;font-size:11px !important;font-weight:normal;}
 .tp-simpleresponsive a.button{-webkit-transition:none;-moz-transition:none;-o-transition:none;-ms-transition:none;}
+.hash{font-size: 25px;}
+.tp-caption .callto{margin-top: 15px;}
 }
 @media only screen and (max-width:530px){.text-slider{font-size:28px;margin-top:100px;padding-left:10px;}
 .tit-slider{font-size:24px;}
+.hash{font-size: 25px;}
+.tp-caption .callto{    margin-top: 38px;width: 200px !important;height: 40px !important;}
 }
 @media only screen and (min-width:0px) and (max-width:479px){.tp-simpleresponsive .button{padding:2px 5px 2px;line-height:20px !important;font-size:10px !important;}
 .tp-simpleresponsive a.button{-webkit-transition:none;-moz-transition:none;-o-transition:none;-ms-transition:none;}

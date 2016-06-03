@@ -8,11 +8,11 @@
 						ng-src="<?php echo $baseurl;?>admin/public/dist/img/posts/{{item.path_url}}">
 						<p>{{item.title}}</p>
 					</div>
-				</a>
-				<div class="col-md-12 descarga">
+				</a>				
+			</div>
+			<div class="col-md-12 descarga">
  					<a href="<?php echo $baseurl;?>document/brochure.pdf" download>
  					<h2>DESCARGAR BROCHURE</h2>
  					<img class="img-responsive icondwl" src="<?php echo $baseurl;?>dist/img2/icons/download.svg" alt="descargar brochure">
  					</a>
- 				</div>
-			</div>
+ 			</div>

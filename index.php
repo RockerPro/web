@@ -89,7 +89,7 @@ include 'app.php';
     </ul>
   </div>
 <div class="col-md-12 contcli">
-                               <p class="titsec" style="width: 250px;">CLIENTES</p>
+                               <p class="titsec" style="width: 280px;">NUESTROS CLIENTES</p>
                                <div class="divider divider_gray ">
                                </div>
                                <br><br>

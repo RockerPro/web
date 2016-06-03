@@ -9,7 +9,7 @@
 							<input type="text" class="form-control" name="email" placeholder="Email..." >						
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Suscribirse" class="btn btn-success pull-right">
+							<input type="submit" value="Suscribirse" class="btn btn-orange pull-right">
 						</div>
 					</form>
 					<p class="success-message2"></p>

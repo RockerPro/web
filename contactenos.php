@@ -44,7 +44,7 @@ include 'app.php';
 		            	<div class="contvalor wow zoomIn" data-wow-delay="0.3s"  style="margin-bottom:30px;">
 		            		<p class="how" style="text-align:center;">¿CONVERSAMOS?</p>
 		            	</div>
-		            	<form id="contact-form" class="formcontac" role="form" autocomplete="off">  
+		            	<form id="contact-form" class="formcontac" role="form" autocomplete="off" style="padding-top: 30px;">  
                                 <p class="success-message">Gracias por contactarnos!</p>
                                 <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6 camp form__wrapper"  data-wow-delay="0.6s">
                                     <input type="text" name="name" class="form__input">
@@ -96,14 +96,14 @@ include 'app.php';
 			</div>
 			<div class="col-md-12" style="overflow: hidden;margin-top:30px;">
 			<div class="col-md-12">
-				<div class="contcli wow fadeInDown"  data-wow-delay="0.3s">
+				<div class="contcli wow fadeInDown"  data-wow-delay="0.3s" style="margin-bottom:0px;">
 		            		<p class="titsec" style="width:250px;">VISÍTENOS</p>
 			                <div class="divider divider_gray ">
 			                    <span></span><span></span>
 			                </div>
 		            	</div>	
 			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 direcc">								
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 direcc" style="margin-top:0px">								
 				<div class="col-md-4 col-sm-4 col-ms-6 col-xs-12">
 				<div class="direcciones wow fadeInDown"  data-wow-delay="0.3s">
 				<h3>Perú</h3>

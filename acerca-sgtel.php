@@ -122,7 +122,7 @@ include 'app.php';
 	            <div class="col-md-6 contvalor wow zoomIn" data-wow-delay="1.2s">
                     <p class="titsec" style="color: #004783;">VISIÓN</p>
                     <p class="conttext">
-                    	En el 2021 ser reconocidos como un referente de soluciones <br>
+                    	En el 2021 ser reconocidos como un referente de soluciones
                     	tecnológicas integrales a nivel regional.
                     </p>                                  
 	            </div>
@@ -130,7 +130,7 @@ include 'app.php';
 	            <div class="col-md-12 contcli bg1 wow fadeIn">
 	            	<div class="bg2"></div>
 	            	<div class=" wow zoomIn" data-wow-delay="0.6s">
-                    <p class="titsec" style="width:250px;">VALORES</p>
+                    <p class="titsec" style="width:250px;">NUESTROS VALORES</p>
                     <div class="divider divider_gray ">
                                		<span></span><span></span>
                     </div>

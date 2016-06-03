@@ -44,17 +44,14 @@ include 'app.php';
                       </div>
 	                    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
                                    <ul  class="textarea listaserv">
-                                     <li class="itemm3" data-cont="s1" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>Desarrollo de aplicaciones para dispositivos móviles</li>
-                                     <li class="itemm3" data-cont="s2"><i class="fa fa-circle punto"></i>Desarrollo de software a medida</li>
-                                     <li class="itemm3" data-cont="s3"><i class="fa fa-circle punto"></i>Desarrollo de proyectos de impacto social</li>
+                                     <li class="itemm3" data-cont="s1" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>Desarrollo de software a medida</li>
+                                     <li class="itemm3" data-cont="s2"><i class="fa fa-circle punto"></i>Desarrollo de proyectos de impacto social</li>
+                                     <li class="itemm3" data-cont="s3"><i class="fa fa-circle punto"></i>Desarrollo de aplicaciones para dispositivos móviles</li>                                                                          
                                    </ul>
                                    <br><br>
                                </div>
                                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.9s">
                                     <div class="hidee3" id="s1">
-                                        Desarrollamos soluciones y servicios que incluyen el uso de aplicaciones para teléfonos inteligentes. Somos expertos en tecnologías de geolocalización, conectividad y censado. Desarrollamos aplicaciones para Android y iOS. Todos nuestros desarrollos se apoyan en la plataforma SGTEL Cloud.
-                                    </div>
-                                    <div class="hidee3" id="s2">
                                         Porqué conocemos todos tus proceso, nos involucramos en ellos y te damos
                                         las mejores soluciones para sobrepasar tus expectativas. <br>
                                         Hemos desarrollado proyectos que gestionan de una manera eficiente, rápida y 
@@ -68,14 +65,18 @@ include 'app.php';
                                           <li>Contenidos</li>
                                         </ul>  
                                     </div>
-                                    <div class="hidee3" id="s3">
+                                    <div class="hidee3" id="s2">
                                         Desarrollamos plataformas novedosas apoyando a la sociedad a minimizar los riesgos en desastres naturales, inseguridad ciudadana, transporte, etc.
                                     </div>
+                                    <div class="hidee3" id="s3">
+                                        Desarrollamos soluciones y servicios que incluyen el uso de aplicaciones para teléfonos inteligentes. Somos expertos en tecnologías de geolocalización, conectividad y censado. Desarrollamos aplicaciones para Android y iOS. Todos nuestros desarrollos se apoyan en la plataforma SGTEL Cloud.
+                                    </div>                                    
+                                    
                                </div>                    
 		            </div>
 		           	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
   						    <div class="contcli wow zoomIn" data-wow-delay="1.2s">
-  		            		<p class="titsec" style="width:200px;">SOLUCIONES</p>
+  		            		<p class="titsec" style="width:200px;">NUESTRAS SOLUCIONES</p>
   			                <div class="divider divider_gray ">
   			                    <span></span><span></span>
   			                </div>
@@ -218,7 +219,7 @@ include 'app.php';
                 ?>
             <!-- fin -->  
 			<div class="col-md-12 contcli">
-                     <p class="titsec" style="width:250px;">CLIENTES</p>
+                     <p class="titsec" style="width:250px;">NUESTROS CLIENTES</p>
                                	<div class="divider divider_gray ">
                                		<span></span><span></span>
                                	</div>

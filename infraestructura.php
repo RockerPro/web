@@ -53,17 +53,48 @@ include 'app.php';
                                </div>
                                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.9s">
                                     <div class="hidee5" id="t1">
-                                        Nos especializamos en la más avanzada tecnología relacionada con la conectividad, para facilitar la transmisión de datos, voz y video de alto desempeño. Como especialistas en el campo de la fibra óptica, ponemos a su disposición nuestra amplia experiencia con el fin de que usted obtenga los beneficios con soluciones integrales totalmente probadas para seleccionar los mejores productos del mercado. <br>
-
-                                        Nos especializamos en el diseño, fabricación de cables a la medida, ensamble, soluciones a la medida, para cualquier instalación, sin importar la magnitud de su proyecto. Al conocer las necesidades de nuestros clientes, hacemos que sus sistemas de telecomunicación sean capaces de cumplir totalmente con los aspectos más innovadores y lograr que su impacto sea capaz de evolucionar mantener positivamente la operación de su empresa.
+                                        Nos especializamos en la más avanzada tecnología relacionada con la conectividad, para facilitar la transmisión de datos, voz y video de alto desempeño. Como especialistas en el campo de la fibra óptica, ponemos a su disposición nuestra amplia experiencia con el fin de que usted obtenga los beneficios con soluciones de: <br><br>
+                                        <ul>
+                                            <li>Empalme y Fusión de Fibra Óptica</li>
+                                            <li>Canalización de FO.</li>
+                                            <li>Suministro de Materiales de FO.</li>
+                                            <li>Suministro de Fibra Óptica. </li>
+                                            <li>Mediciones y Certificaciones con equipos certificados y vigentes.</li>
+                                        </ul>
                                     </div>
-                                    <div class="hidee5" id="t2">Ofrecemos soluciones y productos para el cableado de su oficina u edificio, con el fin de ofrecerle una conectividad de todos tus equipos activos, de diferentes o igual tecnología, permitiendo la integración con los diferentes servicios que disponga: telefonía, datos, seguridad, domótica, etc…, es decir, todo lo referente al cableado voz-datos para redes de comunicaciones.</div>
+                                    <div class="hidee5" id="t2">Somos certificados y homologados como integrador de soluciones de cableado 
+                                        estructurado en las marcas AMP, PANDUIT, BTICINO, SYSTIMAX, FURUKAWA.
+                                        Contamos con personal técnico calificado, certificado y capacitado continuamente en: <br><br>
+                                        <ul>
+                                            <li>Diseño e implementación de Cableado Estructurado CAT 6, 6A y 7, 7A</li>
+                                            <li>Adecuaciones de Salas de comunicaciones, instalación de gabinetes, escalerillas, bandejas aéreas, 
+                                            Patch Panel, Estructuras Metálicas, Canaletas y Sistemas de Aire Acondicionado.</li>
+                                            <li>Diseño, Dimensionamiento e Implementación de Data Centers.</li>
+                                            <li>Auditoria de Redes de Cableado Estructurado.</li>
+                                            <li>Mantenimiento correctivo y preventivo.</li>
+                                            <li>Certificación de Cableado con equipos FLUKE.</li>
+                                        </ul>
+                                    </div>
                                     <div class="hidee5" id="t3">
-                                        Los enlaces inalámbricos ofrecen la posibilidad de conectar a Internet lugares de difícil acceso donde no existen otras posibilidades de servicios de telecomunicaciones. A través de los enlaces inalámbricos se puede transportar datos y voz (Voz IP - VoIP) con una calidad y velocidad muy superior a las conexiones Internet vía satélite.
-                                        Estos enlaces se realizan desde un punto donde exista la posibilidad de contratar un acceso a Internet hasta el punto donde sea necesaria dicha conexión.
+                                        Interconectamos Almacenes, Oficinas, Centros de Distribución de una misma empresa, permitiendo a 
+                                        sedes remotas el acceso a correo, bases de datos, internet, aplicaciones y demás herramientas que 
+                                        faciliten el trabajo de sus colaboradores mediante los siguientes servicios:
+                                        <ul>
+                                            <li>Diseño e implementación de equipos inalámbricos externos Punto a Punto, Punto a 
+                                            Multipunto (RADWIN – PROXIM).</li>
+                                            <li>Diseño e implementación de equipos WIFI (ARUBA, AVAYA, CISCO).</li>
+                                            <li>Suministro e Instalación de torres de Ventadas y Auto soportadas.</li>
+                                            <li>Configuración de equipos.</li>
+                                        </ul>
                                     </div>
                                     <div class="hidee5" id="t4">
-                                        Evaluación del Sistema de Seguridad Electrónica con el que cuenta el local, Instalación y Mantenimiento de Sistemas de Seguridad Electrónicos, Asesoría en instalaciones de seguridad electrónica.
+                                        Hemos participado en el diseño, planificación, ejecución y monitoreo de sistemas de Videovigilancia. <br><br>
+                                        <ul>
+                                            <li>Diseño e implementación de Salas de Video Conferencia.</li>
+                                            <li>Diseño e implementación de Sistemas de Perifoneo. </li>
+                                            <li>Diseño e implementación de Sistemas de Circuito Cerrado de TV (CCTV) – Sistemas de CCTV Analógico e IP.</li>
+                                            <li>Consultoría.</li>
+                                        </ul>
                                     </div>                                    
                                </div> 
                 </div>              
@@ -72,27 +103,84 @@ include 'app.php';
                 <div class="contvalor wow fadeIn" data-wow-delay="0.3s" style="margin-top: 35px;">
                   <img src="<?php echo $baseurl?>dist/img2/banners/banner-2.jpg" class="img-responsive" alt="COMUNICACIONES SGTEL">    
                 </div>             
-                <div class="col-md-12">                  
+                <div class="col-md-12"> 
+                <p class="conttex">
+                    Más de 10 años de experiencia en proyectos de telecomunicaciones, contamos con personal experto en instalaciones, pruebas, configuración 
+                    y comisionamiento de equipos, dentro de nuestra cartera de servicios están:
+                </p> <br>            
                               <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
                                    <ul  class="textarea listaserv">
-                                     <li class="itemm" data-cont="i1" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>Proyectos de Planta Externa y Planta Interna</li>
-                                     <li class="itemm" data-cont="i2"><i class="fa fa-circle punto"></i>Auditoria de Instalaciones HFC DTH</li>
-                                     <li class="itemm" data-cont="i3"><i class="fa fa-circle punto"></i>Instalación de Antenas Satelitales</li>
-                                     <li class="itemm" data-cont="i4"><i class="fa fa-circle punto"></i>Redes de Transporte de Radios</li>
+                                     <li class="itemm" data-cont="i1" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>Redes de Acceso ADSL</li>
+                                     <li class="itemm" data-cont="i2"><i class="fa fa-circle punto"></i>Auditoria de Instalaciones HFC</li>
+                                     <li class="itemm" data-cont="i3"><i class="fa fa-circle punto"></i>Redes de Acceso Empresariales</li>
+                                     <li class="itemm" data-cont="i4"><i class="fa fa-circle punto"></i>Centro de Monitoreo de FO y HFC</li>
+                                     <li class="itemm" data-cont="i5"><i class="fa fa-circle punto"></i>Redes de Transporte de Radio</li>
+                                     <li class="itemm" data-cont="i6"><i class="fa fa-circle punto"></i>Otros Servicios</li>
                                    </ul>
                                    <br><br>
                                </div>
                                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.9s">
                                     <div class="hidee" id="i1">
-                                        Consiste en realizar tendido de cable coaxial y/o fibra óptica ya sea aéreo o subterráneo, desde la central o HUB hacia los TAP's ubicados en postes, para posteriormente brindar servicio a los clientes (usuarios). <br>
-                                        Servicio que consiste en ampliar la capacidad de la central o HUB (Headend), a solicitud del cliente, mejorando el Up Stream como el Down Stream (ancho de banda), la calidad de imagen, voz y datos. <br>
+                                        <ul>
+                                            <li>Instalación, integración y puesta en funcionamiento de Redes de Acceso de BA Indoor DSLAM, GSHDSL.</li>
+                                            <li>Instalación, integración y puesta en funcionamiento de Redes de BA Outdoor MSAM.</li>
+                                            <li>Site survey y replanteos de Salas de Datos para instalación de líneas ADSL.</li>
+                                            <li>Implementación de adecuaciones de Salas de Datos, MDF, Energía para soluciones de redes ADSL.</li>
+                                            <li>Migraciones y permutaciones de circuitos de DSLAM ATM a Ethernet.</li>
+                                            <li>Migración de circuitos en Plataforma Ldap y plataforma Nobill.</li>
+                                        </ul>
                                     </div>
-                                    <div class="hidee" id="i2">Auditoria de Instalaciones HFC DTH</div>
+                                    <div class="hidee" id="i2">
+                                    <ul>
+                                        <li>Instalación de Trobas para el servicio de HFC.</li>
+                                        <li>Centralización de Sistemas HFC.</li>
+                                        <li>Monitoreo de la red HFC y la red IP de acceso a Internet (end-to-end).</li>
+                                        <li>Site Survey especializado de los sistemas HFC a nivel Nacional.</li>
+                                        <li>Mejora de la red HFC con mejores prestaciones al cliente.</li>
+                                        <li>Calibración de equipos activos de la red HFC (Troba, amplificadores, minibridger).</li>
+                                        <li>Detección, diagnóstico y reporte de alertas y/o incidentes presentados dentro de la infraestructura de la red HFC.</li>
+                                        <li>Reportes del estado del ruido en el retorno.</li>
+                                        <li>Auditoria de Instalaciones HFC y DTH.</li>
+                                    </ul>
+                                    </div>
                                     <div class="hidee" id="i3">
-                                        Brindar servicio de cable a los usuarios a través de instalación de antenas parabólicas, dichas antenas captan la señal del satélite y la distribuyen al usuario, mediante decodificadores.
+                                        <ul>
+                                            <li>Instalación e integración de Redes Newbridge.</li>
+                                            <li>Instalación e integración de Redes Adtran.</li>
+                                            <li>Instalación e integración de Redes Media Converter: Telco y Tmarc 250</li>
+                                            <li>Implementación de soluciones Stand Alone para equipos de empresas</li>
+                                            <li>Replanteo, Site Survey y adecuaciones de Salas.</li>
+                                            <li>Migración de Equipos Newbridge, configuración de R5000, T5C, Tmarc 250, equipos adtran.</li>
+                                        </ul>
                                     </div>
                                     <div class="hidee" id="i4">
-                                        Redes de Transporte de Radios
+                                        <ul>
+                                            <li>Monitoreo de Fibra de Óptica a través del Software de Supervisión: Fiber Watch, Fiber Visor, Reportes de Averías de FO, Rutinas de verificación de FO.</li>
+                                            <li>Gestión de Clientes y Soporte en Intraway (Call center).</li>
+                                            <li>Reportes y monitoreo en CMTS y cable módems.</li>
+                                            <li>Monitoreo de la red HFC (Red Troncal y Distribución) a través del software PRTG (Cable Módems).</li>
+                                            <li>Monitoreo de las trobas, transmisores ópticos, receptores ópticos y amplificadores de la red HFC a través del software de supervisión NMX.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="hidee" id="i5">
+                                        <ul>
+                                            <li>Estudio de Campo y Replanteo.</li>
+                                            <li>Instalación, energización, configuración e integración de equipos de Radio y Antenas.</li>
+                                            <li>Instalación de Enlaces Microondas 1+0. 1+1, 2+1,3+1. Montaje de Antenas y Soportes.</li>
+                                            <li>Configuración y/o provisión de circuitos de extremo a extremo.</li>
+                                            <li>Replanteo de un radioenlace operativo, configuración, frecuencia de RF, altura, azimuth, diámetro y polarización de antenas.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="hidee" id="i6">
+                                        <ul>
+                                            <li>Instalación de Redes IPVPN – MPLS para servicio a Empresas. </li>
+                                            <li>Instalación y migración de enlaces E1s, E3, STM1, STM 16, STM 64, configuración de radio enlaces Huawei, Ceragon, Siae.  </li>
+                                            <li>Instalación y configuración de equipos DWDM Huawei, ZTE. </li>
+                                            <li>Instalación y configuración de equipos Tellabs 8660, 8630, 8611, 8609, 8607.  </li>
+                                            <li>Instalación de Sistemas radiantes de Acceso para el servicio de Celular 2G, 3G, 4G (LTE).</li>
+                                            <li>Proyectos de planta Externa y Planta Externa.</li>
+                                            <li>Implementación y diseño de BTS, obras civiles, adecuaciones de sala. </li>
+                                        </ul>
                                     </div>
                                </div>
                 </div>
@@ -104,76 +192,42 @@ include 'app.php';
 		            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">		            	
 	                             <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
                                    <ul  class="textarea listaserv">
-                                     <li class="itemm22" data-cont="e1"><i class="fa fa-circle punto"></i>UPS y banco de baterías</li> 
-                                     <li class="itemm2" data-cont="e2" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>Sistemas eléctricos de baja tensión  </li>
-                                     <li class="itemm2" data-cont="e3"><i class="fa fa-circle punto"></i>Sistemas Eléctricos de Media tensión </li>
-                                     <li class="itemm2" data-cont="e4"><i class="fa fa-circle punto"></i>Sistemas de Electrificación Urbana </li>
-                                     <li class="itemm2" data-cont="e5"><i class="fa fa-circle punto"></i>Sub estaciones eléctricas</li>
-                                     <li class="itemm2" data-cont="e6"><i class="fa fa-circle punto"></i>Lineas de transmisión y distribución </li>  
-                                     <li class="itemm22" data-cont="e7"><i class="fa fa-circle punto"></i>Saneamiento </li>  
-                                     <li class="itemm22" data-cont="e8"><i class="fa fa-circle punto"></i>Obras Civíles, pistas y veredas </li>  
-                                     <li class="itemm22" data-cont="e9"><i class="fa fa-circle punto"></i>Remodelaciones </li>                                     
+                                     <li class="itemm2" data-cont="e1" style="color:white;background:#0082c4;"><i class="fa fa-circle punto"></i>UPS y banco de baterías</li> 
+                                     <li class="itemm2" data-cont="e2"><i class="fa fa-circle punto"></i>Sistemas eléctricos de baja tensión  </li>
+                                     <li class="itemm2" data-cont="e3"><i class="fa fa-circle punto"></i>Subestaciones Eléctricas</li>                                  
                                    </ul>
                                    <br><br>
                                </div>
                                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.9s">
-                                    <div class="hidee2" id="e11">
-                                        UPS y banco de baterías
+                                    <div class="hidee2" id="e1">
+                                        <ul>
+                                            <li>Diseño e implementación de Sistemas de protección de energía estabilizada (APC – EMERSON – TRIPP LITE). </li>
+                                            <li>Instalación de Bancos de Baterías</li>
+                                            <li>Instalación de Rectificadores</li>
+                                            <li>Diseño e implementación de bancos de condensadores.</li>
+                                            <li>Sistemas de Puesta a tierra.</li>
+                                        </ul>
                                     </div>
                                     <div class="hidee2" id="e2">
-                                        Diseño y ejecución de proyectos de Sistemas Eléctricos de Baja tensión  <br>
-                                        • Suministro de equipos para Sistemas Eléctricos de Baja Tensión.  <br>
-                                        • Estudios de cargas en edificaciones. <br>
-                                        • Mantenimiento predictivo, preventivo y correctivo de las instalaciones. <br>
-                                        • Servicio de supervisión de proyectos de Sistemas Eléctricos de Baja Tensión. <br>
+                                        <ul>
+                                            <li>Diseño y Ejecución de Proyectos de Electricidad.</li>
+                                            <li>Estudios de Factibilidad.</li>
+                                            <li>Suministros de Equipos, Transformadores, Rectificadores, Generadores, Aisladores, etc.</li>
+                                            <li>Estudio de Carga en Edificaciones.</li>
+                                            <li>Mantenimiento Preventivo y Correctivo.</li>
+                                            <li>Supervisión de Obras de Electricidad.</li>
+                                            <li>Sistemas de Alumbrado Publico</li>
+                                            <li>Iluminación Industrial.</li>
+                                        </ul>
                                     </div>
                                     <div class="hidee2" id="e3">
-                                        Instalación y mantenimiento de subestaciones eléctricas de media y baja tensión, transformadores y tableros generales de distribución. <br>
-                                        Suministro e instalación de postes de media y baja tensión. 
-                                        Instalación de sistemas de alumbrado interior y exterior, toma corrientes comercial e industrial, alimentación eléctrica de maquinas y equipos. 
-                                    </div>
-                                    <div class="hidee2" id="e4">
-                                        • Estudios de factibilidad, proyectos eléctricos. <br>
-                                        • Instalación eléctrica alta, media y baja tensión. <br>
-                                        • Alumbrado público y conexión a domicilio <br>
-                                        • Instalación de suministros. <br>
-                                        • Ingeniería eléctrica. <br>
-                                        • Elaboración de proyectos eléctricos <br>
-                                        • Re levantamiento de instalaciones <br>
-                                        • Instalación eléctrica en MT y BT <br>
-                                        • Mantenimiento en general a subestación eléctrica y banco de condensadores <br>
-                                        • Instalación de todo tipo de subestaciones y banco de condensadores <br>
-                                        • Corrección de bajo factor de potencia <br>
-                                        • Sistema de alumbrado público <br>
-                                        • Redes eléctricas para fraccionamientos en alta y baja tensión <br>
-                                        • Alumbrado en canchas deportivas y áreas cívicas <br>
-                                        • Iluminación industrial, comercial y particular <br>
-                                        • Instalación de iluminación exterior. <br>
-                                        • Instalación de iluminación interior <br>
-                                        • Instalación de sistemas de iluminación de emergencia. <br>
-                                    </div>
-                                    <div class="hidee2" id="e5">
-                                        Montaje y desmontaje de líneas de redes eléctricas de alta media y baja tensión. Instalación de sub estación.<br>
-                                    </div>
-                                    <div class="hidee2" id="e6">
-                                        Líneas de transmisión hasta 500kV <br>
-                                        • Montaje de Líneas de transmisión hasta 500Kv <br>
-                                        • Suministro de estructuras metálicas y equipos relacionados a la línea de transmisión. <br>
-                                        • Mantenimiento preventivo y correctivo de Líneas de Transmisión hasta 500kV <br>
-                                        • Soluciones individuales para satisfacer los estándares más exigentes de nuestros clientes. <br>
-                                        • Mayor eficiencia energética gracias a la optimización de la energía y flexibilidad para integrar marcas que ofrezcan mayor ahorro de energía e inversión. <br>
-                                        • Mejor relación precio – calidad para la construcción de su proyecto, garantizado bajo el cumplimiento de las normas vigentes. <br>
-                                        • Servicio postventa con capacidad de atención ante emergencias. <br>   
-                                    </div>
-                                    <div class="hidee2" id="e7">
-                                        Saneamiento
-                                    </div>
-                                    <div class="hidee2" id="e8">
-                                        Obras Civíles, pistas y veredas
-                                    </div>
-                                    <div class="hidee2" id="e9">
-                                        Remodelaciones
-                                    </div>                                   
+                                        <ul>
+                                            <li>Dimensionamiento y Suministro de Subestaciones Eléctricas.</li>
+                                            <li>Suministro, Instalación y energización de equipos.</li>
+                                            <li>Tramite documentarios para energización.</li>
+                                            <li>Mantenimiento preventivo y correctivo </li>
+                                        </ul>
+                                    </div>                                                                  
                                </div> 
 		            </div>            
 				</div>				
